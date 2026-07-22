@@ -316,7 +316,7 @@ button
 {
     color: #FFF;
     font-size: 14px;
-    line-height: 44px;
+    line-height: 64px;
 	font-weight: 600;
 
     display: inline-block;
@@ -326,10 +326,8 @@ button
     text-align: center;
     vertical-align: top;
     text-decoration: none;
-	text-transform: uppercase;
 
-    border-radius: 4px;
-    background: #D64923;
+    background: #111827;
 
     transition: background .2s linear;
 }
@@ -338,7 +336,7 @@ button
 {
 	.btn-dark:hover
 	{
-		background: #B71517;
+		/* background: #B71517; */
 	}
 }
 
@@ -1388,31 +1386,27 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*---------------
 	Page head
 ---------------*/
-.top-wrap__btn
+._marg
 {
-	margin-left: 30px;
-	flex-shrink: 0;
-	padding-bottom: 8px;
+	margin-top: 100px;
 }
 
 .main-title
 {
 	font-size: 48px;
-	line-height: 1.2;
-	color: #3A3B55;
-	font-weight: 500;
+	line-height: 1.1;
+	color: #111827;
+	font-weight: 300;
 }
 
-.main-subtitle{
-	margin-top: 20px;
+.main-subtitle
+{
+	
 }
 
 .page-title
 {
-	font-weight: 500;
-	font-size: 56px;
-	line-height: 1.2;
-	color: #1B2745;
+	
 }
 
 
@@ -1866,6 +1860,63 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*------------
     Commit
 ------------*/
+
+.find-marketplaces__bg
+{
+	background-color: #72CFE8;
+	position: relative;
+	overflow: hidden;
+}
+
+.find-marketplaces__box
+{
+	width: 592px;
+	padding: 40px;
+	position: relative;
+}
+
+.find-marketplaces__desc
+{
+	margin-top: 16px;
+	font-size: 14px;
+}
+
+.find-marketplaces__img
+{
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	width: calc(100% - 552px);
+
+	transform: translateY(-50%);
+	padding-right: 4.4%;
+	padding-left: 4.4%;
+}
+
+.find-marketplaces__img img
+{
+	display: block;
+	max-width: 100%;
+}
+
+.find-marketplaces__btns
+{
+	margin-top: 89px;
+	margin-left: -16px;
+}
+
+.find-marketplaces__btn
+{
+	width: calc(100%/3 - 16px);
+	margin: 16px 0 0 16px;
+}
 
 
 @media (any-hover: hover)
