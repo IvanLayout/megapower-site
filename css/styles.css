@@ -1386,6 +1386,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*---------------
 	Page head
 ---------------*/
+.head-section._pad-right
+{
+	padding-right: 150px;
+}
+
 ._marg
 {
 	margin-top: 100px;
@@ -1401,7 +1406,24 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .main-subtitle
 {
-	
+	color: #838691;
+	position: relative;
+	padding-left: 15px;
+}
+
+.main-subtitle::before
+{
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+
+	display: block;
+
+	width: 6px;
+	height: 6px;
+
+	background-color: #72CFE8;
 }
 
 .page-title
