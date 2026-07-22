@@ -1943,6 +1943,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .footer__contacts
 {
 	color: #fff;
+	font-size: 14px;
 }
 
 .footer__contacts a
@@ -2028,7 +2029,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .footer__socials._big
 {
 	margin-left: -8px;
-	margin-top: 16px;
+	margin-top: -8px;
 }
 
 .footer__socials-link 
