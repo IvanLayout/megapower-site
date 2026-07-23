@@ -47,258 +47,70 @@
 			<div class="main">
 				<!-- Шапка -->
 				<header class="header">
-					<div class="adres-mini">
-						<button data-adres-close class="mini-modal__close">
-							<svg>
-								<use xlink:href="images/sprite.svg#close"></use>
-							</svg>
-						</button>
-						<div class="adres-mini__title">
-							Ваш город Москва?
+					<div class="cont _flex">
+						<div class="header__logo">
+							<a href="/">
+								<img src="images/logo.svg" alt="">
+							</a>
 						</div>
 
-						<div class="adres-mini__btns _flex">
-							<button data-adres-close class="btn-blue adres-mini__btn">Да, верно</button>
+						<div class="header__colr">
+							<div class="header__top _flex">
+								<div class="header__contacts _flex">
+									<div class="mini-modal header__adres">
+										<button type="button" class="mini-modal__btn header__adres-btn">
+											<span>Москва</span>
+										</button>
 
-							<button type="button" class="adres-mini__link modal-btn" data-content="#modal-addres">Нет, другой</button>
-						</div>
-					</div>
-					
-					<div class="adres-over"></div>
-
-					<div class="header__top">
-						<div class="header__top-mob">
-							<div class="cont">
-								<button type="button" class="header__top-close">
-									<svg>
-										<use xlink:href="images/sprite.svg#close"></use>
-									</svg>
-								</button>
-
-								<div class="header__top-logo">
-									<a href="/">
-										<img src="images/logo_small.svg" alt="">
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="cont _flex">
-							<div class="header__adres">
-								<button type="button" class="header__adres-btn modal-btn" data-content="#modal-addres">
-									<svg class="header__adres-marker">
-										<use xlink:href="images/sprite.svg#marker"></use>
-									</svg>
-									Москва
-								</button>
-							</div>
-
-							<div class="header__iso">
-								<a href="/" class="header__iso-link">
-									<span class="header__iso-icon">
-										<img src="images/iso.png" alt="">
-									</span>
-									<span>Сертификат ISO</span>
-								</a>
-							</div>
-
-							<nav class="header__list _flex">
-								<div class="header__list-item">
-									<a href="/" class="header__list-link _sub">
-										О компании
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow3"></use>
-										</svg>
-									</a>
-
-									<div class="header__list-submenu">
-										<div>
-											<a href="/">О компании</a>
-										</div>
-										<div>
-											<a href="/">Наши клиенты</a>
-										</div>
-										<div>
-											<a href="/">Почему мы</a>
-										</div>
-										<div>
-											<a href="/">Служба качества</a>
-										</div>
-										<div>
-											<a href="/">Производители</a>
-										</div>
-										<div>
-											<a href="/">Компания в лицах</a>
-										</div>
-										<div>
-											<a href="/">Вакансии</a>
-										</div>
-										<div>
-											<a href="/">Акции</a>
-										</div>
-										<div>
-											<a href="/">Партнёрам</a>
-										</div>
-										<div>
-											<a href="/">Отзывы</a>
+										<div class="mini-modal__modal header__adres-items">
+											<div class="header__adres-item">
+												<a href="/" class="header__adres-link">Санкт-Петербург</a>
+											</div>
+											<div class="header__adres-item">
+												<a href="/" class="header__adres-link">Новосибирск</a>
+											</div>
+											<div class="header__adres-item">
+												<a href="/" class="header__adres-link">Ростов-на-Дону</a>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="header__list-item">
-									<a href="/" class="header__list-link">Как купить?</a>
-								</div>
-								<div class="header__list-item">
-									<a href="/" class="header__list-link _sub">
-										Услуги
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow3"></use>
-										</svg>
-									</a>
-
-									<div class="header__list-submenu">
-										<div>
-											<a href="/">О компании</a>
-										</div>
-										<div>
-											<a href="/">Наши клиенты</a>
-										</div>
-										<div>
-											<a href="/">Почему мы</a>
-										</div>
-										<div>
-											<a href="/">Служба качества</a>
-										</div>
-										<div>
-											<a href="/">Производители</a>
-										</div>
-										<div>
-											<a href="/">Компания в лицах</a>
-										</div>
-										<div>
-											<a href="/">Вакансии</a>
-										</div>
-										<div>
-											<a href="/">Акции</a>
-										</div>
-										<div>
-											<a href="/">Партнёрам</a>
-										</div>
-										<div>
-											<a href="/">Отзывы</a>
-										</div>
+									<div class="header__mail">
+										<a href="mailto:info@megapower.ru">
+											<span>info@megapower.ru</span>
+										</a>
 									</div>
+									<div class="header__phone">
+										<a href="tel:88000000000">
+											<span>8‑800‑000‑00‑00</span>
+										</a>
+									</div>
+									<div class="header__time">Пн‑Пт 9:00–18:00</div>
 								</div>
-								<div class="header__list-item">
-									<a href="/" class="header__list-link">Блог</a>
-								</div>
-								<div class="header__list-item">
-									<a href="/" class="header__list-link">Доставка и оплата</a>
-								</div>
-								<div class="header__list-item">
-									<a href="/" class="header__list-link">Контакты</a>
-								</div>
-								<div class="header__list-item header__list-item_mob">
-									<a href="/" class="header__list-link">
-										<span>
-											Избранное
 
-											<span class="header__list-number">999</span>
-										</span>
-									</a>
-								</div>
-								<div class="header__list-item header__list-item_mob">
-									<a href="/" class="header__list-link">
-										<span>
-											Сравнение
-
-											<span class="header__list-number">999</span>
-										</span>
-									</a>
-								</div>
-							</nav>
-
-							<div class="header__contacts _flex">
-								<div class="header__phone">
-									<a href="tel:+88043337039">8 (804) 333–70–39</a>
-								</div>
-								<div class="header__mail">
-									<a href="mailto:info176@rusautomation.ru">info176@rusautomation.ru</a>
+								<div class="header__top-colr _flex">
+									<a href="/" class="header__partner">Стать партнёром</a>
+									<div class="header__links _flex">
+										<a href="/" class="header__links-link">
+											<img data-src="images/ic_vk.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+										<a href="/" class="header__links-link">
+											<img data-src="images/ic_drive.jpg" src="images/img_plug.png" alt="" class="lazyload">
+										</a>
+									</div>
+									<a href="/" class="header__contact">Контакты</a>
 								</div>
 							</div>
-
-							<div class="header__messengers _flex">
-								<a href="/" class="header__messengers-link">
-									<img data-src="images/ic_mess1.svg" src="images/img_plug.png" alt="" class="lazyload">
-								</a>
-								<a href="/" class="header__messengers-link">
-									<img data-src="images/ic_mess2.svg" src="images/img_plug.png" alt="" class="lazyload">
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="header__mob">
-						<div class="cont _flex">
-							<button type="button" class="mob-menu-btn">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-
-							<div class="header__adres">
-								<button type="button" data-content="#modal-addres" class="header__adres-btn modal-btn">
-									<svg class="header__adres-marker">
-										<use xlink:href="images/sprite.svg#marker"></use>
-									</svg>
-									Москва
-								</button>
-							</div>
-
-							<div class="header__iso">
-								<a href="/" class="header__iso-link">
-									<span class="header__iso-icon">
-										<img src="images/iso.png" alt="">
-									</span>
-								</a>
-							</div>
-
-							<div class="header__logo">
-								<a href="/">
-									<img src="images/logo_small.svg" alt="">
-								</a>
-							</div>
-
-							<div class="header__contacts _flex">
-								<div class="header__lg">
-									<a href="/"></a>
-								</div>
-								<div class="header__mail">
-									<a href="mailto:info176@rusautomation.ru"></a>
-								</div>
-								<div class="header__phone">
-									<a href="tel:+88043337039"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="header__info">
-						<div class="header__info-wrap">
-							<div class="cont _flex">
-								<div class="header__logo">
-									<a href="/">
-										<img src="images/logo.svg" alt="">
-									</a>
-								</div>
-
+							<div class="header__info _flex">
 								<div class="header-catalog">
 									<button type="button" class="header-catalog__open">
-										<span class="header-catalog__open-burger">
-											<span></span>
-											<span></span>
-											<span></span>
+										<span class="header-catalog__open-wrap">
+											<span class="header-catalog__open-burger">
+												<span></span>
+												<span></span>
+												<span></span>
+											</span>
+											Каталог
 										</span>
-										Каталог
 									</button>
 
 									<div class="header-catalog__block">
@@ -1732,509 +1544,174 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="header__search">
-									<div class="header__search-wrap">
-										<button type="button" class="header__search-close">
-											<svg>
-												<use xlink:href="images/sprite.svg#arrow_back"></use>
-											</svg>
-										</button>
-
-										<div class="header__search-flex _flex">
-											<div class="mini-modal mini-modal__select">
-												<button type="button" class="mini-modal__btn mini-modal__btn-select">
-													Везде
-
-													<svg>
-														<use xlink:href="images/sprite.svg#arrow3"></use>
-													</svg>
-												</button>
-
-												<div class="mini-modal__modal mini-modal__modal-select">
-													<div class="header-select">
-														<div>
-															<a href="/">Везде</a>
-														</div>
-														<div>
-															<a href="/">О&nbsp;компании</a>
-														</div>
-														<div>
-															<a href="/">Наши клиенты</a>
-														</div>
-														<div>
-															<a href="/">Почему мы</a>
-														</div>
-														<div>
-															<a href="/">Служба качества</a>
-														</div>
-														<div>
-															<a href="/">Производители</a>
-														</div>
-														<div>
-															<a href="/">Компания в&nbsp;лицах</a>
-														</div>
-														<div>
-															<a href="/">Вакансии</a>
-														</div>
-														<div>
-															<a href="/">Акции</a>
-														</div>
-														<div>
-															<a href="/">Партнёрам</a>
-														</div>
-														<div>
-															<a href="/">Отзывы</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="header__search-field _flex">
-												<input type="text" value="" placeholder="Микроволновый рефлексный датчик уровня HHK-703–4" id="header__search-input" class="header__search-input">
-
-												<button type="submit" class="header__search-submit">
-													<svg>
-														<use xlink:href="images/sprite.svg#lupa"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
+								<nav class="header__menu _flex">
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>О компании</span>
+										</a>
 									</div>
-
-									<div class="header__search-mob">
-										<div class="you-search">
-											<div class="you-search__box">
-												<div class="you-search__title">Вы искали</div>
-
-												<div class="you-search__history">
-													<div class="you-search__history-product">
-														<a href="/" class="you-search__history-name">Микроволновый рефлексный датчик</a>
-													</div>
-												</div>
-
-												<button type="button" class="you-search__history-btn">Очистить историю поиска</button>
-											</div>
-
-											<div class="you-search__box">
-												<div class="you-search__title">Просмотренные товары</div>
-												
-												<div class="products-view">
-													<div class="products-view__item _flex">
-														<a href="/" class="products-view__img">
-															<img data-src="images/tmp/cats_img1.png" src="images/img_plug.png" alt="" class="lazyload">
-														</a>
-
-														<div class="products-view__info">
-															<div class="products-view__logo">
-																<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-															</div>
-
-															<div class="products-view__name">
-																<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
-															</div>
-
-															<div class="products-view__prices">
-																<div class="products-view__price-old">1 396 ₽ /шт</div>
-
-																<div class="products-view__price">1 396 ₽ /шт</div>
-															</div>
-														</div>
-													</div>
-													<div class="products-view__item _flex">
-														<a href="/" class="products-view__img">
-															<img data-src="images/tmp/cats_img1.png" src="images/img_plug.png" alt="" class="lazyload">
-														</a>
-
-														<div class="products-view__info">
-															<div class="products-view__logo">
-																<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-															</div>
-
-															<div class="products-view__name">
-																<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
-															</div>
-
-															<div class="products-view__prices">
-																<div class="products-view__price-old">1 396 ₽ /шт</div>
-
-																<div class="products-view__price">1 396 ₽ /шт</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>Где купить</span>
+										</a>
 									</div>
-								</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>Новости</span>
+										</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>Гарантия</span>
+										</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>Партнёрам</span>
+										</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>FAQ</span>
+										</a>
+									</div>
+									<div class="header__menu-item">
+										<a href="/" class="header__menu-link">
+											<span>Материалы</span>
+										</a>
+									</div>
+								</nav>
 
-								<a href="tel:+88043337039" class="header__info-phone"></a>
+								<div class="header__search _flex">
+									<input type="text" value="" placeholder="Поиск по артикулу / VIN / названию" id="header__search-input" class="header__search-input">
 
-								<div class="header__btns _flex">
-									<a href="/" class="header__btn">
-										<span class="header__btn-icon">
-											<svg width="20" height="20">
-												<use xlink:href="images/sprite.svg#stock"></use>
-											</svg>
-										</span>
-										<span class="header__btn-name">Акции</span>
-									</a>
-									<a href="/" class="header__btn">
-										<span class="header__btn-number">10</span>
-										<span class="header__btn-icon">
-											<svg width="20" height="20">
-												<use xlink:href="images/sprite.svg#favorite"></use>
-											</svg>
-										</span>
-										<span class="header__btn-name">Избранное</span>
-									</a>
-									<a href="/" class="header__btn">
-										<span class="header__btn-icon">
-											<svg width="20" height="20">
-												<use xlink:href="images/sprite.svg#compare"></use>
-											</svg>
-										</span>
-										<span class="header__btn-name">Сравнение</span>
-									</a>
-									<button type="button" class="header__btn modal-btn" data-content="#modal-cart">
-										<span class="header__btn-number">100</span>
-										<span class="header__btn-icon">
-											<svg width="20" height="20">
-												<use xlink:href="images/sprite.svg#cart"></use>
-											</svg>
-										</span>
-										<span class="header__btn-name">Корзина</span>
-									</button>
-									<button type="button" data-content="#modal-login" class="header__btn modal-btn">
-										<span class="header__btn-icon">
-											<svg width="20" height="20">
-												<use xlink:href="images/sprite.svg#user"></use>
-											</svg>
-										</span>
-										<span class="header__btn-name">Войти</span>
+									<button type="button" class="header__search-clear">
+										<svg>
+											<use xlink:href="images/sprite.svg#clear"></use>
+										</svg>
 									</button>
 								</div>
-							</div>
-
-							<div class="overlay-catalog"></div>
-						</div>
-					</div>
-
-					<div class="header__bot">
-						<div class="cont">
-							<div class="header__cats swiper swiper_visible">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Датчики уровня</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Частотные преобразователи</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Индикаторы уровня</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Решения по автоматизации</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Шкафы управления</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Устройства плавного пуска</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Расходомеры</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Датчики уровня</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Частотные преобразователи</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Принцип работы</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Как подключить</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">В чем различие</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Сравнить</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Частотные преобразователи</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Принцип работы</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Как подключить</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">В чем различие</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="/" class="header__cats-link">Сравнить</a>
-									</div>
-								</div>
-								<button type="button" class="slider-button-prev">
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow2"></use>
-									</svg>
-								</button>
-								<button type="button" class="slider-button-next">
-									<svg>
-										<use xlink:href="images/sprite.svg#arrow2"></use>
-									</svg>
-								</button>
 							</div>
 						</div>
 					</div>
 				</header>
-
-				<div class="overlay"></div>
-
-				<div class="fix-btns">
-					<a href="/" class="fix-btns__btn">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#home"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-name">Главная</span>
-					</a>
-					<button type="button" class="fix-btns__btn open-catalog-mob">
-						<span class="fix-btns__btn-icon">
-							<svg class="fix-btns__btn-catalog">
-								<use xlink:href="images/sprite.svg#ic_catalog"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-name">Каталог</span>
-					</button>
-					<a href="/" class="fix-btns__btn">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#favorite"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-number">999</span>
-
-						<span class="fix-btns__btn-name">Избранное</span>
-					</a>
-					<button type="button" class="fix-btns__btn open-user-info modal-btn" data-content="#modal-login">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#user"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-name">Профиль</span>
-					</button>
-					<button type="button" class="fix-btns__btn modal-btn" data-content="#modal-cart">
-						<span class="fix-btns__btn-icon">
-							<svg>
-								<use xlink:href="images/sprite.svg#cart"></use>
-							</svg>
-						</span>
-
-						<span class="fix-btns__btn-number">999</span>
-
-						<span class="fix-btns__btn-name">Корзина</span>
-					</button>
-				</div>
 				<!-- End Шапка -->
 
-				<section class="first-section first-section_marg">
+				<section class="main-banner">
+					<picture class="main-banner__bg">
+						<source srcset="images/tmp/main_banner_mob1.jpg" type="image/jpg" media="(max-width: 767px)">
+						<img src="images/tmp/main_banner1.jpg" alt="">
+					</picture>
+					<picture>
+					</picture>
 					<div class="cont">
-						<div class="first-section__cols _flex">
-							<div class="first-section__col">
-								<div class="info-slider slider swiper_visible swiper">
-									<div class="swiper-wrapper">
-										<div class="info-slider__item swiper-slide">
-											<h1 class="info-slider__title"><span>Решения</span> для заводов, производств и цехов</h1>
-
-											<div class="info-slider__desc">Предлагаем широкий ассортимент оборудования собственного производства, отвечающего самым высоким стандартам качества</div>
-											
-											<div class="info-slider__link">
-												<a href="/" class="btn-arrow">
-													<span>
-														Перейти в каталог
-
-														<svg>
-															<use xlink:href="images/sprite.svg#arrow"></use>
-														</svg>
-													</span>
-												</a>
-											</div>
-										</div>
-										<div class="info-slider__item swiper-slide">
-											<h1 class="info-slider__title"><span>Решения</span> для заводов, производств и цехов</h1>
-
-											<div class="info-slider__desc">Предлагаем широкий ассортимент оборудования собственного производства, отвечающего самым высоким стандартам качества</div>
-											
-											<div class="info-slider__link">
-												<a href="/" class="btn-arrow">
-													<span>
-														Перейти в каталог
-
-														<svg>
-															<use xlink:href="images/sprite.svg#arrow"></use>
-														</svg>
-													</span>
-												</a>
-											</div>
-										</div>
-										<div class="info-slider__item swiper-slide">
-											<h1 class="info-slider__title"><span>Решения</span> для заводов, производств и цехов</h1>
-
-											<div class="info-slider__desc">Предлагаем широкий ассортимент оборудования собственного производства, отвечающего самым высоким стандартам качества</div>
-											
-											<div class="info-slider__link">
-												<a href="/" class="btn-arrow">
-													<span>
-														Перейти в каталог
-
-														<svg>
-															<use xlink:href="images/sprite.svg#arrow"></use>
-														</svg>
-													</span>
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="slider-pagination slider-pagination_number"></div>
-
-									<button type="button" class="slider-button-prev _bot-number">
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow2"></use>
-										</svg>
-									</button>
-									<button type="button" class="slider-button-next _bot-number">
-										<svg>
-											<use xlink:href="images/sprite.svg#arrow2"></use>
-										</svg>
-									</button>
+						<div class="main-banner__wrap">
+							<div class="main-banner__top">
+								<div class="main-banner__logo">
+									<img src="images/logo-2.svg" alt="">
 								</div>
+
+								<h1 class="main-banner__title">Надёжные автозапчасти для&nbsp;грузовых и&nbsp;легковых автомобилей</h1>
+
+								<div class="main-banner__desc">Контроль качества и увеличенный ресурс эксплуатации</div>
+
+								<a href="/" class="btn-light main-banner__about">О компании</a>
 							</div>
-
-							<div class="first-section__col">
-								<div class="main-slider swiper">
-									<div class="swiper-wrapper">
-										<a href="/" class="main-slider__item swiper-slide">
-											<span class="main-slider__img">
-												<img data-src="images/tmp/main_slider_img.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</a>
-										<a href="/" class="main-slider__item swiper-slide">
-											<span class="main-slider__img">
-												<img data-src="images/tmp/main_slider_img.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</a>
-										<a href="/" class="main-slider__item swiper-slide">
-											<span class="main-slider__img">
-												<img data-src="images/tmp/main_thumbs_img2.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</a>
-										<a href="/" class="main-slider__item swiper-slide">
-											<span class="main-slider__img">
-												<img data-src="images/tmp/main_thumbs_img3.png" src="images/img_plug.png" alt="" class="lazyload">
-											</span>
-										</a>
-									</div>
-								</div>
-
-								<div class="main-thumbs swiper">
-									<div class="swiper-wrapper">
-										<div class="main-thumbs__item swiper-slide">
-											<a href="/" class="main-thumbs__item-link">
-												<span class="main-thumbs__img">
-													<img data-src="images/tmp/main_thumbs_img1.png" src="images/img_plug.png" alt="" class="lazyload">
-												</span>
-
-												<span class="main-thumbs__name">Датчики уровня</span>
-											</a>
-										</div>
-										<div class="main-thumbs__item swiper-slide">
-											<a href="/" class="main-thumbs__item-link">
-												<span class="main-thumbs__img">
-													<img data-src="images/tmp/main_slider_img.png" src="images/img_plug.png" alt="" class="lazyload">
-												</span>
-
-												<span class="main-thumbs__name">Расходомеры жидкости</span>
-											</a>
-										</div>
-										<div class="main-thumbs__item swiper-slide">
-											<a href="/" class="main-thumbs__item-link">
-												<span class="main-thumbs__img">
-													<img data-src="images/tmp/main_thumbs_img2.png" src="images/img_plug.png" alt="" class="lazyload">
-												</span>
-
-												<span class="main-thumbs__name">Решения по автоматизации</span>
-											</a>
-										</div>
-										<div class="main-thumbs__item swiper-slide">
-											<a href="/" class="main-thumbs__item-link">
-												<span class="main-thumbs__img">
-													<img data-src="images/tmp/main_thumbs_img3.png" src="images/img_plug.png" alt="" class="lazyload">
-												</span>
-
-												<span class="main-thumbs__name">Расходомеры</span>
-											</a>
-										</div>
-									</div>
-								</div>
+							<div class="main-banner__bottom _flex">
+								<a href="/" class="btn-dark main-banner__link">Перейти в каталог</a>
+								<a href="/" class="btn-blue main-banner__link">Где купить</a>
 							</div>
 						</div>
 					</div>
 				</section>
 
 
-				<section class="advantages-main advantages-main_marg">
+				<section class="advantages-main _marg">
 					<div class="cont">
-						<div class="advantages-main__slider swiper">
+						<div class="head-section _flex">
+							<div class="global-title">Преимущества</div>	
+							<div class="main-title">Ключевые принципы бренда <br>и подход к качеству продукции</div>	
+						</div>
+
+						<div class="advantages-main__slider swiper swiper_visible">
 							<div class="swiper-wrapper">
-								<a href="/" class="advantages-main__item swiper-slide">
-									<div class="advantages-main__info">
-										<div class="advantages-main__title">Изготовление шкафов управления насосами</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item _big">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">01</div>
 
-										<div class="advantages-main__desc">от производителя под задачи <br>вашего предприятия</div>
+											<div class="advantages-main__number">4200+</div>
+											<div class="advantages-main__title">позиций в каталоге</div>
+										</div>
 									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">02</div>
 
-									<div class="advantages-main__img">
-										<img data-src="images/tmp/adv_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-									</div>
-								</a>
-								<a href="/" class="advantages-main__item swiper-slide">
-									<div class="advantages-main__info">
-										<div class="advantages-main__title">Датчики линеного <br>положения MSI</div>
+											<div class="advantages-main__title">Испытания продукции и&nbsp;проверка качества </div>
+										</div>
 
-										<div class="advantages-main__desc">Конфигурации исполнения решают <br>задачи и обеспечивают высокое качество</div>
+										<div class="advantages-main__info">на каждом этапе производства</div>
 									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item _dark">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">03</div>
 
-									<div class="advantages-main__img">
-										<img data-src="images/tmp/adv_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-									</div>
-								</a>
-								<a href="/" class="advantages-main__item swiper-slide">
-									<div class="advantages-main__info">
-										<div class="advantages-main__title">Типовое одобрение <br>морского регистра</div>
+											<div class="advantages-main__title advantages-main__title_big">Серия LONGLIFE</div>
+										</div>
 
-										<div class="advantages-main__desc">на индикаторы уровня и потока производства «РусаАвтоматизации»</div>
+										<div class="advantages-main__info">Увеличенный ресурс эксплуатации для&nbsp;тяжёлых условий</div>
 									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">04</div>
 
-									<div class="advantages-main__img">
-										<img data-src="images/tmp/adv_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+											<div class="advantages-main__title">Официальная <br>гарантия</div>
+										</div>
+
+										<div class="advantages-main__info">1-2 года в зависимости от товара</div>
 									</div>
-								</a>
+								</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">05</div>
+
+											<div class="advantages-main__title">Поддержка отечественных марок</div>
+										</div>
+
+										<div class="advantages-main__info">КАМАЗ, МАЗ, ГАЗ, УАЗ, УРАЛ и др.</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="advantages-main__item _dark">
+										<div class="advantages-main__item-top">
+											<div class="advantages-main__code">06</div>
+
+											<div class="advantages-main__title">Дилерская сеть</div>
+										</div>
+
+										<div class="advantages-main__info">Представленность в 60 регионах России</div>
+									</div>
+								</div>
 							</div>
 
-							<div class="slider-pagination"></div>
+							<button type="button" class="slider-button-prev">
+								<svg>
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</button>
+							<button type="button" class="slider-button-next">
+								<svg>
+									<use xlink:href="images/sprite.svg#arrow1"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 				</section>
@@ -2654,615 +2131,6 @@
 									<use xlink:href="images/sprite.svg#arrow2"></use>
 								</svg>
 							</button>
-						</div>
-					</div>
-				</section>
-
-
-				<section class="main-news _marg">
-					<div class="cont">
-						<div class="tabs-container">
-							<div class="top-wrap _flex">
-								<div class="tabs tabs-text"> 
-									<div class="tabs-text__flex _flex">
-										<button type="button" data-content="#tab1" data-level="level1" class="tabs-text__btn tabs__button_js _active">
-											Новости
-										</button>
-										<button type="button" data-content="#tab2" data-level="level1" class="tabs-text__btn tabs__button_js">
-											Статьи
-										</button>
-										<button type="button" data-content="#tab3" data-level="level1" class="tabs-text__btn tabs__button_js">
-											База знаний
-										</button>
-										<button type="button" data-content="#tab4" data-level="level1" class="tabs-text__btn tabs__button_js">
-											Применения
-										</button>
-									</div>
-								</div>
-		
-								<div class="top-wrap__btn top-wrap__mob-none">
-									<div class="tab-content level1 _active" data-id="#tab1">
-										<a href="/" class="btn-arrow">
-											<span>
-												Смотреть все новости
-
-												<svg>
-													<use xlink:href="images/sprite.svg#arrow"></use>
-												</svg>
-											</span>
-										</a>
-									</div>
-									<div class="tab-content level1" data-id="#tab2">
-										<a href="/" class="btn-arrow">
-											<span>
-												Смотреть все статьи
-
-												<svg>
-													<use xlink:href="images/sprite.svg#arrow"></use>
-												</svg>
-											</span>
-										</a>
-									</div>
-									<div class="tab-content level1" data-id="#tab3">
-										<a href="/" class="btn-arrow">
-											<span>
-												Смотреть вcю базу знаний
-
-												<svg>
-													<use xlink:href="images/sprite.svg#arrow"></use>
-												</svg>
-											</span>
-										</a>
-									</div>
-									<div class="tab-content level1" data-id="#tab4">
-										<a href="/" class="btn-arrow">
-											<span>
-												Смотреть все применения
-
-												<svg>
-													<use xlink:href="images/sprite.svg#arrow"></use>
-												</svg>
-											</span>
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="tab-content level1 _active" id="tab1">
-								<div class="main-news__cols _flex">
-									<div class="main-news__coll">
-										<div class="main-news__bg">
-											<img data-src="images/main_news_bg.jpg" src="images/img_plug.png" alt="" class="lazyload">
-
-											<div class="main-news__info">
-												<div class="main-news__stikers _flex">
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_eye.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">678</div>
-													</div>
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_clock.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">10 минут</div>
-													</div>
-												</div>
-	
-												<div class="main-news__info-name">Применение сигнального оборудования <br>в системах безопасности</div>
-	
-												<div class="main-news__info-desc">Предвкушаем встречу с представителями водного <br>хозяйства на выставке «IX Всероссийского водного конгресса».</div>
-	
-												<div class="main-news__info-link">
-													<a href="/" class="btn-arrow">
-														<span>
-															Читать статью
-						
-															<svg>
-																<use xlink:href="images/sprite.svg#arrow"></use>
-															</svg>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="main-news__colr">
-										<div class="main-news__wrap">
-											<div class="main-news__items _box-items">
-												<div class="main-news__item _item-mob">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Применение сигнального оборудования в системах безопасности</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Предвкушаем встречу с представителями водного хозяйства на выставке «IX Всероссийского водного конгресса».
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">С праздником, уважаемые химики!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Дорогие химики! Вы как никто другой умеете превращать сложные формулы в реальные технологии…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 февраля 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Пневмовибраторы XSON — аналог швейцарского бренда</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Залипание и уплотнение порошков, гранул и других сыпучих материалов — причины образования пробок в бункерах, силосах и трубопроводах…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 марта 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Поздравляем с профессиональным праздником <br>тех, кто ответственен за закупки!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Ваша работа — это искусство баланса: между выгодой и качеством, сроком и бюджетом, риском и надёжностью. Вы не просто покупаете, вы создаёте возможности для бизнеса!
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="slider-pagination"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="mob-wrap">
-									<a href="/" class="btn-mob">
-										<span>
-											Смотреть Все новости
-
-											<svg>
-												<use xlink:href="images/sprite.svg#arrow"></use>
-											</svg>
-										</span>
-									</a>
-								</div>
-							</div>
-
-							<div class="tab-content level1" id="tab2">
-								<div class="main-news__cols _flex">
-									<div class="main-news__coll">
-										<div class="main-news__bg">
-											<img data-src="images/main_news_bg.jpg" src="images/img_plug.png" alt="" class="lazyload">
-
-											<div class="main-news__info">
-												<div class="main-news__stikers _flex">
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_eye.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">678</div>
-													</div>
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_clock.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">10 минут</div>
-													</div>
-												</div>
-	
-												<div class="main-news__info-name">Применение сигнального оборудования <br>в системах безопасности</div>
-	
-												<div class="main-news__info-desc">Предвкушаем встречу с представителями водного <br>хозяйства на выставке «IX Всероссийского водного конгресса».</div>
-	
-												<div class="main-news__info-link">
-													<a href="/" class="btn-arrow">
-														<span>
-															Читать статью
-						
-															<svg>
-																<use xlink:href="images/sprite.svg#arrow"></use>
-															</svg>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="main-news__colr">
-										<div class="main-news__wrap">
-											<div class="main-news__items _box-items">
-												<div class="main-news__item _item-mob">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Применение сигнального оборудования в системах безопасности</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Предвкушаем встречу с представителями водного хозяйства на выставке «IX Всероссийского водного конгресса».
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">С праздником, уважаемые химики!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Дорогие химики! Вы как никто другой умеете превращать сложные формулы в реальные технологии…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 февраля 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Пневмовибраторы XSON — аналог швейцарского бренда</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Залипание и уплотнение порошков, гранул и других сыпучих материалов — причины образования пробок в бункерах, силосах и трубопроводах…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 марта 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Поздравляем с профессиональным праздником <br>тех, кто ответственен за закупки!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Ваша работа — это искусство баланса: между выгодой и качеством, сроком и бюджетом, риском и надёжностью. Вы не просто покупаете, вы создаёте возможности для бизнеса!
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="slider-pagination"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="mob-wrap">
-									<a href="/" class="btn-mob">
-										<span>
-											Смотреть все статьи
-
-											<svg>
-												<use xlink:href="images/sprite.svg#arrow"></use>
-											</svg>
-										</span>
-									</a>
-								</div>
-							</div>
-
-							<div class="tab-content level1" id="tab3">
-								<div class="main-news__cols _flex">
-									<div class="main-news__coll">
-										<div class="main-news__bg">
-											<img data-src="images/main_news_bg.jpg" src="images/img_plug.png" alt="" class="lazyload">
-
-											<div class="main-news__info">
-												<div class="main-news__stikers _flex">
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_eye.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">678</div>
-													</div>
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_clock.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">10 минут</div>
-													</div>
-												</div>
-	
-												<div class="main-news__info-name">Применение сигнального оборудования <br>в системах безопасности</div>
-	
-												<div class="main-news__info-desc">Предвкушаем встречу с представителями водного <br>хозяйства на выставке «IX Всероссийского водного конгресса».</div>
-	
-												<div class="main-news__info-link">
-													<a href="/" class="btn-arrow">
-														<span>
-															Читать статью
-						
-															<svg>
-																<use xlink:href="images/sprite.svg#arrow"></use>
-															</svg>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="main-news__colr">
-										<div class="main-news__wrap">
-											<div class="main-news__items _box-items">
-												<div class="main-news__item _item-mob">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Применение сигнального оборудования в системах безопасности</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Предвкушаем встречу с представителями водного хозяйства на выставке «IX Всероссийского водного конгресса».
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">С праздником, уважаемые химики!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Дорогие химики! Вы как никто другой умеете превращать сложные формулы в реальные технологии…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 февраля 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Пневмовибраторы XSON — аналог швейцарского бренда</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Залипание и уплотнение порошков, гранул и других сыпучих материалов — причины образования пробок в бункерах, силосах и трубопроводах…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 марта 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Поздравляем с профессиональным праздником <br>тех, кто ответственен за закупки!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Ваша работа — это искусство баланса: между выгодой и качеством, сроком и бюджетом, риском и надёжностью. Вы не просто покупаете, вы создаёте возможности для бизнеса!
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="slider-pagination"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="mob-wrap">
-									<a href="/" class="btn-mob">
-										<span>
-											Смотреть вcю базу знаний
-
-											<svg>
-												<use xlink:href="images/sprite.svg#arrow"></use>
-											</svg>
-										</span>
-									</a>
-								</div>
-							</div>
-
-							<div class="tab-content level1" id="tab4">
-								<div class="main-news__cols _flex">
-									<div class="main-news__coll">
-										<div class="main-news__bg">
-											<img data-src="images/main_news_bg.jpg" src="images/img_plug.png" alt="" class="lazyload">
-
-											<div class="main-news__info">
-												<div class="main-news__stikers _flex">
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_eye.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">678</div>
-													</div>
-													<div class="main-news__stiker">
-														<div class="main-news__stiker-icon">
-															<img data-src="images/ic_clock.svg" src="images/img_plug.png" alt="" class="lazyload">
-														</div>
-	
-														<div class="main-news__stiker-name">10 минут</div>
-													</div>
-												</div>
-	
-												<div class="main-news__info-name">Применение сигнального оборудования <br>в системах безопасности</div>
-	
-												<div class="main-news__info-desc">Предвкушаем встречу с представителями водного <br>хозяйства на выставке «IX Всероссийского водного конгресса».</div>
-	
-												<div class="main-news__info-link">
-													<a href="/" class="btn-arrow">
-														<span>
-															Читать статью
-						
-															<svg>
-																<use xlink:href="images/sprite.svg#arrow"></use>
-															</svg>
-														</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="main-news__colr">
-										<div class="main-news__wrap">
-											<div class="main-news__items _box-items">
-												<div class="main-news__item _item-mob">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Применение сигнального оборудования в системах безопасности</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Предвкушаем встречу с представителями водного хозяйства на выставке «IX Всероссийского водного конгресса».
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 мая 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">С праздником, уважаемые химики!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Дорогие химики! Вы как никто другой умеете превращать сложные формулы в реальные технологии…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 февраля 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Пневмовибраторы XSON — аналог швейцарского бренда</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Залипание и уплотнение порошков, гранул и других сыпучих материалов — причины образования пробок в бункерах, силосах и трубопроводах…
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-												<div class="main-news__item">
-													<div class="main-news__item-info">
-														<div class="main-news__item-date">10 марта 2025</div>
-
-														<div class="main-news__item-name">
-															<a href="/">Поздравляем с профессиональным праздником <br>тех, кто ответственен за закупки!</a>
-														</div>
-
-														<div class="main-news__item-desc">
-															Ваша работа — это искусство баланса: между выгодой и качеством, сроком и бюджетом, риском и надёжностью. Вы не просто покупаете, вы создаёте возможности для бизнеса!
-														</div>
-
-														<div class="main-news__item-link">
-															<a href="/">Датчики уровня</a>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="slider-pagination"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="mob-wrap">
-									<a href="/" class="btn-mob">
-										<span>
-											Смотреть все применения
-
-											<svg>
-												<use xlink:href="images/sprite.svg#arrow"></use>
-											</svg>
-										</span>
-									</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -3824,33 +2692,6 @@
 
 
 				<!-- commit -->
-
-				<section class="main-news _marg">
-					<div class="cont">
-						<div class="head-section _pad-right _flex">
-							<div class="main-subtitle">Новости компании</div>
-
-							<div class="main-title">Обновления ассортимента и события бренда</div>
-						</div>
-
-						<div class="main-news__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide"></div>
-							</div>
-
-							<button type="button" class="slider-button-prev">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow"></use>
-								</svg>
-							</button>
-							<button type="button" class="slider-button-next">
-								<svg>
-									<use xlink:href="images/sprite.svg#arrow"></use>
-								</svg>
-							</button>
-						</div>
-					</div>
-				</section>
 
 
 				<section class="find-marketplaces _marg">

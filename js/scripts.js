@@ -18,6 +18,108 @@ $(() => {
 		$('body').addClass('_lock')
 		$('.overlay').addClass('_show')
 	})
+
+	if ($('.advantages-main__slider').length) {
+		new Swiper(".advantages-main__slider", {
+			loop: true,
+			loopAdditionalSlides: 1,
+			spaceBetween: 15,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 16,
+					slidesPerView: 4
+				}
+			}
+		})
+	}
+
+	if ($('.inner-news__slider').length) {
+		new Swiper(".inner-news__slider", {
+			loop: false,
+			spaceBetween: 15,
+			slidesPerView: 1,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4
+				}
+			},
+			on: {
+				init: function (swiper) {
+					let posTop = $(swiper.el).find('.inner-news__img').height()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop/2)
+				},
+				resize: function (swiper) {
+					let posTop = $(swiper.el).find('.inner-news__img').height()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop/2)
+				}
+			}
+		})
+	}
 });
 
 
