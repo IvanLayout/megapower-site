@@ -2546,6 +2546,177 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*------------
     Commit
 ------------*/
+@media (any-hover: hover)
+{
+
+}
+
+.main-news__slider
+{
+	margin-top: 64px;
+}
+
+.main-news__slider .slider-pagination
+{
+	display: none;
+}
+
+.main-news__top
+{
+	position: relative;
+}
+
+.main-news__bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+.main-news__img-box
+{
+	display: block;
+	text-decoration: none;
+	aspect-ratio: 1 / .6916;
+	width: 100%;
+	position: relative;
+}
+
+.main-news__arrow
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+
+	width: 40px;
+	height: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	background: #fff;
+	transition: background .2s linear;
+
+	z-index: 1;
+}
+
+.main-news__arrow svg
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	fill: #111827;
+	transition: fill .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.main-news__img-box:hover .main-news__arrow
+	{
+		background: #72CFE8;
+	}
+
+	.main-news__img-box:hover .main-news__arrow svg
+	{
+		fill: #fff;
+	}
+}
+
+.main-news__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	position: relative;
+}
+
+.main-news__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.main-news__date
+{
+	margin-top: 24px;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	padding-left: 14px;
+	position: relative;
+}
+
+.main-news__date:before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+
+	display: block;
+
+	width: 6px;
+	height: 6px;
+
+	margin-top: -4px;
+
+	background: #111827;
+}
+
+.main-news__name
+{
+	margin-top: 16px;
+
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.main-news__name a
+{
+	color: #111827;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.main-news__name a:hover
+	{
+		color: #72CFE8;
+	}
+}
+
+.main-news__desc
+{
+	margin-top: 12px;
+	color: #838691;
+	letter-spacing: -0.01em;
+}
+
 
 .find-marketplaces__bg
 {
@@ -2602,12 +2773,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	width: calc(100%/3 - 16px);
 	margin: 16px 0 0 16px;
-}
-
-
-@media (any-hover: hover)
-{
-
 }
 
 /*------------
@@ -2825,22 +2990,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .footer__download-link
 {
-    color: #111827;
-    font-size: 14px;
     line-height: 48px;
-	font-weight: 600;
-
-    display: inline-block;
 
     padding: 0 20px;
-
-    text-align: center;
-    vertical-align: top;
-    text-decoration: none;
-
-    background: #72CFE8;
-
-    transition: background .2s linear;
 }
 
 .footer__download-link span
@@ -2862,11 +3014,15 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: -8px;
 
 	fill: #111827;
+	transition: fill .2s linear;
 }
 
 @media (any-hover: hover)
 {
-	
+	.footer__download-link:hover svg
+	{
+		fill: #fff;
+	}
 }
 
 .footer__info
