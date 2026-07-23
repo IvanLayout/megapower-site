@@ -2693,6 +2693,42 @@
 
 				<!-- commit -->
 
+				<section class="points-sale _marg">
+					<div class="cont">
+						<div class="global-title">Где купить</div>
+
+						<div class="points-sale__top _flex">
+							<div class="points-sale__boxL">
+								<div class="main-title">Точки продаж по всей стране</div>
+							</div>
+							
+							<div class="points-sale__boxR">
+								<div class="points-sale__desc">
+									Сеть партнёров MEGAPOWER охватывает более <span>150 городов</span> — от крупных мегаполисов до небольших региональных центров. Найдите точку продаж недалеко от себя.
+								</div>
+							</div>
+						</div>
+
+						<div class="points-sale__wrap">
+							<div class="points-sale__search">
+								<form action="" class="search-form">
+									<div class="search-form__field _flex">
+										<input type="text" value="" placeholder="Введите город или адрес" class="search-form__input">
+		
+										<button type="submit" class="btn-dark search-form__submit">Найти</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="points-sale__map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af69d1cf69b4cdeaf3b29273cc198d69275a9e771385f627e9af216a1f7335ca8&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+							</div>
+
+							<!-- <div class="points-sale__item" id="map"></div> -->
+						</div>
+					</div>
+				</section>
+
 				<section class="main-news _marg">
 					<div class="cont">
 						<div class="head-section _flex">
@@ -3414,5 +3450,31 @@
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<!-- <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+		<script>
+			//карта
+			ymaps.ready(init);
+			function init(){
+				var myMap = new ymaps.Map("map", {
+					center: [57.657548, 39.778991],
+					zoom: 5
+				}),
+				myPlacemark = new ymaps.Placemark([57.657548, 39.778991],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				}),
+				myPlacemark2 = new ymaps.Placemark([57.607846, 50.847209],{
+				}, {
+					iconImageHref: 'images/map_marker.png',
+					iconImageSize: [18, 22],
+					iconImageOffset: [9, 11],
+				})
+
+				myMap.geoObjects.add(myPlacemark).add(myPlacemark2)
+			}
+		</script> -->
 	</body>
 </html>
