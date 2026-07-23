@@ -2076,7 +2076,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     z-index: 10;
     top: 50%;
 
-    color: #D64923;
+    color: #111827;
 
     display: flex;
     overflow: hidden;
@@ -2085,18 +2085,15 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     align-items: center;
     flex-wrap: wrap;
 
-    width: 45px;
-    height: 45px;
-    margin-top: -22.5px;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
 
     cursor: pointer;
 
     border: none;
-    border-radius: 50%;
-    background: #fff;
 
-    transition: color .2s linear, background .2s linear, opacity .2s linear;
-	box-shadow: 0 4px 4px rgba(172, 172, 172, .25);
+    transition: color .2s linear, opacity .2s linear;
 }
 
 
@@ -2107,8 +2104,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     {
         z-index: 11;
 
-        color: #fff;
-		background: #D64923;
+        color: #72CFE8;
     }
 }
 
@@ -2117,27 +2113,40 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
     display: block;
 
-    width: 11px;
-    height: 17px;
-	margin-left: 4px;
+    width: 48px;
+    height: 48px;
 
-    fill: currentColor;
+    stroke: currentColor;
+	fill: none;
 }
 
 .slider-button-prev svg
 {
 	transform: rotate(180deg);
-	margin-left: -4px;
 }
 
 .slider-button-prev
 {
-    left: 20px;
+    left: 0;
 }
 
 .slider-button-next
 {
-    right: 20px;
+    right: 0;
+}
+
+.slider-button-prev._top-btn
+{
+	top: -80px;
+	margin-top: 0;
+	left: auto;
+	right: 72px;
+}
+
+.slider-button-next._top-btn
+{
+	top: -80px;
+	margin-top: 0;
 }
 
 .slider-button-prev.swiper-button-disabled,
@@ -2147,8 +2156,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     pointer-events: none;
 
     opacity: .3;
-	color: #1B2745;
-	background: #fff;
 }
 
 .swiper-button-lock
@@ -2556,6 +2563,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 64px;
 }
 
+.main-news__slider .slider-button-prev._top-btn
+{
+	top: -168px;
+}
+
+.main-news__slider .slider-button-next._top-btn
+{
+	top: -168px;
+}
+
 .main-news__slider .slider-pagination
 {
 	display: none;
@@ -2715,6 +2732,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 12px;
 	color: #838691;
 	letter-spacing: -0.01em;
+}
+
+.main-news__bot
+{
+	margin-top: 17px;
+}
+
+.main-news__btn
+{
+	min-width: 240px;
 }
 
 
