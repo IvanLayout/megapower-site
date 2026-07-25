@@ -1802,6 +1802,55 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*---------------
 	Tabs
 ---------------*/
+.tabs-container_marg
+{
+	margin-top: 48px;
+}
+
+.tabs__margBot
+{
+	margin-bottom: 32px;
+}
+
+.tabs__button_btn
+{
+	position: relative;
+
+    color: #111827;
+    font-size: 14px;
+    line-height: 48px;
+	font-weight: 600;
+
+    display: inline-block;
+
+    padding: 0 20px;
+	min-width: 160px;
+
+    text-align: center;
+    vertical-align: top;
+
+    background: #fff;
+
+    transition: background .2s linear;
+}
+
+@media (any-hover: hover){
+	.tabs__button_btn:hover
+	{
+		background: #72CFE8;
+	}
+}
+
+.tabs__button_btn._active
+{
+    background: #72CFE8;
+}
+
+.tabs__button_btn + .tabs__button_btn
+{
+	margin-left: 8px;
+}
+
 .tabs-text
 {
 	margin-right: auto;
@@ -1878,6 +1927,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*---------------
 	Page head
 ---------------*/
+._padT
+{
+	padding-top: 100px;
+}
+
+._padB
+{
+	padding-bottom: 100px;
+}
+
 ._marg
 {
 	margin-top: 100px;
@@ -1897,6 +1956,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     line-height: 1.25;
     letter-spacing: -0.01em;
     color: #838691;
+}
+
+.global-title._white
+{
+	color: rgba(255, 255, 255, .7);
 }
 
 .global-title::before{
@@ -1937,6 +2001,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	color: #111827;
 	font-weight: 300;
 	letter-spacing: -0.01em;
+}
+
+.main-title._white
+{
+	color: #fff;
 }
 
 .main-subtitle
@@ -2149,7 +2218,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     right: 0;
 }
 
-.slider-button-prev._top-btn
+.slider-button-prev._top
 {
 	top: -80px;
 	margin-top: 0;
@@ -2157,7 +2226,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	right: 72px;
 }
 
-.slider-button-next._top-btn
+.slider-button-next._top
 {
 	top: -80px;
 	margin-top: 0;
@@ -2573,6 +2642,15 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 /*------------
+    products
+------------*/
+
+.products_dark
+{
+	background: #111827;
+}
+
+/*------------
     partners
 ------------*/
 
@@ -2746,12 +2824,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 64px;
 }
 
-.main-news__slider .slider-button-prev._top-btn
+.main-news__slider .slider-button-prev._top
 {
 	top: -168px;
 }
 
-.main-news__slider .slider-button-next._top-btn
+.main-news__slider .slider-button-next._top
 {
 	top: -168px;
 }
