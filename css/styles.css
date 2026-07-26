@@ -867,14 +867,16 @@ button
 ------------*/
 .breadcrumbs
 {
-	color: #D64923;
-	line-height: normal;
-	margin: 40px 0 30px;
+	color: #838691;
+	line-height: 1.2;
+	padding: 25px 0;
+	position: relative;
+	z-index: 1;
 }
 
 .breadcrumbs a
 {
-    color: rgba(27, 39, 69, .5);
+    color: #111827;
 
     text-decoration: none;
 
@@ -887,13 +889,31 @@ button
 {
     .breadcrumbs a:hover
     {
-        border-bottom-color: rgba(27, 39, 69, .5);
+        border-bottom-color: #111827;
     }
 }
 
 .breadcrumbs_sep
 {
-	color: #1B2745;
+	position: relative;
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.breadcrumbs_sep::after
+{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	margin-top: -14px;
+
+	width: 1px;
+	height: 17px;
+	background: #111827;
 }
 
 /*----------------
@@ -2039,9 +2059,17 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .page-title
 {
-	
+	font-size: 60px;
+	line-height: 1.05;
+	color: #111827;
+	font-weight: 300;
 }
 
+
+.page-head
+{
+	padding: 48px 0 40px;
+}
 
 /*--------------
     Fancybox
@@ -3681,6 +3709,15 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	color: #fff;
 	letter-spacing: -0.01em;
 	padding-right: 16px;
+}
+
+/*------------
+    catalog-head
+------------*/
+
+.catalog-head
+{
+
 }
 
 @media (any-hover: hover)

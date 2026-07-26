@@ -28,22 +28,6 @@ $(() => {
 	// Установка ширины стандартного скроллбара
 	$(':root').css('--scroll_width', widthScroll() + 'px')
 
-	// Выбор файла
-	$('.file-selection input[type=file]').change(function(){
-		var val = $(this).val()
-
-		var parent = $(this).parents('.file-selection')
-
-		parent.find('.file-selection__path span').text(val)
-		parent.find('.file-selection__path').addClass('_active')
-
-		if(parent.find('.file-selection__path span').text() == '') {
-			let namePath = parent.find('.file-selection__path').data('name')
-			parent.find('.file-selection__path span').text(namePath)
-			parent.find('.file-selection__path').removeClass('_active')
-		}
-	})
-
 
 	// Мини всплывающие окна
 	$('.mini-modal__btn').click(function (e) {
