@@ -215,7 +215,20 @@ $(() => {
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+
+					$(swiper.el).find('.product__name, .product__info').height('auto')
+
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__info') )
 				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product__name, .product__info').height('auto')
+
+					// setTimeout(function(){
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__info') )
+					// }, 200)
+				}
 			}
 		})
 	}
