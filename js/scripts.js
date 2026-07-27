@@ -246,6 +246,14 @@ $(window).on('load', () => {
 	if ($('.areas-activity__wrap').length){
 		areasActivitySlider()
 	}
+
+
+	//
+	if ($('.products__grid').length){
+		$('.products .products__grid').each(function() {
+			productsHeight($(this), parseInt($(this).css('--products_count')))
+		})
+	}
 });
 
 
@@ -278,7 +286,33 @@ $(window).on('resize', () => {
 	if ($('.areas-activity__wrap').length){
 		areasActivitySlider()
 	}
+
+	//
+	if ($('.products__grid').length){
+		$('.products .products__grid').each(function() {
+			productsHeight($(this), parseInt($(this).css('--products_count')))
+		})
+	}
 });
+
+
+// 
+function productsHeight(context, step) {
+	let start    = 0
+	let finish   = step
+	let products = context.find('.product')
+
+	products.find('.product__name').height('auto')
+	products.find('.product__info').height('auto')
+
+	for (let i = 0; i < products.length; i++) {
+		setHeight(products.slice(start, finish).find('.product__name'))
+		setHeight(products.slice(start, finish).find('.product__info'))
+
+		start  = start + step
+		finish = finish + step
+	}
+}
 
 
 function areasActivitySlider(){
