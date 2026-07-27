@@ -3972,10 +3972,103 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 .sorting__show-link.active
-	{
-		color: #111827;
-		border-bottom-color: #111827;
-	}
+{
+	color: #111827;
+	border-bottom-color: #111827;
+}
+
+/*------------
+    faq
+------------*/
+
+.accordion__item
+{
+	border-bottom: 1px solid #DEDDDC;
+}
+
+.accordion__title
+{
+	cursor: pointer;
+	position: relative;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.faq__name
+{
+	
+}
+
+/* .faq__plus-minus
+{
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	display: block;
+
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+}
+
+.faq__plus-minus::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 18px;
+	height: 2px;
+
+	transform: translate(-50%, -50%);
+	border-radius: 1px;
+
+	background-color: #2C2927;
+}
+
+.faq__plus-minus::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 2px;
+	height: 18px;
+
+	transform: translate(-50%, -50%);
+	border-radius: 1px;
+
+	background-color: #2C2927;
+}
+
+.accordion__item._active .faq__plus-minus::before
+{
+	opacity: 0;
+} */
+
+.accordion__data
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
 
 @media (any-hover: hover)
 {

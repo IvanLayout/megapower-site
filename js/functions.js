@@ -159,6 +159,26 @@ $(() => {
 	}
 
 
+	// Аккордион
+	$('body').on('click', '.accordion__title', function(e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.accordion__item')
+		let accordion = $(this).closest('.accordion')
+
+		if( parent.hasClass('_active') ) {
+			parent.removeClass('_active')
+			parent.find('.accordion__data').slideUp(300)
+		} else {
+			accordion.find('.accordion__item').removeClass('_active')
+			accordion.find('.accordion__data').slideUp(300)
+
+			parent.addClass('_active')
+			parent.find('.accordion__data').slideDown(300)
+		}
+	})
+
+
 	// Fancybox
 	const myCloseBtn = '<button data-fancybox-close class="f-button is-close-button" title="Close"><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><path d="M16 1L1 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg></button>';
 
