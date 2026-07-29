@@ -20,7 +20,7 @@ $(() => {
 	})
 
 	if ($('.advantages-main__slider').length) {
-		new Swiper(".advantages-main__slider", {
+		swiperAdv = new Swiper(".advantages-main__slider", {
 			loop: true,
 			loopAdditionalSlides: 1,
 			spaceBetween: 15,
@@ -59,6 +59,9 @@ $(() => {
 				}
 			}
 		})
+
+		swiperAdv.slideNext(0, false);
+    	swiperAdv.slidePrev(0, false);
 	}
 
 	if ($('.inner-news__slider').length) {
