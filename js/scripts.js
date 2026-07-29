@@ -239,6 +239,33 @@ $(() => {
 			}
 		})
 	}
+
+
+	if ($('.product-info').length) {
+		galleryThumbs = new Swiper('.product-thumbs', {
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			direction: 'horizontal',
+			loop: false,
+			speed: 500,
+			watchOverflow: true,
+			watchSlidesProgress: true
+		})
+
+		new Swiper('.product-images__slider', {
+			spaceBetween: 16,
+			loop: false,
+			speed: 1000,
+			watchOverflow: true,
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		})
+	}
 });
 
 

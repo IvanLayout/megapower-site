@@ -16,4 +16,7 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow3" viewBox="0 0 16 16">
 		<path d="M16 12.367H14.7087V2.20449L1.9132 15L1 14.0868L13.7955 1.29128H3.63297V0H16V12.367Z"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow4" viewBox="0 0 48 48">
+		<path d="M44 4V27.3687H42.9909V5.72922L42.6466 6.07448L5.72824 42.9938H27.3687V44.002H4V20.6382H5.00715V42.2708L42.2718 5.00715H20.6313V4H44Z"/>
+	</symbol>
 </svg>
