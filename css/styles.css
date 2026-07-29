@@ -3981,12 +3981,55 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     faq
 ------------*/
 
-.accordion__item
+.faq__wrap
 {
-	border-bottom: 1px solid #DEDDDC;
+	margin-top: 55px;
+	justify-content: space-between;
 }
 
-.accordion__title
+.faq__box
+{
+	width: 322px;
+	padding: 33px 24px 24px;
+	background: #111827;
+}
+
+.faq__title
+{
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #fff;
+}
+
+.faq__desc
+{
+	margin-top: 24px;
+
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: rgba(255, 255, 255, .7);
+}
+
+.faq__btn
+{
+	margin-top: 45px;
+	line-height: 48px;
+	min-width: 160px;
+}
+
+.faq__info
+{
+	width: calc(100% - 384px);
+}
+
+.faq__item
+{
+	border-bottom: 1px solid #B6BDCA;
+}
+
+.faq__info-title
 {
 	cursor: pointer;
 	position: relative;
@@ -4000,10 +4043,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .faq__name
 {
-	
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	padding: 33px 84px 33px 0;
 }
 
-/* .faq__plus-minus
+.faq__plus-minus
 {
 	position: absolute;
 	top: 50%;
@@ -4011,9 +4057,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 	display: block;
 
-	width: 20px;
-	height: 20px;
-	margin-top: -10px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
 }
 
 .faq__plus-minus::after
@@ -4025,13 +4071,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 	display: block;
 
-	width: 18px;
-	height: 2px;
+	width: 40px;
+	height: 1px;
 
 	transform: translate(-50%, -50%);
-	border-radius: 1px;
 
-	background-color: #2C2927;
+	background-color: #111827;
 }
 
 .faq__plus-minus::before
@@ -4043,19 +4088,23 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 	display: block;
 
-	width: 2px;
-	height: 18px;
+	width: 1px;
+	height: 40px;
 
 	transform: translate(-50%, -50%);
-	border-radius: 1px;
 
-	background-color: #2C2927;
+	background-color: #111827;
 }
 
 .accordion__item._active .faq__plus-minus::before
 {
 	opacity: 0;
-} */
+}
+
+.faq__data
+{
+	padding-bottom: 30px;
+}
 
 .accordion__data
 {
