@@ -4149,7 +4149,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .product-info__info
 {
     width: calc(51.7% - 34px);
-	background: #000;
 }
 
 .product-images__slider .slider-button-prev
@@ -4266,6 +4265,86 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .product-thumbs .swiper-slide-thumb-active .product-thumbs__img 
 {
     border-color: #111827;
+}
+
+.product-info__articles
+{
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+.product-info__title
+{
+	margin-top: 16px;
+	font-family: var(--font-family2);
+	font-size: 40px;
+	line-height: 1.05;
+}
+
+.product-info__maxW
+{
+	max-width: 640px;
+}
+
+.product-info__price-box
+{
+	margin-top: 24px;
+	border-top: 1px solid #C9D4E0;
+	padding-top: 24px;
+}
+
+.product-info__price-desc
+{
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.product-info__price
+{
+	margin-top: 8px;
+	white-space: nowrap;
+	font-size: 40px;
+	line-height: 1.05;
+	font-family: var(--font-family2);
+}
+
+.product-info__features
+{
+	margin-top: 24px;
+}
+
+.features__feature
+{
+	border-bottom: 1px solid #C9D4E0;
+	padding: 14px 0;
+	letter-spacing: -0.01em;
+
+	justify-content: space-between;
+}
+
+.features__feature-name
+{
+	color: #838691;
+	width: calc(50% - 15px);
+}
+
+.features__feature-val
+{
+	width: calc(50% - 15px);
+	text-align: right;
+}
+
+.product-info__bot
+{
+	margin-top: 29px;
+	justify-content: space-between;
+}
+
+.product-info__btn
+{
+	min-width: 240px;
 }
 
 
@@ -4422,18 +4501,23 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	background: url(../images/ic_time.svg) 50% 50% no-repeat;
 }
 
-.footer__socials
+.socials
 {
-	margin: 14px 0 0 -10px;
+	margin: 10px 0 0 -10px;
 }
 
-.footer__socials._big
+.socials._big
 {
 	margin-left: -8px;
 	margin-top: -8px;
 }
 
-.footer__socials-link 
+.socials_marg
+{
+	margin-top: 14px;
+}
+
+.socials__link 
 {
     display: flex;
     justify-content: center;
@@ -4446,7 +4530,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     transition: opacity .2s linear;
 }
 
-.footer__socials._big .footer__socials-link 
+.socials._big .socials__link
 {
 	width: 56px;
 	height: 56px;
@@ -4456,7 +4540,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 8px;
 }
 
-.footer__socials-link img 
+.socials__link img 
 {
     display: block;
     max-width: 100%;
