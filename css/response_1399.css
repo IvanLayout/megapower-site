@@ -1,0 +1,143 @@
+@media (max-width: 1399px)
+{
+    .header__logo{
+        width: 160px;
+    }
+
+	.header__contacts{
+        column-gap: 24px;
+    }
+
+    .header__top-colr{
+        gap: 20px;
+    }
+
+    .header__info{
+        gap: 24px;
+    }
+
+    .header-catalog{
+        width: 120px;
+    }
+
+    .header__menu{
+        gap: 20px;
+    }
+
+
+    .header-menu {
+        width: 306px;
+        padding-right: 16px;
+        max-height: calc(100vh - 154px);
+    }
+
+    .header-submenu {
+        left: 332px;
+        width: calc(100% - 332px);
+    }
+
+    .header-submenu__coll-item {
+        width: calc(100% / 3 - 48px / 3);
+    }
+
+    .header-submenu__coll{
+        gap: 24px;
+    }
+
+    .main-banner__title{
+        max-width: 890px;
+        font-size: 52px;
+    }
+
+
+    .advantages-main__item{
+        min-height: 200px;
+    }
+
+    .advantages-main__number{
+        font-size: 66px;
+    }
+
+    .advantages-main__title{
+        font-size: 20px;
+    }
+
+    .advantages-main__info{
+        padding-top: 24px;
+    }
+
+
+    .main-title{
+        font-size: 42px;
+    }
+
+    .head-section__btn a {
+        min-width: 190px;
+    }
+
+
+    .cats-product__item{
+        padding: 16px;
+    }
+
+    .cats-product__name{
+        font-size: 20px;
+    }
+
+    .cats-product__wrap{
+        margin-left: 20px;
+    }
+
+    .cats-product__arrow{
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .points-sale__boxL {
+        width: calc(55% - 15px);
+    }
+    
+    .points-sale__boxR {
+        width: calc(45% - 15px);
+    }
+
+
+    .main-news__slider .slider-button-prev._top
+    {
+        top: -158px;
+    }
+
+    .main-news__slider .slider-button-next._top
+    {
+        top: -158px;
+    }
+
+    .main-news__name{
+        font-size: 20px;
+    }
+
+    .main-news__btn{
+        min-width: 190px;
+    }
+
+
+    .points-sale__map{
+        height: 560px;
+    }
+
+
+    .product__name{
+        font-size: 20px;
+    }
+
+
+    .cats-popular__name{
+        font-size: 20px;
+    }
+
+
+    .footer__logo {
+        max-width: 160px;
+    }
+}

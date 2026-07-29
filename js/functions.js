@@ -310,6 +310,10 @@ $(() => {
 		}
 	})
 
+	$('.header__search-input').on('input change', function () {
+    	$(this).toggleClass('_full', $(this).val().trim() !== '');
+	}).trigger('input');
+
 	// Кастомный select
 	$('select').niceSelect()
 })

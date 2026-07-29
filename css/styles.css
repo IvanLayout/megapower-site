@@ -625,6 +625,7 @@ button
 
 .header-catalog{
     width: 140px;
+    flex-shrink: 0;
 }
 
 .header-catalog__open{
@@ -958,9 +959,12 @@ button
 
 .header__menu{
     gap: 24px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
 }
 
 .header__menu-item{
+    flex-shrink: 0;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: -0.01em;
@@ -1000,7 +1004,8 @@ button
 
 .header__search{
     flex-wrap: nowrap;
-    width: 384px;
+    width: 100%;
+    max-width: 384px;
     margin-left: auto;
 }
 
@@ -1038,7 +1043,7 @@ button
     transition: .2s linear;
 }
 
-.header__search-input.full .header__search-clear{
+.header__search-input._full + .header__search-clear{
     opacity: 1;
 }
 
@@ -2432,7 +2437,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	flex-shrink: 0;
 	margin-left: auto;
-	padding-left: 30px;
+	padding-left: 14px;
 	margin-top: 10px;
 }
 
@@ -3151,7 +3156,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .advantages-main__img img{
     display: block;
     max-width: 100%;
-    max-height: 100%;
 }
 /*------------
     Commit
@@ -3472,8 +3476,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     max-width: 100%;
     max-height: 100%;
     transition: filter .2s linear;
-    filter: grayscale(100%) saturate(0);
-    -webkit-filter: grayscale(100%) saturate(0);
+    filter: grayscale(100%) brightness(2);
 }
 
 .partners__item:hover img
@@ -3593,6 +3596,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*------------
     main-news
 ------------*/
+.main-news .head-section{
+    padding-right: 160px;
+}
 
 .main-news__slider
 {
@@ -3790,14 +3796,18 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .find-marketplaces__box
 {
 	width: 592px;
+    min-height: 352px;
 	padding: 40px;
 	position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .find-marketplaces__desc
 {
 	margin-top: 16px;
 	font-size: 14px;
+    width: 100%;
 }
 
 .find-marketplaces__img
@@ -3827,7 +3837,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .find-marketplaces__btns
 {
-	margin-top: 89px;
+	margin-top: auto;
+    padding-top: 30px;
 	margin-left: -16px;
 }
 
@@ -3852,21 +3863,17 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .cats-product__item
 {
 	break-inside: avoid;
+	-webkit-break-inside: avoid;
 
 	position: relative;
 	text-decoration: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	flex-wrap: nowrap;
-
+    display: inline-block;
+    width: 100%;
 	color: #72CFE8;
 	background: transparent;
 	transition: color .2s linear, background .2s linear;
 
-	/* padding: 28px 24px; */
-	padding: 31px 24px 25px;
+	padding: 28px 24px;
 }
 
 .cats-product__item::after
@@ -3884,6 +3891,14 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	background: #72CFE8;
 }
 
+.cats-product__item-flex{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
 .cats-product__name
 {
 	font-size: 24px;
@@ -3892,6 +3907,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-family: var(--font-family2);
 	display: block;
 	width: 100%;
+    padding-right: 20px;
 }
 
 .cats-product__img-box
@@ -3902,31 +3918,29 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	align-content: center;
 	flex-wrap: wrap;
 
-	width: 160px;
+	width: 22.73%;
+    height: 40px;
 	position: relative;
 	z-index: 1;
 
 	flex-shrink: 0;
-	margin-left: 20px;
+	margin-left: auto;
 }
 
 .cats-product__img
 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
 
-	width: 160px;
-	height: 160px;
-
-	margin-top: -80px;
-	margin-left: -80px;
+	width: 100%;
+    aspect-ratio: 1;
 
 	opacity: 0;
 	transition: opacity .2s linear;
@@ -3940,20 +3954,27 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-height: 100%;
 }
 
+.cats-product__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 30.7%;
+    flex-shrink: 0;
+    margin-left: 7.4%;
+    gap: 10px;
+}
+
 .cats-product__val
 {
-	white-space: nowrap;
 	letter-spacing: -0.01em;
-	flex-shrink: 0;
-	margin-left: 54px;
-	width: 156px;
 	display: block;
 }
 
 .cats-product__arrow
 {
 	flex-shrink: 0;
-	margin-left: 20px;
 	width: 40px;
 	height: 40px;
 
@@ -3974,8 +3995,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	transition: fill .2s linear;
 }
 
-@media (any-hover: hover)
-{
+/* @media (any-hover: hover)
+{ */
 	.cats-product__item:hover
 	{
 		color: #111827;
@@ -3991,7 +4012,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	{
 		fill: #111827;
 	}
-}
+/* } */
 
 /*------------
     cats-popular
@@ -4153,6 +4174,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	position: relative;
 	padding: 60px 16px 55px;
 	aspect-ratio: 1 / .4954;
+    height: auto;
 }
 
 .about-main__bg::after
@@ -4188,7 +4210,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	position: relative;
 	z-index: 1;
-	height: 100%;
+	min-height: 100%;
 
 	display: flex;
 	flex-direction: column;
@@ -4197,6 +4219,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .about-main .head-section
 {
 	flex: 1 0 auto;
+    padding-bottom: 20px;
 }
 
 .about-main .main-title
@@ -4968,4 +4991,25 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-right: auto;
 	height: 100%;
 	color: #1B2745;
+}
+
+
+@media (max-width: 1559px)
+{
+    .advantages-main__slider{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        overflow: visible;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .advantages-main__slider .slider-button-prev{
+        left: 10px;
+    }
+
+    .advantages-main__slider .slider-button-next{
+        right: 10px;
+    }
 }
