@@ -1,4 +1,258 @@
 @media (max-width: 1199px)
 {
-	
+    .header .cont{
+        gap: 16px;
+    }
+
+	.header__logo{
+        width: 118px;
+    }
+
+
+    .header__contacts {
+        column-gap: 15px;
+    }
+
+    .header__adres-btn{
+        font-size: 12px;
+    }
+
+    .header__mail{
+        font-size: 12px;
+    }
+
+    .header__phone{
+        font-size: 12px;
+    }
+
+    .header__time{
+        font-size: 12px;
+    }
+
+    .header__partner {
+        font-size: 12px;
+        line-height: 30px;
+        padding: 0 12px;
+    }
+
+    .header__contact{
+        font-size: 12px;
+        line-height: 32px;
+    }
+
+
+    .header__info {
+        gap: 15px;
+    }
+
+    .header-catalog {
+        width: 100px;
+    }
+
+    .header-catalog__open{
+        height: 40px;
+        font-size: 12px;
+    }
+
+
+    .header__menu-item{
+        font-size: 12px;
+    }
+
+    .header__menu {
+        gap: 15px;
+    }
+
+    .header__search-input{
+        font-size: 12px;
+        padding: 0 39px;
+        height: 40px;
+        background-position: 12px 50%;
+    }
+
+    .header__search-clear{
+        width: 40px;
+        height: 40px;
+        margin-left: -40px;
+    }
+
+
+    .header-menu{
+        width: 288px;
+        max-height: calc(100vh - 130px);
+    }
+
+    .header-menu__link{
+        font-size: 14px;
+    }
+
+    .header-menu__link-icon{
+        width: 50px;
+        height: 38px;
+    }
+
+    .header-submenu {
+        left: 308px;
+        width: calc(100% - 308px);
+    }
+
+    .header-submenu__colr{
+        display: none;
+    }
+
+    .header-submenu__title{
+        font-size: 20px;
+    }
+
+    .header-submenu__item{
+        font-size: 14px;
+    }
+
+
+    .main-banner__wrap{
+        min-height: 830px;
+    }
+
+
+    .advantages-main__slider{
+        margin-top: 32px;
+    }
+
+    .advantages-main__item{
+        padding: 16px;
+    }
+
+    .advantages-main__number{
+        font-size: 50px;
+        line-height: .8;
+    }
+
+    .advantages-main__title{
+        font-size: 16px;
+    }
+
+    .advantages-main__info{
+        font-size: 12px;
+    }
+
+
+    ._marg{
+        margin-top: 60px;
+    }
+
+    ._marg2{
+        margin-top: 60px;
+    }
+
+    ._padT{
+        padding-top: 60px;
+    }
+
+    ._padB{
+        padding-bottom: 60px;
+    }
+
+
+    .main-title{
+        font-size: 34px;
+    }
+
+
+    .btn-dark{
+        line-height: 56px;
+    }
+
+
+    .cats-popular__grid{
+        margin-top: -24px;
+    }
+
+    .cats-popular__grid-marg{
+        margin-top: 8px;
+    }
+
+    .cats-popular__item{
+        margin-top: 24px;
+    }
+
+
+    .about-main .main-title {
+        font-size: 42px;
+    }
+
+    .about-main__val{
+        font-size: 70px;
+    }
+
+
+    .partners__grid{
+        margin-top: 33px;
+    }
+
+
+    .product__bot{
+        padding: 16px;
+    }
+
+
+    .cats-product__items{
+        margin-top: 32px;
+    }
+
+    .cats-product__img-box{
+        display: none;
+    }
+
+    .cats-product__wrap{
+        width: 180px;
+    }
+
+
+    .points-sale__wrap{
+        margin-top: 32px;
+    }
+
+    .points-sale__map{
+        height: 460px;
+    }
+
+    .main-news__slider{
+        margin-top: 32px;
+    }
+
+    .main-news__slider .slider-button-prev._top,
+    .main-news__slider .slider-button-next._top{
+        top: -104px;
+    }
+
+
+    .find-marketplaces__box{
+        padding: 24px;
+        width: 530px;
+        min-height: 300px;
+    }
+
+    .find-marketplaces__img {
+        width: calc(100% - 530px);
+        padding-right: 3%;
+        padding-left: 0;
+    }
+
+
+    .footer__cols{
+        padding-top: 48px;
+        padding-bottom: 40px;
+    }
+
+    .footer__logo{
+        max-width: 120px;
+    }
+
+    .footer__col{
+        padding-top: 24px;
+    }
+
+    .footer__info{
+        padding: 40px 0 24px;
+    }
 }
