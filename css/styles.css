@@ -4378,11 +4378,28 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	justify-content: space-between;
 }
 
-.faq__box
+.faq__wrap-marg
+{
+	margin-top: 30px;
+}
+
+.faq__col
 {
 	width: 322px;
+}
+
+.faq__col .select-wrap
+{
+	width: 100%;
+	margin-bottom: 216px;
+	margin-top: 24px;
+}
+
+.faq__box
+{
 	padding: 33px 24px 24px;
 	background: #111827;
+	width: 100%;
 }
 
 .faq__title
