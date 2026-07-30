@@ -4940,6 +4940,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-family: var(--font-family2);
 	letter-spacing: -0.01em;
 	margin-right: 20px;
+
+	width: 55px;
+}
+
+.information__name-box
+{
+	width: calc(51.27% - 46px);
 }
 
 .information__name
@@ -4949,7 +4956,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-family: var(--font-family2);
 	letter-spacing: -0.01em;
 
-	width: 368px;
+	max-width: 368px;
+	width: 100%;
 	margin-left: auto;
 }
 
@@ -4958,8 +4966,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: -0.01em;
-	width: 50%;
-	max-width: 640px;
+	width: calc(48.73% - 46px);
+	margin-left: auto;
 }
 
 
