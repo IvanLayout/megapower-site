@@ -4909,6 +4909,112 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	background: url(../images/ic_check.svg) 50% 50% no-repeat;
 }
 
+/*------------
+    information
+------------*/
+
+.information__item 
+{
+    border-bottom: 1px solid #B6BDCA;
+}
+
+.information__info-title
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+
+	position: relative;
+	cursor: pointer;
+	padding: 37px 112px 37px 0;
+}
+
+.information__number
+{
+	flex-shrink: 0;
+	white-space: nowrap;
+	font-size: 32px;
+	line-height: 1.2;
+	font-family: var(--font-family2);
+	letter-spacing: -0.01em;
+	margin-right: 20px;
+}
+
+.information__name
+{
+	font-size: 32px;
+	line-height: 1.2;
+	font-family: var(--font-family2);
+	letter-spacing: -0.01em;
+
+	width: 368px;
+	margin-left: auto;
+}
+
+.information__info
+{
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	width: 50%;
+	max-width: 640px;
+}
+
+
+.information__plus-minus
+{
+	position: absolute;
+	top: 32px;
+	right: 16px;
+
+	display: block;
+
+	width: 40px;
+	height: 40px;
+}
+
+.information__plus-minus::after
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 40px;
+	height: 1px;
+
+	transform: translate(-50%, -50%);
+
+	background-color: #111827;
+}
+
+.information__plus-minus::before
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+
+	display: block;
+
+	width: 1px;
+	height: 40px;
+
+	transform: translate(-50%, -50%);
+
+	background-color: #111827;
+}
+
+.accordion__item._active .information__plus-minus::before
+{
+	opacity: 0;
+}
+
+
 @media (any-hover: hover)
 {
 
