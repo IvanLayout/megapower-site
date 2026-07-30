@@ -13,10 +13,17 @@ $(() => {
 	$('body').on('click', '.mob-menu-btn', function (e) {
 		e.preventDefault()
 
-		$('.header__top').addClass('_show')
-		$('.header__small-right').addClass('_show')
-		$('body').addClass('_lock')
-		$('.overlay').addClass('_show')
+		if ( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$('.header-mob__wrap').removeClass('_active')
+			$('.header').removeClass('_show')
+			$('body').removeClass('_lock')
+		} else {
+			$(this).addClass('_active')
+			$('.header-mob__wrap').addClass('_active')
+			$('.header').addClass('_show')
+			$('body').addClass('_lock')
+		}
 	})
 
 	if ($('.advantages-main__slider').length) {

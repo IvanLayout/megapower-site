@@ -65,18 +65,20 @@ $(() => {
 			if (is_touch_device()) $('body').css('cursor', 'default')
 		}
 
-		if ( !e.target.closest('.header-catalog') && !e.target.closest('.header-catalog__open') && !e.target.closest('.fix-btns') ) {
+		if ( !e.target.closest('.header-catalog') && !e.target.closest('.header-catalog__open') ) {
 			$('.header-catalog__open').removeClass('_active')
-			if($('.header-catalog__block').hasClass('_show')){
-				$('.overlay').removeClass('_show')
-				$('body').removeClass('_lock')
-			}
 			$('.header-catalog__block').removeClass('_show')
-			if($('.header-catalog').hasClass('_show')){
-				$('body').removeClass('_lock')
+			$('.header').removeClass('_active')
+			$('.overlay').removeClass('_show')
+
+			if( $('.catalog-head__back').hasClass('_second') ){
+				let titleCatalog = $('.catalog-head__title').data('title')
+				$('.catalog-head__title').text(titleCatalog)
+
+				$('.header-submenu').removeClass('_show')
+
+				$('.header-catalog, .catalog-head__back').removeClass('_second')
 			}
-			$('.header-catalog').removeClass('_show')
-			$('.overlay-catalog').removeClass('_show')
 		}
 	})
 
@@ -271,47 +273,26 @@ $(() => {
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 			$('.header-catalog__block').removeClass('_show')
+			$('.header').removeClass('_active')
 			$('.overlay').removeClass('_show')
 		} else {
 			$(this).addClass('_active')
 			$('.header-catalog__block').addClass('_show')
+			$('.header').addClass('_active')
 			$('.overlay').addClass('_show')
 		}
 	})
 
-	$('body').on('click', '.header-submenu__link._sub', function (e) {
-		e.preventDefault()
-
-		if ($(this).closest('.header-submenu__item').hasClass('_active')) {
-			$(this).closest('.header-submenu__item').removeClass('_active')
-		} else {
-			$(this).closest('.header-submenu__item').addClass('_active')
-		}
-	})
-	
-	$('body').on('click', '.header__list-link._sub', function (e) {
-		if ( $(window).width() < 1024 ) {
-			e.preventDefault()
-
-			if ( $(this).closest('.header__list-item').hasClass('_show') ) {
-				$(this).closest('.header__list-item').removeClass('_show')
-			} else {
-				$(this).closest('.header__list-item').addClass('_show')
-			}
-		}
-	})
-	
-
 	// Наведение на пункты меню
-	if ( $(window).width() > 1023 ) {
-		$('body').on('mouseover', '.header-menu__item', function (e) {
+	$('body').on('mouseover', '.header-menu__item', function (e) {
+		if ( $(window).width() > 1023 ) {
 			if (!$(this).hasClass('_active-pc')) {
 				$(this).closest('.header-menu').find('.header-menu__item').removeClass('_active-pc')
 	
 				$(this).addClass('_active-pc')
 			}
-		})
-	}
+		}
+	})
 
 	$('body').on('click', '.header-menu__link._sub', function (e) {
 		if ( $(window).width() < 1024 ) {
@@ -324,6 +305,26 @@ $(() => {
 
 			$('.header-catalog, .catalog-head__back').addClass('_second')
 		}
+	})
+
+	$('body').on('click', '.catalog-head__back:not(._second)', function (e) {
+		e.preventDefault()
+
+		$('.header-catalog__open').removeClass('_active')
+		$('.header-catalog__block').removeClass('_show')
+		$('.header').removeClass('_active')
+		$('.overlay').removeClass('_show')
+	})
+
+	$('body').on('click', '.catalog-head__back._second', function (e) {
+		e.preventDefault()
+
+		let titleCatalog = $('.catalog-head__title').data('title')
+		$('.catalog-head__title').text(titleCatalog)
+
+		$('.header-submenu').removeClass('_show')
+
+		$('.header-catalog, .catalog-head__back').removeClass('_second')
 	})
 
 	$('.header__search-input').on('input change', function () {

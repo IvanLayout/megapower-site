@@ -922,7 +922,7 @@ button
     line-height: normal;
 }
 
-.header-submenu__item a{
+.header-submenu__link{
     display: block;
     color: #212633;
     text-decoration: none;
@@ -931,7 +931,7 @@ button
 }
 
 @media (any-hover: hover){
-    .header-submenu__item a:hover{
+    .header-submenu__link:hover{
         color: #72CFE8;
     }
 }
@@ -1059,6 +1059,12 @@ button
     height: 16px;
     fill: currentColor;
 }
+
+
+.header-mob{
+    display: none;
+}
+
 
 .overlay{
     position: fixed;
