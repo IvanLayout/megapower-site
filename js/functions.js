@@ -179,6 +179,22 @@ $(() => {
 	})
 
 
+	// Показать все
+	$('body').on('click', '.reviews__btn', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.reviews__info').find('.reviews__desc').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.reviews__info').find('.reviews__desc').addClass('_show')
+		}
+	})
+
+
 	// Fancybox
 	const myCloseBtn = '<button data-fancybox-close class="f-button is-close-button" title="Close"><svg viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L16 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><path d="M16 1L1 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg></button>';
 

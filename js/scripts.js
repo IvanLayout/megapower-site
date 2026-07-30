@@ -244,6 +244,73 @@ $(() => {
 	}
 
 
+	if ($('.reviews-slider').length) {
+		new Swiper('.reviews-slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 16,
+					slidesPerView: 3,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+
+					$(swiper.el).find('.product__name, .product__info').height('auto')
+
+					setHeight( $(swiper.el).find('.product__name') )
+					setHeight( $(swiper.el).find('.product__info') )
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.product__name, .product__info').height('auto')
+
+					// setTimeout(function(){
+						setHeight( $(swiper.el).find('.product__name') )
+						setHeight( $(swiper.el).find('.product__info') )
+					// }, 200)
+				}
+			}
+		})
+	}
+
+
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
 			spaceBetween: 16,
