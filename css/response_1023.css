@@ -712,6 +712,16 @@
 		margin-top: 24px;
 	}
 
+	.faq__wrap-marg
+	{
+		margin-top: 0;
+	}
+
+	.faq__top
+	{
+		margin-bottom: 24px;
+	}
+
 	.faq__col
 	{
 		width: 100%;
@@ -724,6 +734,7 @@
 	{
 		width: 100%;
 	}
+	
 
 
     .footer__logo{

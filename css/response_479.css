@@ -182,6 +182,11 @@
 		padding: 24px 16px;
 	}
 
+	.faq__top
+	{
+		width: 100%;
+	}
+
 	.faq__col
 	{
 		max-width: 100%;

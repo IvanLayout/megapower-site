@@ -4398,11 +4398,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	width: 322px;
 }
 
-.faq__col .select-wrap
+.faq__top
 {
-	width: 100%;
+	width: 322px;
 	margin-bottom: 216px;
 	margin-top: 24px;
+}
+
+.faq__top .select-wrap
+{
+	width: 100%;
 }
 
 .faq__box
