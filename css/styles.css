@@ -3278,9 +3278,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .product__img 
 {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -3707,10 +3704,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .main-news__img
 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	
 	width: 100%;
 	height: 100%;
 
@@ -3719,8 +3712,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-
-	position: relative;
 }
 
 .main-news__img img
@@ -4099,10 +4090,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .cats-popular__img
 {
-	position: absolute;
-	top: 0;
-	left: 0;
-
 	width: 100%;
 	height: 100%;
 
