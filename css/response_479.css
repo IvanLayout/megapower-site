@@ -1,4 +1,6 @@
 @media (max-width: 479px)
 {
-	
+    .cats-product__wrap{
+        min-width: 118px;
+    }
 }

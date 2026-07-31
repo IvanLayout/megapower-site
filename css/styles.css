@@ -1087,6 +1087,10 @@ button
 /*------------
     BTNS
 ------------*/
+.wrap-btn._mob{
+    display: none;
+}
+
 .btn-dark
 {
     color: #FFF;
@@ -2668,8 +2672,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
     display: block;
 
-    width: 48px;
-    height: 48px;
+    width: 100%;
+    height: 100%;
 
     stroke: currentColor;
 	fill: none;
@@ -2749,8 +2753,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
     width: 100%;
     padding: 0;
+    height: 40px;
 
-	margin-top: 30px;
+	margin-top: 32px;
 
     text-align: center;
 
@@ -2761,7 +2766,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	bottom: 0;
 }
 
-.slider-pagination_mob{
+.slider-pagination._mob{
 	display: none;
 }
 
@@ -2777,16 +2782,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
     display: block;
 
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: 0;
     padding: 0;
 
-    border-radius: 50px;
-    background: #D9D9D9;
+    border-radius: 0;
+    background: #C9D4E0;
     box-shadow: none;
 
-    transition: background .2s linear, height .2s linear, width .2s linear;
+    transition: background .2s linear, width .2s linear;
 
     appearance: none;
 }
@@ -2805,13 +2810,14 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
     .slider-dot:hover
     {
-        background: #D64923;
+        background: #72CFE8;
     }
 }
 
 .slider-dot.slider-dot_active
 {
-    background: #CD1719;
+    background: #72CFE8;
+    width: 40px;
 }
 
 .swiper-scrollbar
@@ -3193,11 +3199,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	flex-direction: column;
 }
 
-.products-slider .slider-pagination
-{
-	display: none;
-}
-
 .products__grid
 {
 	align-items: stretch;
@@ -3227,7 +3228,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     z-index: 12;
     top: 0;
     left: 0;
-    width: calc(100% - 82px);
+    width: calc(100% - 50px);
     pointer-events: none;
 }
 
@@ -3581,7 +3582,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	background: #fff url(../images/lupa.svg) 16px center / 16px 16px no-repeat;
 	padding-left: 48px;
 	padding-right: 16px;
-	border: none;
+	border: 1px solid transparent;
 }
 
 .search-form__submit
@@ -3619,11 +3620,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .main-news__slider .slider-button-next._top
 {
 	top: -168px;
-}
-
-.main-news__slider .slider-pagination
-{
-	display: none;
 }
 
 .main-news__grid
@@ -3815,7 +3811,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	width: 592px;
     min-height: 352px;
 	padding: 40px;
-	position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -4764,12 +4759,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 /*------------
     reviews
 ------------*/
-
-.reviews-slider .slider-pagination
-{
-	display: none;
-}
-
 .reviews-slider_marg
 {
 	margin-top: 64px;
@@ -5086,9 +5075,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-width: 242px;
 }
 
-.footer__col:first-child
-{
-	padding-top: 0;
+.footer-menu{
+	padding-top: 46px;
+	max-width: 242px;
 }
 
 .footer__logo
@@ -5100,6 +5089,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	display: block;
 	max-width: 100%;
+}
+
+.footer__logo img + img{
+    display: none;
 }
 
 .footer-menu__item + .footer-menu__item
@@ -5331,6 +5324,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	justify-content: space-between;
 	max-width: 1340px;
+    gap: 12px 24px;
 }
 
 .footer__links-link

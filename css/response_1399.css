@@ -131,6 +131,10 @@
         font-size: 20px;
     }
 
+    .product__name br{
+        display: none;
+    }
+
 
     .cats-popular__name{
         font-size: 20px;

@@ -30,8 +30,8 @@ $(() => {
 		swiperAdv = new Swiper(".advantages-main__slider", {
 			loop: true,
 			loopAdditionalSlides: 1,
-			spaceBetween: 15,
-			slidesPerView: 1,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -47,17 +47,24 @@ $(() => {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
-					slidesPerView: 1,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
-					slidesPerView: 2,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 16,
 					slidesPerView: 3
 				},
 				'1024': {
@@ -108,7 +115,7 @@ $(() => {
 					slidesPerView: 2,
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 16,
 					slidesPerView: 3
 				},
 				'1024': {
@@ -135,7 +142,7 @@ $(() => {
 		new Swiper(".main-news__slider", {
 			loop: false,
 			spaceBetween: 16,
-			slidesPerView: 1,
+			slidesPerView: 'auto',
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			preloadImages: false,
@@ -160,15 +167,15 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 15,
-					slidesPerView: 1,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 15,
-					slidesPerView: 2,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 16,
 					slidesPerView: 3
 				},
 				'1024': {
@@ -222,7 +229,7 @@ $(() => {
 				},
 				'768': {
 					spaceBetween: 16,
-					slidesPerView: 'auto'
+					slidesPerView: 3
 				},
 				'1024': {
 					spaceBetween: 16,

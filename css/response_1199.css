@@ -246,6 +246,9 @@
         padding-left: 0;
     }
 
+    .search-form__submit{
+        line-height: 48px;
+    } 
 
     .footer__cols{
         padding-top: 48px;
@@ -257,6 +260,10 @@
     }
 
     .footer__col{
+        padding-top: 24px;
+    }
+
+    .footer-menu{
         padding-top: 24px;
     }
 

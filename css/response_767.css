@@ -1,4 +1,179 @@
 @media (max-width: 767px)
 {
-	
+	.main-banner__wrap{
+        min-height: 730px;
+    }
+
+    .main-banner__about{
+        position: relative;
+        bottom: auto;
+        margin-top: 24px;
+    }
+
+
+    .advantages-main{
+        padding-bottom: 40px;
+    }
+
+    .advantages-main__slider .swiper-slide{
+        width: 320px;
+    }
+
+    .advantages-main__item {
+        min-height: 240px;
+    }
+
+    .advantages-main__number{
+        font-size: 60px;
+        line-height: 1.05;
+        margin-bottom: 12px;
+    }
+
+    .advantages-main__title{
+        font-size: 22px;
+    }
+
+    .advantages-main__info{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .advantages-main__img{
+        margin-top: 14px;
+    }
+
+    .advantages-main__img img{
+        max-height: 216px;
+    }
+
+    ._marg{
+        margin-top: 40px;
+    }
+
+    ._marg2{
+        margin-top: 40px;
+    }
+
+    ._padT{
+        padding-top: 40px;
+    }
+
+    ._padB{
+        padding-bottom: 40px;
+    }
+
+
+    .cats-popular__item {
+        width: calc(100% / 2 - 16px);
+    }
+
+    .cats-popular__name{
+        font-size: 18px;
+    }
+
+    .cats-popular__desc{
+        font-size: 14px;
+    }
+
+
+    .about-main__wrap{
+        min-height: 680px;
+    }
+
+    .about-main__item {
+        width: calc(100% / 2 - 16px);
+        max-width: none;
+        flex-grow: 1;
+        margin-top: 40px;
+    }
+
+    .about-main__items{
+        margin-right: 0;
+    }
+
+    .partners__grid .partners__item {
+        width: calc(100% / 4 + 1px);
+        padding: 15px;
+    }
+
+    .tabs__button_btn{
+        min-width: 1px;
+    }
+
+    .products-slider .swiper-overflow{
+        overflow: visible;
+    }
+
+    .products-slider .swiper-slide{
+        width: 320px;
+    }
+
+    .product__sticker{
+        font-size: 14px;
+    }
+
+    .product__arrow{
+        top: 20px;
+        right: 20px;
+    }
+
+    .product__bot{
+        padding-bottom: 24px;
+    }
+
+    .product__name {
+        font-size: 22px;
+    }
+
+    .main-news__slider .swiper-overflow{
+        overflow: visible;
+    }
+
+    .main-news__slider .swiper-slide{
+        width: 343px;
+    }
+
+
+    .find-marketplaces{
+        padding-top: 32px;
+    }
+
+    .find-marketplaces__box{
+        width: 100%;
+    }
+
+    .find-marketplaces__img{
+        width: calc(100% + 32px);
+        margin: 8px -16px 0;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        padding-right: 0;
+    }
+
+    .find-marketplaces__btns{
+        padding-top: 0;
+        margin-top: -8px;
+    }
+    
+
+    .footer__logo{
+        width: calc(50% - 12px);
+    }
+
+    .footer-menu{
+        width: calc(50% - 12px);
+        max-width: none;
+        padding-top: 0;
+    }
+
+    .footer-menu__item + .footer-menu__item{
+        margin-top: 16px;
+    }
+
+    .footer__col{
+        width: calc(50% - 12px);
+        max-width: none;
+        padding-top: 40px;
+    }
 }
