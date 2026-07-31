@@ -248,7 +248,19 @@
 
     .search-form__submit{
         line-height: 48px;
-    } 
+    }
+
+	/* commit */
+
+	.sorting__btn
+	{
+		line-height: 48px;
+	}
+
+	.page-title 
+	{
+		font-size: 48px;
+	}
 
     .footer__cols{
         padding-top: 48px;

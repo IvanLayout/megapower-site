@@ -669,6 +669,24 @@
         padding-right: 0;
     }
 
+	/* commit */
+
+	.cats-popular__info
+	{
+		margin-top: 48px;
+	}
+
+	.breadcrumbs
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.page-title 
+	{
+		font-size: 42px;
+	}
+
 
     .footer__logo{
         max-width: none;
