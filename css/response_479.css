@@ -132,6 +132,84 @@
 		padding-top: 20px;
 	}
 
+	.sorting__box
+	{
+		margin-top: 32px;
+	}
+
+
+	.products__grid 
+	{
+		--products_count: 1;
+	}
+
+	.products__grid .product__name
+	{
+		font-size: 20px;
+		min-height: 48px;
+	}
+
+	.products__info
+	{
+		font-size: 14px;
+	}
+
+
+	.faq__info-title
+	{
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-right: 70px;
+	}
+
+	.faq__name
+	{
+		font-size: 20px;
+	}
+
+	.faq__plus-minus::before
+	{
+		height: 32px;
+	}
+
+	.faq__plus-minus::after
+	{
+		width: 32px;
+	}
+
+	.faq__box
+	{
+		padding: 24px 16px;
+	}
+
+	.faq__col
+	{
+		max-width: 100%;
+	}
+
+	.faq__title
+	{
+		font-size: 20px;
+	}
+
+	.faq__desc
+	{
+		margin-top: 16px;
+	}
+
+	.faq__desc br
+	{
+		display: none;
+	}
+
+	.faq__btn
+	{
+		margin-top: 24px;
+		width: 100%;
+		line-height: 52px;
+	}
+
+
     .footer__logo{
         width: 100%;
     }

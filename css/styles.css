@@ -2144,6 +2144,21 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     margin-top: 30px;
 }
 
+.pagination a:first-child
+{
+	margin-left: 0;
+}
+
+.pagination .hide 
+{
+    display: none;
+}
+
+.pagination .hide + * 
+{
+    margin-left: 0;
+}
+
 .pagination a
 {
     color: #111827;
@@ -2189,6 +2204,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
     color: #fff;
     background: #111827;
+	padding: 0 5px;
 }
 
 .pagination a.active::after
@@ -2211,6 +2227,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     flex-wrap: wrap;
 
     height: 48px;
+	padding: 0;
 }
 
 .pagination .prev svg,
@@ -3197,6 +3214,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 	display: flex;
 	flex-direction: column;
+}
+
+.products-slider .slider-pagination
+{
+	display: none;
 }
 
 .products__grid
@@ -4271,7 +4293,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .sorting
 {
 	position: relative;
-	z-index: 2;
+	z-index: 15;
 }
 
 .sorting__wrap
@@ -4435,6 +4457,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+
+	padding: 33px 84px 33px 0;
 }
 
 .faq__name
@@ -4442,7 +4466,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-size: 24px;
 	line-height: 1.2;
 	letter-spacing: -0.01em;
-	padding: 33px 84px 33px 0;
 }
 
 .faq__plus-minus

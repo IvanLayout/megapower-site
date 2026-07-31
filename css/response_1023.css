@@ -687,6 +687,44 @@
 		font-size: 42px;
 	}
 
+	.products__grid
+	{
+		margin-top: 8px;
+	}
+
+	.products__grid .product
+	{
+		margin-top: 24px;
+	}
+
+	.product__sticker::before
+	{
+		top: 4px;
+	}
+
+	.products-slider .slider-pagination
+	{
+		display: flex;
+	}
+
+	.faq__wrap
+	{
+		margin-top: 24px;
+	}
+
+	.faq__col
+	{
+		width: 100%;
+		max-width: 375px;
+		order: 2;
+		margin-top: 24px;
+	}
+
+	.faq__info
+	{
+		width: 100%;
+	}
+
 
     .footer__logo{
         max-width: none;

@@ -262,6 +262,21 @@
 		font-size: 48px;
 	}
 
+	.products__info
+	{
+		margin-top: 70px;
+	}
+
+	.faq__col 
+	{
+		width: 300px;
+	}
+
+	.faq__info 
+	{
+		width: calc(100% - 340px);
+	}
+
     .footer__cols{
         padding-top: 48px;
         padding-bottom: 40px;
