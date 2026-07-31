@@ -175,10 +175,14 @@
 
     .header-catalog__block .cont{
         height: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .catalog-head{
         display: block;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .catalog-head__back{
@@ -219,7 +223,7 @@
         max-width: none;
         padding: 0;
         border: none;
-        padding: 0 0 24px;
+        padding: 0 16px 24px;
     }
 
     .header-catalog._second .header-menu{
@@ -585,6 +589,10 @@
         font-size: 14px;
     }
 
+    .cats-product__name{
+        padding-right: 0;
+    }
+
 
     .points-sale__boxL{
         width: 100%;
@@ -674,5 +682,13 @@
 
     .footer__logo img + img{
         display: block;
+    }
+
+    .footer__callback-btn{
+        line-height: 48px;
+    }
+
+    .footer__download-link{
+        line-height: 48px;
     }
 }

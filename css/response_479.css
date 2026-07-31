@@ -1,6 +1,147 @@
 @media (max-width: 479px)
 {
+    .main-banner__title br{
+        display: none;
+    }
+
+    .main-banner__about{
+        width: 100%;
+    }
+
+    .main-banner__bottom{
+        gap: 8px;
+    }
+
+    .main-banner__link{
+        width: 100%;
+    }
+
+
+    .cats-popular__item {
+        width: calc(100% - 16px);
+    }
+
+    .cats-popular__name{
+        font-size: 24px;
+    }
+
+    .cats-popular__desc{
+        font-size: 16px;
+    }
+    
+    .wrap-btn._mob .btn-dark{
+        width: 100%;
+    }
+    
+    .wrap-btn._mob .btn-light{
+        width: 100%;
+    }
+    
+    .wrap-btn._mob .btn-blue{
+        width: 100%;
+    }
+
+
+    .partners__grid .partners__item {
+        width: calc(100% / 2 + 1px);
+        padding: 19px;
+        aspect-ratio: auto;
+        min-height: 130px;
+    }
+
+
     .cats-product__wrap{
         min-width: 118px;
+    }
+
+
+    .points-sale__desc{
+        font-size: 14px;
+    }
+
+
+    .search-form__input{
+        padding-left: 15px;
+        background-image: none;
+    }
+
+    .search-form__submit{
+        min-width: 85px;
+        padding: 0;
+    }
+
+    .points-sale__map {
+        height: 530px;
+    }
+
+
+    .main-news__name{
+        font-size: 22px;
+    }
+
+    .main-news__desc{
+        font-size: 16px;
+    }
+
+    .main-news__btn{
+        width: 100%;
+    }
+
+
+    .find-marketplaces__img{
+        width: calc(100% + 360px);
+        margin-left: -180px;
+        margin-right: -180px;
+        overflow: hidden;
+    }
+
+    .find-marketplaces__img img{
+        width: 100%;
+        margin-bottom: -40px;
+    }
+
+
+    .footer__logo{
+        width: 100%;
+    }
+
+    .footer-menu{
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .footer__col{
+        width: 100%;
+    }
+
+    .footer__title{
+        margin-bottom: 16px;
+    }
+
+    .footer__contacts > div + div{
+        margin-top: 16px;
+    }
+
+    .socials_marg{
+        margin-top: 6px;
+    }
+
+    .footer__callback-btn{
+        margin-top: 24px;
+        width: 100%;
+        line-height: 52px;
+    }
+
+    .footer__download-box{
+        margin-top: 24px;
+    }
+
+    .footer__download-link{
+        width: 100%;
+        line-height: 52px;
+    }
+
+    .footer__bot > div{
+        width: 100%;
     }
 }
