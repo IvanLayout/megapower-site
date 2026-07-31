@@ -215,6 +215,12 @@
 	}
 
 
+	.main-news__grid .main-news__item
+	{
+		width: calc(100% / 1 - 16px);
+	}
+
+
     .footer__logo{
         width: 100%;
     }

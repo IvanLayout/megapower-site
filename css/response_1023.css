@@ -736,6 +736,16 @@
 	}
 	
 
+	.main-news__grid
+	{
+		margin-top: -26px;
+	}
+
+	.main-news__grid .main-news__item
+	{
+		margin-top: 40px;
+	}
+
 
     .footer__logo{
         max-width: none;

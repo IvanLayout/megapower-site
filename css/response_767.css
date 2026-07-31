@@ -235,6 +235,13 @@
 		margin-left: 10px;
 	}
 
+
+	.main-news__grid .main-news__item
+	{
+		width: calc(100% / 2 - 16px);
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }
