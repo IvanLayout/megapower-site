@@ -278,6 +278,29 @@
 		width: calc(100% - 340px);
 	}
 
+
+	.slider-button-prev._top2, 
+	.slider-button-next._top2 
+	{
+		top: -104px;
+	}
+
+	.product-info__title,
+	.product-info__price
+	{
+		font-size: 32px;
+	}
+
+	.product-info .socials._big 
+	{
+		margin-top: -16px;
+	}
+
+
+
+
+
+
     .footer__cols{
         padding-top: 48px;
         padding-bottom: 40px;

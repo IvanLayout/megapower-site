@@ -183,6 +183,8 @@
 	{
 		padding-top: 16px;
 		padding-bottom: 12px;
+
+		font-size: 14px;
 	}
 
 	.page-head
@@ -239,6 +241,101 @@
 	.main-news__grid .main-news__item
 	{
 		width: calc(100% / 2 - 16px);
+	}
+
+
+	.product-images__img
+	{
+		aspect-ratio: 1 / .939;
+	}
+
+	.product-thumbs
+	{
+		margin-top: 8px;
+	}
+
+
+	.product-info__price-box
+	{
+		margin-top: 16px;
+		padding-top: 16px;
+	}
+
+	.product-info__title, 
+	.product-info__price 
+	{
+		font-size: 28px;
+	}
+
+	.product-info__features
+	{
+		margin-top: 16px;
+	}
+
+	.product-info__bot
+	{
+		flex-wrap: wrap;
+	}
+
+	.product-info__bot-btn
+	{
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.product-info .socials._big
+	{
+		margin-top: 0;
+	}
+
+
+	.information__info-title
+	{
+		padding-top: 27px;
+		padding-bottom: 27px;
+		padding-right: 70px;
+	}
+
+	.information__number 
+	{
+		font-size: 24px;
+		color: #838691;
+		width: 30px;
+		margin-right: 12px;
+	}
+
+	.information__name
+	{
+		font-size: 24px;
+	}
+
+	.information__info
+	{
+		width: calc(100% + 70px);
+		margin-right: -70px;
+		color: #838691;
+	}
+
+	.information__plus-minus 
+	{
+		top: 22px;
+		right: 0;
+	}
+
+	.information__plus-minus::before
+	{
+		height: 32px;
+	}
+
+	.information__plus-minus::after
+	{
+		width: 32px;
+	}
+
+
+	.reviews-slider .swiper-slide 
+	{
+		width: 320px;
 	}
 
 

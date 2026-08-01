@@ -143,6 +143,34 @@
 
 	/* commit */
 
+	.product-info__images 
+	{
+		width: calc(48.3% - 20px);
+	}
+
+	.product-info__info 
+	{
+		width: calc(51.7% - 20px);
+	}
+
+
+	.information__name-box 
+	{
+		width: calc(47% - 46px);
+	}
+
+	.information__info
+	{
+		width: calc(53% - 46px);
+	}
+
+
+	.slider-button-prev._top2,
+	.slider-button-next._top2
+	{
+		top: -110px;
+	}
+
 
     .footer__logo {
         max-width: 160px;

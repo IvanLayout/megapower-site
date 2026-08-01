@@ -296,7 +296,7 @@ $(() => {
 				},
 				'768': {
 					spaceBetween: 16,
-					slidesPerView: 'auto'
+					slidesPerView: 2
 				},
 				'1024': {
 					spaceBetween: 16,
@@ -333,7 +333,21 @@ $(() => {
 			loop: false,
 			speed: 500,
 			watchOverflow: true,
-			watchSlidesProgress: true
+			watchSlidesProgress: true,
+			breakpoints: {
+				'320': {
+					spaceBetween: 8,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 8,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				}
+			},
 		})
 
 		new Swiper('.product-images__slider', {

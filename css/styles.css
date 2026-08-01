@@ -4684,6 +4684,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-family: var(--font-family2);
 	font-size: 40px;
 	line-height: 1.05;
+	font-weight: 400;
 }
 
 .product-info__maxW
@@ -4777,6 +4778,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .reviews-slider_marg
 {
 	margin-top: 64px;
+}
+
+.reviews-slider .slider-pagination
+{
+	display: none;
 }
 
 .reviews__item
@@ -4906,7 +4912,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .reviews__box
 {
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 .reviews__name

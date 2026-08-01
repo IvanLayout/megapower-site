@@ -219,6 +219,64 @@
 	{
 		width: calc(100% / 1 - 16px);
 	}
+	
+
+	.product-thumbs .swiper-slide
+	{
+		width: 56px;
+	}
+
+	.product-images__img
+	{
+		padding: 50px;
+	}
+
+	.product-images__arrow,
+	.product-images__arrow svg
+	{
+		width: 39px;
+		height: 39px;
+	}
+
+	.product-info__title
+	{
+		font-size: 24px;
+	}
+
+	
+	.features__feature-name,
+	.features__feature-val
+	{
+		width: calc(50% - 2px);
+	}
+
+	
+	.product-info__btn
+	{
+		width: 100%;
+	}
+
+
+	.information__number
+	{
+		font-size: 22px;
+		width: 25px;
+	}
+
+	.information__name-box 
+	{
+		width: calc(100% - 37px);
+	}
+	
+	.information__name
+	{
+		font-size: 22px;
+	}
+
+	.information__plus-minus
+	{
+		top: 20px;
+	}
 
 
     .footer__logo{

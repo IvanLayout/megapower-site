@@ -31,4 +31,26 @@
 		margin-left: 0;
 		margin-top: 20px;
 	}
+
+
+	.product-info__title
+	{
+		font-size: 36px;
+	}
+
+	.information__name,
+	.information__number
+	{
+		font-size: 28px;
+	}
+
+	.product-info__price
+	{
+		font-size: 36px;
+	}
+
+	.product-info .socials._big
+	{
+		margin-top: -11px;
+	}
 }
