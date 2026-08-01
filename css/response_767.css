@@ -339,6 +339,54 @@
 	}
 
 
+	.contacts_marg
+	{
+		margin-top: 0;
+	}
+
+	.contacts__items 
+	{
+		columns: 1;
+	}
+
+	.contacts__item-flex
+	{
+		padding: 22px 0;
+	}
+
+	.contacts__desc
+	{
+		font-size: 18px;
+	}
+
+	.form__line 
+	{
+		margin-bottom: 16px;
+	}
+
+	.form .form__input
+	{
+		height: 45px;
+	}
+
+	.form .form__textarea
+	{
+		height: 100px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.form__submit 
+	{
+		margin-top: 16px;
+	}
+
+	.form__submit-btn
+	{
+		width: 100%;
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }

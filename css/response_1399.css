@@ -172,6 +172,12 @@
 	}
 
 
+	.main-form__wrap
+	{
+		margin-right: auto;
+	}
+
+
     .footer__logo {
         max-width: 160px;
     }

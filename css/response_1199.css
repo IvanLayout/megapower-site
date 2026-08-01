@@ -297,6 +297,21 @@
 	}
 
 
+	.contacts_marg 
+	{
+		margin-top: 20px;
+	}
+
+	.contacts__item-flex
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.contacts__desc
+	{
+		font-size: 18px;
+	}
 
 
 
