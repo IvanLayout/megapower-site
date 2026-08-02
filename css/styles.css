@@ -3445,22 +3445,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	padding-right: 24px;
 }
 
-.product__price span::after
-{
-	position: absolute;
-	content: '';
-	top: 50%;
-	right: 0;
-
-	display: block;
-	margin-top: -9px;
-
-	width: 16px;
-	height: 16px;
-
-	background: #72CFE8 url(../images/ic_info.svg) 50% 50% no-repeat;
-}
-
 .products__info
 {
 	margin-top: 130px;
@@ -5190,6 +5174,90 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-width: 624px;
 	margin-left: auto;
 	margin-right: 128px;
+}
+
+
+.tooltip
+{
+    position: relative;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.product__price .tooltip
+{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 0;
+
+	display: block;
+	margin-top: -10px;
+
+	width: 16px;
+	height: 16px;
+}
+
+.tooltip__icon
+{
+    width: 16px;
+    height: 16px;
+
+	background: #72CFE8 url(../images/ic_info.svg) 50% 50% no-repeat;
+}
+
+.mini-modal__btn.tooltip__icon
+{
+    display: none;
+}
+
+.tooltip__wrap
+{
+    position: absolute;
+    z-index: 30;
+    top: 100%;
+	margin-top: 10px;
+    left: 50%;
+	margin-left: -100px;
+
+    visibility: hidden;
+
+    width: 200px;
+    padding: 15px;
+
+    pointer-events: none;
+
+    opacity: 0;
+    background: #fff;
+	border: 1px solid #E0E9EE;
+
+    transition: opacity .2s linear, visibility .2s linear;
+}
+
+.tooltip .mini-modal__close
+{
+	display: none;
+}
+
+@media (min-width: 768px)
+{
+    .tooltip:hover .tooltip__wrap
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+}
+
+.tooltip__desc
+{
+	font-size: 12px;
+	line-height: 1.2;
+	color: #8D95A1;
 }
 
 @media (any-hover: hover)
