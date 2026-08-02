@@ -729,6 +729,25 @@
         padding-right: 0;
     }
 
+
+    .about-banner{
+        padding-top: 10px;
+    }
+
+    .about-banner__bg{
+        object-position: 58% 0;
+    }
+
+    .about-banner__flex {
+        padding-top: 21px;
+        margin-top: 22px;
+        gap: 20px;
+    }
+
+    .about-banner__btn{
+        min-width: 190px;
+    }
+
 	/* commit */
 
 	.cats-popular__info

@@ -185,6 +185,20 @@
     }
 
 
+    .about-banner{
+        min-height: 640px;
+    }
+
+
+    .advantages-main__bot-title{
+        font-size: 18px;
+    }
+
+    .advantages-main__date {
+        font-size: 40px;
+    }
+
+
 	/* commit */
 
 	.product-info__images 

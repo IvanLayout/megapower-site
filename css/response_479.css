@@ -126,6 +126,18 @@
         margin-bottom: -40px;
     }
 
+	.about-main__items_inner{
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: -20px;
+	}
+
+	.about-main__items_inner .about-main__item{
+		margin-top: 28px;
+		width: 100%;
+		margin-left: 0;
+	}
+
 	/* commit */
 
 	.page-title 

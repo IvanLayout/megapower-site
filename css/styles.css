@@ -1432,6 +1432,10 @@ button
 	z-index: 1;
 }
 
+.breadcrumbs._white{
+    color: rgba(255, 255, 255, .7);
+}
+
 .breadcrumbs a
 {
     color: #111827;
@@ -1443,35 +1447,31 @@ button
     transition: border .2s linear;
 }
 
+.breadcrumbs._white a{
+    color: #fff;
+}
+
 @media (any-hover: hover)
 {
     .breadcrumbs a:hover
     {
-        border-bottom-color: #111827;
+        border-bottom-color: currentColor;
     }
 }
 
 .breadcrumbs_sep
 {
 	position: relative;
+    top: 2px;
 	display: inline-block;
-	margin: 0 8px;
+	margin: 0 3px;
+    width: 1px;
+    height: 17px;
+	background: #111827;
 }
 
-.breadcrumbs_sep::after
-{
-	position: absolute;
-	content: '';
-	top: 0;
-	left: 0;
-
-	display: block;
-
-	margin-top: -14px;
-
-	width: 1px;
-	height: 17px;
-	background: #111827;
+.breadcrumbs._white .breadcrumbs_sep{
+    background: #fff;
 }
 
 /*----------------
@@ -1887,11 +1887,9 @@ button
 
 .form__agree a
 {
-    color: #111827;
+    color: currentColor;
 
     text-decoration: none;
-
-    border-bottom: 1px solid currentColor;
 
     transition: color .2s linear, border .2s linear;
 }
@@ -1900,7 +1898,7 @@ button
 {
     .form__agree a:hover
     {
-        border-bottom-color: transparent;
+        color: #111827;
     }
 }
 
@@ -2780,6 +2778,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-weight: 300;
 }
 
+.page-title._white{
+    color: #fff;
+}
+
 
 .page-head
 {
@@ -3456,6 +3458,131 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .advantages-main__img img{
     display: block;
     max-width: 100%;
+}
+
+.advantages-main__date{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.05;
+}
+
+.advantages-main__bot{
+    margin-top: auto;
+    padding-top: 56px;
+}
+
+.advantages-main__thumb + .advantages-main__bot{
+    padding-top: 16px;
+}
+
+.advantages-main__bot-title{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.advantages-main__bot-desc{
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color1);
+}
+
+.advantages-main__thumb{
+    margin-top: 13px;
+    width: 100%;
+}
+
+.advantages-main__thumb span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    aspect-ratio: 1/.603;
+}
+
+.advantages-main__thumb img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.about-banner{
+    position: relative;
+    min-height: 740px;
+    padding: 15px 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-banner__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 58% 50%;
+}
+
+.about-banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #111827;
+    opacity: .2;
+}
+
+.about-banner .breadcrumbs{
+    position: relative;
+    z-index: 1;
+}
+
+.about-banner__bot{
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    padding-top: 60px;
+}
+
+.about-banner__flex{
+    padding-top: 31px;
+    border-top: 1px solid #C9D4E0;
+    margin-top: 32px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.about-banner__desc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 785px;
+}
+
+.about-banner__btn{
+    min-width: 240px;
+    flex-shrink: 0;
+}
+
+
+.production__accordion{
+    border-top: 1px solid #B6BDCA;
+    margin-top: 32px;
+}
+
+.production__accordion .information__info {
+    margin-left: 16px;
+    max-width: 512px;
 }
 /*------------
     Commit
@@ -4508,11 +4635,30 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	color: rgba(255, 255, 255, .7);
 }
 
+.about-main__bot{
+    margin-left: -16px;
+	margin-right: -16px;
+    width: calc(100% + 32px);
+}
+
 .about-main__items
 {
-	margin-left: -16px;
-	margin-right: -16px;
+    margin-left: auto;
 	justify-content: flex-end;
+}
+
+.about-main__items_inner{
+    justify-content: flex-start;
+    max-width: 1152px;
+    gap: 14px 0;
+}
+
+.about-main__items_inner::before{
+    content: '';
+    display: block;
+	width: calc(100%/3 - 16px);
+	margin: 16px 0 0 16px;
+	max-width: 368px;
 }
 
 .about-main__item
@@ -6092,5 +6238,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
     .advantages-main__slider .slider-button-next{
         right: 10px;
+    }
+
+    .advantages-main__date{
+        font-size: 50px;
     }
 }
