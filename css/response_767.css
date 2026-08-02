@@ -1,5 +1,59 @@
 @media (max-width: 767px)
 {
+	.header__search-sector{
+		margin-bottom: 20px;
+	}
+
+	.header__search-title{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.header__search-link a{
+		padding: 15px 0;
+	}
+
+	.popular-cats{
+		margin-top: 16px;
+	}
+	
+	.popular-cats__item{
+		display: block;
+	}
+
+	.popular-cats__thumb{
+		width: 100%;
+	}
+
+	.popular-cats__box{
+		padding: 8px 0 0;
+	}
+
+	.popular-cats__name{
+		font-size: 16px;
+	}
+
+	.popular-cats__desc{
+		padding-top: 8px;
+	}
+
+	.products-search{
+		margin-top: 14px;
+		gap: 14px 0
+	}
+
+	.products-search__item{
+		width: 100%;
+		padding-bottom: 13px;
+		border-bottom: 1px solid #C9D4E0;
+	}
+
+	.products-search__item:before,
+	.products-search__item:after{
+		display: none;
+	}
+
+
 	.main-banner__wrap{
         min-height: 730px;
     }

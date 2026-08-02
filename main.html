@@ -1492,14 +1492,272 @@
 									</div>
 								</nav>
 
-								<div class="header__search _flex">
-									<input type="text" value="" placeholder="Поиск по артикулу / VIN / названию" id="header__search-input" class="header__search-input">
+								<div class="header__search">
+									<div class="header__search-flex _flex">
+										<button type="button" class="header__search-hide">
+											<svg>
+												<use xlink:href="images/sprite.svg#arrow_back"></use>
+											</svg>
+										</button>
+										<input type="text" value="" placeholder="Поиск по артикулу / VIN / названию" id="header__search-input" autocomplete="off" class="header__search-input">
+										<button type="button" class="header__search-clear">
+											<svg>
+												<use xlink:href="images/sprite.svg#clear"></use>
+											</svg>
+										</button>
+									</div>
 
-									<button type="button" class="header__search-clear">
-										<svg>
-											<use xlink:href="images/sprite.svg#clear"></use>
-										</svg>
-									</button>
+									<div class="header__search-block">
+										<div class="header__search-scroll">
+											<div class="header__search-sector _default">
+												<div class="header__search-title">Популярные запросы</div>
+
+												<div class="header__search-links">
+													<div class="header__search-link">
+														<a href="/">подвес глушителя</a>
+													</div>
+													<div class="header__search-link">
+														<a href="/">подвеска</a>
+													</div>
+													<div class="header__search-link">
+														<a href="/">подвес глушителя</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="header__search-sector">
+												<div class="header__search-title">Лучшие совпадения</div>
+
+												<div class="header__search-links">
+													<div class="header__search-link">
+														<a href="/">подвес глушителя</a>
+													</div>
+													<div class="header__search-link">
+														<a href="/">подвеска</a>
+													</div>
+													<div class="header__search-link">
+														<a href="/">подвес глушителя</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="header__search-sector _default">
+												<div class="header__search-title">Популярные категории</div>
+
+												<div class="popular-cats _flex">
+													<div class="popular-cats__item _flex">
+														<a href="/" class="popular-cats__thumb">
+															<img data-src="images/tmp/cats_popular_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="popular-cats__box">
+															<div class="popular-cats__name">
+																<a href="/">Двигатель</a>
+															</div>
+
+															<div class="popular-cats__desc">Патрубки, фильтры, ремни и др.</div>
+														</div>
+													</div>
+													<div class="popular-cats__item _flex">
+														<a href="/" class="popular-cats__thumb">
+															<img data-src="images/tmp/cats_popular_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="popular-cats__box">
+															<div class="popular-cats__name">
+																<a href="/">Подвеска</a>
+															</div>
+
+															<div class="popular-cats__desc">Рычаги, шаровые, сайлентблоки</div>
+														</div>
+													</div>
+													<div class="popular-cats__item _flex">
+														<a href="/" class="popular-cats__thumb">
+															<img data-src="images/tmp/cats_popular_img3.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="popular-cats__box">
+															<div class="popular-cats__name">
+																<a href="/">Тормозная система</a>
+															</div>
+
+															<div class="popular-cats__desc">Патрубки, фильтры, ремни и др.</div>
+														</div>
+													</div>
+													<div class="popular-cats__item _flex">
+														<a href="/" class="popular-cats__thumb">
+															<img data-src="images/tmp/cats_popular_img4.jpg" src="images/img_plug.png" alt="" class="lazyload">
+														</a>
+
+														<div class="popular-cats__box">
+															<div class="popular-cats__name">
+																<a href="/">Охлаждение</a>
+															</div>
+
+															<div class="popular-cats__desc">Радиаторы, термостаты, помпы</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="header__search-sector">
+												<div class="header__search-title">Товары</div>
+
+												<div class="products-search _flex">
+													<div class="products-search__item _flex">
+														<a href="/" class="products-search__thumb">
+															<span>
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+														</a>
+
+														<div class="products-search__box">
+															<div class="products-search__name">
+																<a href="/">Подушка подвески коробки раздаточной</a>
+															</div>
+
+															<div class="product__price">
+																<span>
+																	3 940 ₽
+						
+																	<div class="mini-modal tooltip">
+																		<div class="tooltip__icon"></div>
+							
+																		<button type="button" class="mini-modal__btn tooltip__icon"></button>
+								
+																		<div class="mini-modal__modal tooltip__wrap">
+																			<button type="button" data-mini-close class="mini-modal__close">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#close"></use>
+																				</svg>
+																			</button>
+								
+																			<div class="tooltip__info">
+																				<div class="tooltip__desc">9 000 шт свободно со склада</div>
+																			</div>
+																		</div>
+																	</div>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="products-search__item _flex">
+														<a href="/" class="products-search__thumb">
+															<span>
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+														</a>
+
+														<div class="products-search__box">
+															<div class="products-search__name">
+																<a href="/">Подушка подвески коробки раздаточной</a>
+															</div>
+
+															<div class="product__price">
+																<span>
+																	3 940 ₽
+						
+																	<div class="mini-modal tooltip">
+																		<div class="tooltip__icon"></div>
+							
+																		<button type="button" class="mini-modal__btn tooltip__icon"></button>
+								
+																		<div class="mini-modal__modal tooltip__wrap">
+																			<button type="button" data-mini-close class="mini-modal__close">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#close"></use>
+																				</svg>
+																			</button>
+								
+																			<div class="tooltip__info">
+																				<div class="tooltip__desc">9 000 шт свободно со склада</div>
+																			</div>
+																		</div>
+																	</div>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="products-search__item _flex">
+														<a href="/" class="products-search__thumb">
+															<span>
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+														</a>
+
+														<div class="products-search__box">
+															<div class="products-search__name">
+																<a href="/">Подушка подвески коробки раздаточной</a>
+															</div>
+
+															<div class="product__price">
+																<span>
+																	3 940 ₽
+						
+																	<div class="mini-modal tooltip">
+																		<div class="tooltip__icon"></div>
+							
+																		<button type="button" class="mini-modal__btn tooltip__icon"></button>
+								
+																		<div class="mini-modal__modal tooltip__wrap">
+																			<button type="button" data-mini-close class="mini-modal__close">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#close"></use>
+																				</svg>
+																			</button>
+								
+																			<div class="tooltip__info">
+																				<div class="tooltip__desc">9 000 шт свободно со склада</div>
+																			</div>
+																		</div>
+																	</div>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="products-search__item _flex">
+														<a href="/" class="products-search__thumb">
+															<span>
+																<img data-src="images/tmp/product1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</span>
+														</a>
+
+														<div class="products-search__box">
+															<div class="products-search__name">
+																<a href="/">Подушка подвески коробки раздаточной</a>
+															</div>
+
+															<div class="product__price">
+																<span>
+																	3 940 ₽
+						
+																	<div class="mini-modal tooltip">
+																		<div class="tooltip__icon"></div>
+							
+																		<button type="button" class="mini-modal__btn tooltip__icon"></button>
+								
+																		<div class="mini-modal__modal tooltip__wrap">
+																			<button type="button" data-mini-close class="mini-modal__close">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#close"></use>
+																				</svg>
+																			</button>
+								
+																			<div class="tooltip__info">
+																				<div class="tooltip__desc">9 000 шт свободно со склада</div>
+																			</div>
+																		</div>
+																	</div>
+																</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<a href="/" class="btn-dark btn-dark_big">В каталог</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1525,6 +1783,7 @@
 				</div>
 
 				<div class="overlay"></div>
+				<div class="overlay-search _show"></div>
 				<!-- End Шапка -->
 
 				<section class="main-banner">
