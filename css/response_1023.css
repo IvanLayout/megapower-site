@@ -891,6 +891,75 @@
 	}
 
 
+	.list-dealers__sorting
+	{
+		margin-top: 40px;
+	}
+
+	.list-dealers__sorting-flex .select-wrap 
+	{
+		min-width: 260px;
+	}
+
+	.wrap-table_mob
+	{
+		display: none;
+	}
+
+	.list-dealers__slider
+	{
+		display: block;
+		margin-top: 40px;
+	}
+
+	.list-dealers__item
+	{
+		height: auto;
+		border: 1px solid #C9D4E0;
+		padding: 16px;
+	}
+
+	.list-dealers__name
+	{
+		font-family: var(--font-family2);
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	.list-dealers__info
+	{
+		margin-top: 16px;
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: -0.01em;
+	}
+
+	.list-dealers__info div + div
+	{
+		margin-top: 8px;
+	}
+
+	.list-dealers__info div a
+	{
+		text-decoration: none;
+		color: #111827;
+	}
+
+	.list-dealers__slider .slider-button-prev,
+    .list-dealers__slider .slider-button-next
+	{
+        bottom: 0;
+        top: auto;
+        margin-top: 0;
+    }
+
+
+	.list-dealers__map
+	{
+		height: 530px;
+	}
+
+
     .footer__logo{
         max-width: none;
         width: 100%;

@@ -2536,6 +2536,14 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	padding: 48px 0 40px;
 }
 
+.page-head__desc
+{
+	margin-top: 24px;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
 /*--------------
     Fancybox
 --------------*/
@@ -5258,6 +5266,131 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-size: 12px;
 	line-height: 1.2;
 	color: #8D95A1;
+}
+
+/*------------
+    section-map
+------------*/
+
+.list-dealers_marg
+{
+	margin-top: 24px;
+}
+
+.list-dealers__map
+{
+	height: 660px;
+    overflow: hidden;
+
+	background: #F2F6FA;
+}
+
+.list-dealers__sorting
+{
+	margin-top: 48px;
+}
+
+.list-dealers__sorting-flex
+{
+	margin: -12px 0 0 -12px;
+}
+
+.list-dealers__sorting-flex > *
+{
+	margin: 12px 0 0 12px;
+}
+
+.list-dealers__sorting-flex .select-wrap
+{
+	min-width: 292px;
+}
+
+.list-dealers__btn
+{
+	line-height: 48px;
+	padding-left: 36px;
+	padding-right: 36px;
+}
+
+.wrap-table_marg
+{
+	margin-top: 40px;
+}
+
+.wrap-table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.wrap-table tr th
+{
+	background: #F2F6FA;
+	padding: 16px 24px;
+	border-top: 1px solid #B6BDCA;
+	border-left: 1px solid #B6BDCA;
+
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	color: #838691;
+	font-weight: 400;
+
+	text-align: left;
+}
+
+.wrap-table tr th:last-child
+{
+	border-right: 1px solid #B6BDCA;
+}
+
+.wrap-table tr td
+{
+	padding: 20px 24px;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+
+	border-top: 1px solid #B6BDCA;
+	border-left: 1px solid #B6BDCA;
+}
+
+.wrap-table tr td:last-child
+{
+	border-right: 1px solid #B6BDCA;
+}
+
+.wrap-table tr:last-child td
+{
+	border-bottom: 1px solid #B6BDCA;
+}
+
+.wrap-table tr td a
+{
+	text-decoration: none;
+	color: #111827;
+	white-space: nowrap;
+}
+
+.wrap-table tr td a.wrap-table__link
+{
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.wrap-table tr td a.wrap-table__link:hover
+	{
+		border-bottom-color: #111827;
+	}
+}
+
+.list-dealers__slider
+{
+	display: none;
 }
 
 @media (any-hover: hover)

@@ -438,6 +438,22 @@
     }
 
 
+	.page-head__desc
+	{
+		margin-top: 16px;
+	}
+
+	.list-dealers__item
+	{
+		width: 320px;
+	}
+
+	.list-dealers__sorting-flex > * 
+	{
+		width: calc(100% + 12px);
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }

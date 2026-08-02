@@ -314,6 +314,17 @@
 	}
 
 
+	.list-dealers__btn
+	{
+		line-height: 48px;
+	}
+
+	.wrap-table tr th,
+	.wrap-table tr td
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 
     .footer__cols{
