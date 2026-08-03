@@ -3677,6 +3677,31 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .accordion__data-pad{
     padding-bottom: 39px;
 }
+
+
+.accordion__list{
+    margin-top: 24px;
+    gap: 16px;
+}
+
+.accordion__list-item{
+    padding-left: 14px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.accordion__list-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    background: #72CFE8;
+}
 /*------------
     Commit
 ------------*/

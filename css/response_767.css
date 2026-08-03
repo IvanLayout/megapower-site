@@ -296,6 +296,15 @@
 	.production__name{
 		margin-top: 12px;
 	}
+
+
+	.accordion__list{
+		gap: 8px 16px;
+	}
+
+	.accordion__list{
+		margin-top: 14px;
+	}
 	/* commit */
 
 	.cats-popular_marg
