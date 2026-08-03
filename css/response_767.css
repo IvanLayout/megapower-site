@@ -1,5 +1,59 @@
 @media (max-width: 767px)
 {
+	.header__search-sector{
+		margin-bottom: 20px;
+	}
+
+	.header__search-title{
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+
+	.header__search-link a{
+		padding: 15px 0;
+	}
+
+	.popular-cats{
+		margin-top: 16px;
+	}
+	
+	.popular-cats__item{
+		display: block;
+	}
+
+	.popular-cats__thumb{
+		width: 100%;
+	}
+
+	.popular-cats__box{
+		padding: 8px 0 0;
+	}
+
+	.popular-cats__name{
+		font-size: 16px;
+	}
+
+	.popular-cats__desc{
+		padding-top: 8px;
+	}
+
+	.products-search{
+		margin-top: 14px;
+		gap: 14px 0
+	}
+
+	.products-search__item{
+		width: 100%;
+		padding-bottom: 13px;
+		border-bottom: 1px solid #C9D4E0;
+	}
+
+	.products-search__item:before,
+	.products-search__item:after{
+		display: none;
+	}
+
+
 	.main-banner__wrap{
         min-height: 730px;
     }
@@ -155,6 +209,63 @@
         padding-top: 0;
         margin-top: -8px;
     }
+
+
+	.about-banner{
+		padding-top: 4px;
+		padding-bottom: 40px;
+		min-height: 640px;
+	}
+
+	.about-banner::after{
+		opacity: .45;
+	}
+
+	.about-banner .page-title br{
+		display: none;
+	}
+
+	.about-banner__bot{
+		padding-top: 40px;
+	}
+
+	.about-banner__desc{
+		width: 100%;
+		max-width: none;
+	}
+
+	.about-banner__flex {
+		padding-top: 15px;
+		margin-top: 16px;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.advantages-main__date {
+		font-size: 48px;
+	}
+
+	.advantages-main__bot-title{
+		font-size: 18px;
+	}
+
+	.advantages-main__bot-desc{
+		font-size: 14px;
+		margin-top: 12px;
+	}
+
+	.advantages-main__bot{
+		padding-top: 30px;
+	}
+
+
+	.about-main__items_inner{
+		gap: 0;
+	}
+	
+	.about-main__items_inner::before{
+		display: none;
+	}
 
 	/* commit */
 

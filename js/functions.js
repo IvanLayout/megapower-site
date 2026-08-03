@@ -80,6 +80,12 @@ $(() => {
 				$('.header-catalog, .catalog-head__back').removeClass('_second')
 			}
 		}
+
+		if (!$(e.target).closest('.header__search').length) {
+			$('.header__search').removeClass('_active');
+			$('.overlay-search').removeClass('_show');
+			$('.header').removeClass('_search');
+		}
 	})
 
 	$('body').on('click', '[data-mini-close]', function(e) {
@@ -337,8 +343,28 @@ $(() => {
 	})
 
 	$('.header__search-input').on('input change', function () {
-    	$(this).toggleClass('_full', $(this).val().trim() !== '');
+		const hasValue = $(this).val().trim() !== '';
+
+		$(this).toggleClass('_full', hasValue);
+		$('.header__search-block').toggleClass('_active', hasValue);
+		$('.overlay-search').toggleClass('_show', hasValue)
+		$('.header').toggleClass('_search', hasValue)
 	}).trigger('input');
+	$('body').on('focus', '.header__search-input', function (e) {
+		$(this).closest('.header__search').addClass('_active')
+		$('.overlay-search').addClass('_show')
+		$('.header').addClass('_search')
+	})
+	$('body').on('click', '.header__search-clear, .header__search-hide', function (e) {
+		e.preventDefault()
+
+		$('.header__search-input').val('')
+		$('.header__search-input').removeClass('_full')
+		$('.header__search-block').removeClass('_active');
+		$(this).closest('.header__search').removeClass('_active')
+		$('.overlay-search').removeClass('_show')
+		$('.header').removeClass('_search')
+	})
 
 	// Кастомный select
 	$('select').niceSelect()

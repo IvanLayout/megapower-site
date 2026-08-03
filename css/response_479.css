@@ -1,5 +1,31 @@
 @media (max-width: 479px)
 {
+	.popular-cats{
+		gap: 16px 0;
+	}
+
+	.popular-cats__item {
+		width: calc(50% - 6px);
+	}
+
+	.popular-cats__item:before,
+	.popular-cats__item:after{
+		display: none;
+	}
+
+	.products-search__item{
+		gap: 12px;
+	}
+
+	.products-search__thumb {
+    	width: 23.35%;
+	}
+
+	.products-search__thumb span{
+		aspect-ratio: 1;
+	}
+
+
     .main-banner__title br{
         display: none;
     }
@@ -99,6 +125,18 @@
         width: 100%;
         margin-bottom: -40px;
     }
+
+	.about-main__items_inner{
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: -20px;
+	}
+
+	.about-main__items_inner .about-main__item{
+		margin-top: 28px;
+		width: 100%;
+		margin-left: 0;
+	}
 
 	/* commit */
 
