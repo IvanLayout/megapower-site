@@ -6421,6 +6421,70 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-width: 259px;
 }
 
+
+/*------------
+    for-partner
+------------*/
+
+.for-partner
+{
+	position: relative;
+	z-index: 1;
+
+	margin-top: 85px;
+
+	flex: 1 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.for-partner .cont
+{
+	flex: 1 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.for-partner__info
+{
+	max-width: 700px;
+
+	flex: 1 0 auto;
+}
+
+.for-partner__desc
+{
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 1.2;
+	font-family: var(--font-family2);
+	color: rgba(255, 255, 255, .7);
+	max-width: 670px;
+}
+
+.for-partner__bot
+{
+	margin-top: 60px;
+	justify-content: space-between;
+}
+
+.for-partner__btns
+{
+	gap: 16px;
+}
+
+.for-partner__btn
+{
+	min-width: 240px;
+}
+
+.for-partner__btn-big
+{
+	min-width: 368px;
+}
+
 @media (any-hover: hover)
 {
 
