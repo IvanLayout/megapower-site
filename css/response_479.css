@@ -138,6 +138,18 @@
 		margin-left: 0;
 	}
 
+
+	.production__accordion .information__number{
+		font-size: 16px;
+		width: 100%;
+		margin-bottom: 6px;
+		margin-right: 0;
+	}
+
+	.production__accordion .information__name-box{
+		width: 100%;
+	}
+
 	/* commit */
 
 	.page-title 
