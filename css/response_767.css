@@ -305,6 +305,43 @@
 	.accordion__list{
 		margin-top: 14px;
 	}
+
+
+	.certificate {
+		width: calc(100% / 2 - 16px);
+	}
+
+	.technology__flex{
+		margin-top: 24px;
+	}
+
+	.technology__coll{
+		width: 100%;
+	}
+
+	.technology__number {
+		font-size: 48px;
+	}
+
+	.technology__info{
+		margin-top: 8px;
+		padding-top: 7px;
+		font-size: 18px;
+	}
+
+	.technology__colr{
+		width: 100%;
+		order: 2;
+		margin-top: 32px;
+	}
+
+	.technology__imp{
+		display: none;
+	}
+
+	.technology__desc{
+		margin-top: 24px;
+	}
 	/* commit */
 
 	.cats-popular_marg

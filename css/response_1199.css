@@ -317,6 +317,43 @@
         font-size: 12px;
     }
 
+
+    .certificate{
+        padding: 20px;
+    }
+
+    .certificate__download{
+        right: 8px;
+    }
+
+    .certificate__desc{
+        margin-top: 12px;
+    }
+
+    .certificate__size{
+        margin-top: 8px;
+    }
+
+
+    .quality-control__cols{
+        margin-top: 32px;
+        gap: 32px 30px;
+    }
+
+    .quality-control__title {
+        font-size: 22px;
+    }
+
+    .quality-control__item{
+        padding: 24px 16px;
+    }
+
+
+    .technology__title{
+        font-size: 20px;
+        padding-top: 0;
+    }
+
 	/* commit */
 
 	.sorting__btn

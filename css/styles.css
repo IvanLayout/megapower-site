@@ -3702,6 +3702,227 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     height: 6px;
     background: #72CFE8;
 }
+
+
+.certificates__grid{
+    margin-left: auto;
+    width: 75.57%;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 16px 0;
+    margin-top: 56px;
+}
+
+.certificate{
+    background: #F2F6FA;
+    position: relative;
+    width: calc(100%/3 - 16px);
+    margin-left: 16px;
+    padding: 24px;
+    color: #111827;
+    text-decoration: none;
+}
+
+.certificate__download{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: #fff;
+    color: #72CFE8;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: background .2s linear, color .2s linear;
+}
+
+.certificate__download svg{
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+@media (any-hover: hover){
+    .certificate:hover .certificate__download{
+        color: #fff;
+        background: #1789A7;
+    }
+}
+
+.certificate__name{
+    display: block;
+    padding-right: 44px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.certificate__desc{
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #838691;
+    margin-top: 16px;
+}
+
+.certificate__size{
+    display: block;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #838691;
+    margin-top: 12px;
+}
+
+
+.quality-control__cols{
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: 1fr 49.5%;
+    gap: 56px 30px;
+    align-items: start;
+}
+
+.quality-control__coll{
+    grid-row: span 2;
+}
+
+.quality-control__img{
+    max-width: 698px;
+}
+
+.quality-control__img img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/.9312;
+    object-fit: cover;
+}
+
+.quality-control__title{
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    font-family: var(--font-family2);
+}
+
+.quality-control__title span{
+    display: block;
+    max-width: 602px;
+}
+
+.quality-control__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: 100%;
+    text-decoration: none;
+
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #72CFE8;
+    padding: 33px 24px;
+    border-bottom: 1px solid #72CFE8;
+    transition: background .2s linear, color .2s linear;
+}
+
+.quality-control__item-val{
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-align: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 27%;
+}
+
+@media (any-hover: hover){
+    .quality-control__item:hover{
+        background: #72CFE8;
+        color: #111827;
+    }
+}
+
+
+.technology__flex{
+    margin-top: 87px;
+    justify-content: space-between;
+}
+
+.technology__colr,
+.technology__coll{
+    width: calc(50% - 8px);
+}
+
+.technology__box{
+    display: inline-block;
+}
+
+.technology__number{
+    font-weight: 300;
+    font-size: 80px;
+    line-height: .7;
+    letter-spacing: -0.08em;
+    color: #72CFE8;
+    letter-spacing: -0.03em;
+}
+
+.technology__info{
+    margin-top: 24px;
+    padding-top: 23px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    color: #72CFE8;
+    border-top: 1px solid #72CFE8;
+}
+
+.technology__title{
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    padding-top: 8px;
+    max-width: 632px;
+}
+
+.technology__desc{
+    margin-top: 16px;
+
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, .7);
+    max-width: 562px;
+}
+
+.technology__chart{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.technology__chart img{
+    display: block;
+    width: 100%;
+}
+
+.technology__imp{
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, .4);
+    max-width: 1228px;
+    width: 100%;
+}
 /*------------
     Commit
 ------------*/

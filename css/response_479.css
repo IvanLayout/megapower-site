@@ -150,6 +150,40 @@
 		width: 100%;
 	}
 
+
+	.certificates__grid{
+		gap: 12px 0;
+		margin-top: 24px;
+	}
+
+	.certificate {
+		width: calc(100% - 16px);
+	}
+
+	.certificate__desc{
+		margin-top: 8px;
+	}
+
+
+	.quality-control__title{
+		font-size: 16px;
+	}
+
+	.quality-control__item{
+		width: calc(100% + 32px);
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+
+	.quality-control__item-val{
+		text-align: right;
+	}
+
+
+	.technology__box{
+		width: 100%;
+	}
+
 	/* commit */
 
 	.page-title 

@@ -757,6 +757,79 @@
         display: none;
     }
 
+
+    .certificates__grid{
+        width: calc(100% + 16px);
+        margin-left: -16px;
+        margin-top: 32px;
+    }
+
+
+    .quality-control__colr{
+        width: 100%;
+    }
+
+    .quality-control__item{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .quality-control__item-val{
+        font-size: 14px;
+    }
+
+
+    .quality-control__cols {
+        margin-top: 24px;
+        grid-template-columns: 1fr;
+    }
+
+    .quality-control__coll {
+        grid-row: span 1;
+    }
+
+    .quality-control__title {
+        font-size: 18px;
+        order: -1;
+    }
+
+    .quality-control__title span{
+        max-width: none;
+    }
+
+    .quality-control__img{
+        max-width: 500px;
+    }
+
+    .quality-control__img img {
+        aspect-ratio: 1 / .7;
+    }
+
+
+    .technology__flex{
+        margin-top: 32px;
+    }
+
+    .technology__number{
+        font-size: 60px;
+    }
+
+    .technology__title{
+        font-size: 16px;
+    }
+
+    .technology__desc{
+        font-size: 14px;
+    }
+
+    .technology__chart{
+        margin-top: 32px;
+    }
+
+    .technology__imp{
+        margin-top: 32px;
+    }
+
 	/* commit */
 
 	.cats-popular__info
