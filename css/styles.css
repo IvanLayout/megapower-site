@@ -1789,6 +1789,25 @@ button
 	color: #FF2600;
 }
 
+.form__label span
+{
+	padding-right: 9px;
+	position: relative;
+}
+
+.form__label span::after
+{
+	position: absolute;
+	content: '*';
+	top: 2px;
+	right: 0;
+	
+	color: #72CFE8;
+	font-size: 12px;
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+}
+
 .form .form__input
 {
     color: #111827;
@@ -1863,6 +1882,23 @@ button
 	margin-top: 24px;
 }
 
+.main-form__link
+{
+	line-height: 62px;
+	border: 1px solid #C9D4E0;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: #111827;
+	text-decoration: none;
+	font-size: 14px;
+	background: transparent;
+
+	margin-left: 8px;
+	display: block;
+	font-weight: 600;
+	transition: background .2s linear;
+}
+
 .form__submit-btn
 {
 	min-width: 240px;
@@ -1900,6 +1936,11 @@ button
     {
         color: #111827;
     }
+
+	.main-form__link:hover
+	{
+		background: #72CFE8;
+	}
 }
 
 ._file-flex
@@ -5611,12 +5652,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .main-form__coll
 {
-	width: 480px;
+	width: calc(50% - 15px);
 }
 
 .main-form__colr
 {
-	width: calc(100% - 510px);
+	width: calc(50% - 15px);
 }
 
 .main-form__title
