@@ -394,6 +394,17 @@
 	}
 
 
+	.page-dealer__coll 
+	{
+		width: calc(60% - 15px);
+	}
+
+	.page-dealer__colr 
+	{
+		width: calc(40% - 15px);
+	}
+
+
     .footer__cols{
         padding-top: 48px;
         padding-bottom: 40px;

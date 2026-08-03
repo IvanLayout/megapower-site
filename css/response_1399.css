@@ -241,6 +241,34 @@
 		padding: 20px 15px;
 	}
 
+	
+
+	.partners__grid .partners__item
+	{
+		padding: 15px;
+	}
+
+	.partners__img
+	{
+		height: 70px;
+	}
+
+	.partners__info
+	{
+		margin-top: 25px;
+	}
+	
+	.partners__desc
+	{
+		margin-top: 10px;
+	}
+
+
+	.page-dealer__title
+	{
+		font-size: 50px;
+	}
+
 
     .footer__logo {
         max-width: 160px;

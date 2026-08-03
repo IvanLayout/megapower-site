@@ -1079,6 +1079,36 @@
 	}
 
 
+	.partners__info
+	{
+		display: none;
+	}
+
+
+	.page-dealer__coll
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.page-dealer__colr
+	{
+		width: 100%;
+		margin-top: 32px;
+	}
+
+	.page-dealer .contacts 
+	{
+		margin-top: 32px;
+	}
+
+	.page-dealer__logo
+	{
+		aspect-ratio: 1 / .642;
+		padding: 60px;
+	}
+
+
     .footer__logo{
         max-width: none;
         width: 100%;

@@ -317,6 +317,12 @@
 	}
 
 
+	.contacts__title
+	{
+		font-size: 22px;
+	}
+
+
     .footer__logo{
         width: 100%;
     }

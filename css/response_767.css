@@ -576,6 +576,24 @@
 	}
 
 
+	.page-dealer_marg
+	{
+		margin-top: 16px;
+	}
+
+	.page-dealer__desc
+	{
+		font-size: 14px;
+		margin-top: 16px;
+	}
+
+	.contacts__title
+	{
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }
