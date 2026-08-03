@@ -6352,14 +6352,74 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 /*------------
-    conditions
+    advantages-inner
 ------------*/
 
-.conditions
+.advantages-inner__wrap-marg
 {
-	
+	margin-top: 56px;
 }
 
+.advantages-inner__grid._flex
+{
+	margin: -16px 0 0 -16px;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.advantages-inner__grid._flex .advantages-inner__item 
+{
+    width: calc(100% / 4 - 16px);
+    margin: 16px 0 0 16px;
+}
+
+.advantages-inner__item
+{
+	background: #F2F6FA;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+}
+
+.advantages-inner__item._empty
+{
+	background: none;
+}
+
+.advantages-inner__top
+{
+	justify-content: space-between;
+	flex-wrap: nowrap;
+
+	flex: 1 0 auto;
+}
+
+.advantages-inner__name
+{
+	font-family: var(--font-family2);
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.advantages-inner__number
+{
+	color: #838691;
+	letter-spacing: -0.01em;
+	flex-shrink: 0;
+	margin-left: 30px;
+}
+
+.advantages-inner__desc
+{
+	color: #838691;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+
+	margin-top: 66px;
+	max-width: 259px;
+}
 
 @media (any-hover: hover)
 {
