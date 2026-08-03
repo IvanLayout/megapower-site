@@ -374,40 +374,6 @@ $(() => {
 		})
 	}
 
-	if ($('.download-slider').length) {
-		new Swiper('.download-slider', {
-			loop: false,
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			spaceBetween: 16,
-			slidesPerView: 'auto',
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
-			},
-			breakpoints: {
-				'1200': {
-					spaceBetween: 16,
-					slidesPerView: 3
-				}
-			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
-			}
-		})
-	}
-
 
 	if ($('.product-info').length) {
 		galleryThumbs = new Swiper('.product-thumbs', {
@@ -456,6 +422,9 @@ $(window).on('load', () => {
 		areasActivitySlider()
 	}
 
+	if ($('.download').length){
+		downloadSlider()
+	}
 
 	//
 	if ($('.products__grid').length){
@@ -494,6 +463,10 @@ $(window).on('resize', () => {
 
 	if ($('.areas-activity__wrap').length){
 		areasActivitySlider()
+	}
+
+	if ($('.download').length){
+		downloadSlider()
 	}
 
 	//
@@ -579,5 +552,47 @@ function areasActivitySlider(){
 		$('.areas-activity__wrap').removeClass('swiper')
 		$('.areas-activity__grid').removeClass('swiper-wrapper').addClass('_flex')
 		$('.areas-activity__item').removeClass('swiper-slide')
+	}
+}
+
+function downloadSlider(){
+	if ( $(window).width() > 1023 && !$('.download').hasClass('swiper-initialized') ) {
+		$('.download').addClass('swiper')
+		$('.download__wrap').addClass('swiper-wrapper').removeClass('_flex')
+		$('.download__item').addClass('swiper-slide')
+
+		downloadSwiper = new Swiper('.download', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 16,
+			slidesPerView: 2,
+			preloadImages: false,
+			breakpoints: {
+				'1024': {
+					spaceBetween: 16,
+					slidesPerView: 2
+				},
+				'1200': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				}
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				}
+			}
+		})
+	} else if ($(window).width() < 1023 && $('.download').hasClass('swiper-initialized')) {
+		downloadSwiper.destroy(true, true)
+
+		$('.download').removeClass('swiper')
+		$('.download__wrap').removeClass('swiper-wrapper').addClass('_flex')
+		$('.download__item').removeClass('swiper-slide')
 	}
 }

@@ -960,6 +960,48 @@
 	}
 
 
+	.section-download .main-title, 
+	.section-download .head-section__desc
+	{
+		padding-right: 0;
+	}
+
+	.head-section__box
+	{
+		width: 100%;
+	}
+
+	.head-section__desc
+	{
+		font-size: 14px;
+	}
+
+	.download .slider-button-prev, 
+	.download .slider-button-next
+	{
+		display: none;
+	}
+
+	.download__wrap._flex
+	{
+		justify-content: space-between;
+		align-items: stretch;
+		align-content: stretch;
+		margin-top: -12px;
+	}
+
+	.download__item
+	{
+		width: calc(50% - 8px);
+		margin-top: 12px;
+	}
+
+	.download__name
+	{
+		font-size: 20px;
+	}
+
+
     .footer__logo{
         max-width: none;
         width: 100%;

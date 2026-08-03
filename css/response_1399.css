@@ -178,6 +178,12 @@
 	}
 
 
+	.download__item
+	{
+		padding: 20px 15px;
+	}
+
+
     .footer__logo {
         max-width: 160px;
     }

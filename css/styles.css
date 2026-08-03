@@ -5397,12 +5397,35 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     download
 ------------*/
 
-.head-section__box
+.section-download .main-title,
+.section-download .head-section__desc
 {
-	width: 75.57%;
+    padding-right: 160px;
 }
 
-.download-slider
+.section-download_padT
+{
+	padding-top: 60px;
+}
+
+.section-download_padB
+{
+	padding-bottom: 60px;
+}
+
+.head-section__box
+{
+	width: calc(75.57% - 16px);
+}
+
+.head-section__desc
+{
+	color: #838691;
+	margin-top: 15px;
+	letter-spacing: -0.01em;
+}
+
+.download_marg
 {
 	margin-top: 56px;
 }
@@ -5410,7 +5433,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .download__item
 {
 	height: auto;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	background: #F2F6FA;
 	padding: 24px;
 	text-decoration: none;
@@ -5424,7 +5448,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	font-size: 20px;
 	line-height: 1.2;
 	font-family: var(--font-family2);
-	padding-right: 70px;
+	padding-right: 60px;
+	width: 100%;
+	flex: 1 0 auto;
+	transition: color .2s linear;
 }
 
 .download__arrow
@@ -5478,6 +5505,35 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	line-height: 1.2;
 	letter-spacing: -0.01em;
 }
+
+@media (any-hover: hover)
+{
+	.download__item:hover .download__arrow
+	{
+		background: #72CFE8;
+	}
+
+	.download__item:hover .download__arrow svg
+	{
+		stroke: #fff;
+	}
+
+	.download__item:hover .download__name
+	{
+		color: #72CFE8;
+	}
+}
+
+
+/*------------
+    page-dealer
+------------*/
+
+.page-dealer__cols
+{
+	justify-content: space-between;
+}
+
 
 @media (any-hover: hover)
 {

@@ -454,6 +454,17 @@
 	}
 
 
+	.download_marg 
+	{
+		margin-top: 32px;
+	}
+
+	.download__item
+	{
+		width: 100%;
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }

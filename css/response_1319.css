@@ -53,4 +53,32 @@
 	{
 		margin-top: -11px;
 	}
+	
+
+	.section-download_padB
+	{
+		padding-bottom: 24px;
+	}
+
+	.section-download_padT
+	{
+		padding-top: 24px;
+	}
+
+	.download_marg
+	{
+		margin-top: 40px;
+	}
+
+	.download__name
+	{
+		font-size: 18px;
+		padding-right: 50px;
+	}
+
+	.download .slider-button-prev._top2, 
+	.download .slider-button-next._top2 
+	{
+		top: -87px;
+	}
 }
