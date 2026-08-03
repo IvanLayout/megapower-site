@@ -354,6 +354,15 @@
         padding-top: 0;
     }
 
+    .partners__grid_inner .partners__img{
+        height: 100%;
+    }
+
+    .partners__item:hover .partners__info
+    {
+        display: none;
+    }
+
 	/* commit */
 
 	.sorting__btn

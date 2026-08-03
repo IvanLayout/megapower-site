@@ -256,7 +256,7 @@
 		padding: 15px;
 	}
 
-	.partners__img
+	.partners__grid_inner .partners__img
 	{
 		height: 70px;
 	}

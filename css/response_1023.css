@@ -830,6 +830,11 @@
         margin-top: 32px;
     }
 
+
+    .partners__item img{
+        filter: none;
+    }
+
 	/* commit */
 
 	.cats-popular__info
