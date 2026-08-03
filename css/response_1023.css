@@ -835,6 +835,19 @@
         filter: none;
     }
 
+
+    .news-top{
+        margin-top: 12px;
+    }
+
+    .news-top__coll {
+        width: calc(50% - 20px);
+    }
+
+    .news-top__desc{
+        margin-top: 16px;
+    }
+
 	/* commit */
 
 	.cats-popular__info

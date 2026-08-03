@@ -342,6 +342,27 @@
 	.technology__desc{
 		margin-top: 24px;
 	}
+
+
+	.news-top__coll{
+		order: 2;
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	.news-top .page-title br{
+		display: none;
+	}
+
+	.news-top__desc{
+		max-width: none;
+	}
+	
+	.news-top__colr{
+		width: 100%;
+		max-width: 500px;
+		margin-right: 0;
+	}
 	/* commit */
 
 	.cats-popular_marg
