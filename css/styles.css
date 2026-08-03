@@ -6089,6 +6089,94 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	max-height: 100%;
 }
 
+/*------------
+    loyalty-program
+------------*/
+
+.loyalty-program__grid
+{
+	align-items: stretch;
+	align-content: stretch;
+	margin: 40px 0 0 -16px;
+}
+
+.loyalty-program__item
+{
+	width: calc(100%/3 - 16px);
+	margin: 16px 0 0 16px;
+	background: #F2F6FA;
+	padding: 24px 24px 32px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.loyalty-program__name
+{
+	font-family: var(--font-family2);
+	font-size: 32px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.loyalty-program__desc
+{
+	flex: 1 0 auto;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+
+	margin-top: 17px;
+	max-width: 410px;
+}
+
+.loyalty-program__profit
+{
+	margin-top: 31px;
+}
+
+.loyalty-program__profit-item + .loyalty-program__profit-item
+{
+	margin-top: 12px;
+}
+
+.loyalty-program__profit-item
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.loyalty-program__profit-name
+{
+	letter-spacing: -0.01em;
+	margin-right: 15px;
+	width: calc(48.5% - 15px);
+}
+
+.loyalty-program__profit-box
+{
+	width: calc(51.5% - 15px);
+	position: relative;
+	background: rgba(17, 24, 39, .1);
+	height: 8px;
+}
+
+.loyalty-program__profit-line
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	height: 100%;
+
+	background: #111827;
+}
+
 
 @media (any-hover: hover)
 {
