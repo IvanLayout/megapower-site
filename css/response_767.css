@@ -267,6 +267,44 @@
 		display: none;
 	}
 
+	.production__accordion .accordion__data-small{
+		margin-left: 0;
+		max-width: none;
+		margin-top: 16px;
+	}
+
+	.accordion__data-pad{
+		padding-bottom: 20px;
+	}
+
+	.production__slider{
+		margin-top: 0;
+		max-width: none;
+		overflow: visible;
+	}
+
+	.production__slider .slider-button-prev,
+	.production__slider .slider-button-next{
+		display: none;
+	}
+
+	.production__slider .swiper-slide{
+		width: 232px;
+	}
+
+
+	.production__name{
+		margin-top: 12px;
+	}
+
+
+	.accordion__list{
+		gap: 8px 16px;
+	}
+
+	.accordion__list{
+		margin-top: 14px;
+	}
 	/* commit */
 
 	.cats-popular_marg
@@ -400,7 +438,7 @@
 	}
 
 
-	.information__info-title
+	.info-title
 	{
 		padding-top: 27px;
 		padding-bottom: 27px;
@@ -420,7 +458,7 @@
 		font-size: 24px;
 	}
 
-	.information__info
+	.accordion__data-small
 	{
 		width: calc(100% + 70px);
 		margin-right: -70px;

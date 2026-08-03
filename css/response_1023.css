@@ -748,6 +748,15 @@
         min-width: 190px;
     }
 
+
+    .production__accordion .information__name{
+        font-size: 22px;
+    }
+
+    .production__accordion .information__name br{
+        display: none;
+    }
+
 	/* commit */
 
 	.cats-popular__info
@@ -877,14 +886,14 @@
 	}
 
 
-	.information__info-title
+	.info-title
 	{
 		flex-wrap: wrap;
 		padding-top: 30px;
 		padding-bottom: 30px;
 	}
 
-	.information__info
+	.accordion__data-small
 	{
 		width: 100%;
 		margin-top: 20px;

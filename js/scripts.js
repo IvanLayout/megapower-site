@@ -78,6 +78,44 @@ $(() => {
     	swiperAdv.slidePrev(0, false);
 	}
 
+	if ($('.production__slider').length) {
+		new Swiper(".production__slider", {
+			loop: true,
+			loopAdditionalSlides: 1,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto',
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto',
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3
+				}
+			}
+		})
+	}
+
 	if ($('.inner-news__slider').length) {
 		new Swiper(".inner-news__slider", {
 			loop: false,
