@@ -6178,6 +6178,94 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 }
 
 
+/*------------
+    info-section
+------------*/
+
+.info-section__bg
+{
+	background: #72CFE8;
+	padding: 32px 32px 32px 0;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.info-section__img-box
+{
+	position: relative;
+	width: 25.8%;
+}
+
+.info-section__img
+{
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	height: 200px;
+	width: 100%;
+	padding: 0 32px;
+
+	margin-top: -100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.info-section__img img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.info-section__wrap
+{
+	width: 74.2%;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.info-section__title
+{
+	font-size: 32px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+.info-section__desc
+{
+	margin-top: 12px;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	max-width: 543px;
+}
+
+.info-section__btn-box
+{
+	margin-left: 30px;
+	flex-shrink: 0;
+}
+
+.info-section__btn
+{
+	min-width: 240px;
+}
+
+@media (any-hover: hover)
+{
+	.info-section__btn:hover
+	{
+		background: #1789A7;
+	}
+}
+
 @media (any-hover: hover)
 {
 
