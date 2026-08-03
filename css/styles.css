@@ -6262,6 +6262,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     info-section
 ------------*/
 
+.info-section_marg
+{
+	margin-top: 48px;
+}
+
 .info-section__bg
 {
 	background: #72CFE8;
@@ -6345,6 +6350,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 		background: #1789A7;
 	}
 }
+
+/*------------
+    conditions
+------------*/
+
+.conditions
+{
+	
+}
+
 
 @media (any-hover: hover)
 {
