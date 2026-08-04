@@ -1669,6 +1669,50 @@ button
     background: #72CFE8;
 }
 
+.text-block table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.text-block table th{
+    border-bottom: 1px solid #C9D4E0;
+    padding: 16px 0 24px 16px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #838691;
+    text-align: left;
+    vertical-align: top;
+}
+
+.text-block table th:first-child{
+    padding-left: 0;
+}
+
+.text-block table td{
+    border-bottom: 1px solid #C9D4E0;
+    padding: 32px 0 32px 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: rgba(17, 24, 39, 0.7);
+    vertical-align: top;
+}
+
+.text-block table td:first-child{
+    padding-left: 0;
+    width: 32%;
+}
+
+.text-block table td b{
+    color: #111827;
+}
+
 .text-block blockquote{
 	background: #F2F6FA;
 	padding: 24px;
@@ -2801,6 +2845,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .main-title._white
 {
 	color: #fff;
+}
+
+.main-title_small{
+    max-width: 970px;
 }
 
 .main-subtitle
@@ -4180,6 +4228,47 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .section-empty__btn{
     width: 240px;
+}
+
+
+.section-text_pad{
+    padding-top: 40px;
+}
+
+.section-text__bord{
+    padding-top: 79px;
+    border-top: 1px solid #C9D4E0;
+}
+
+.section-text .text-block{
+    max-width: 752px;
+    margin: 0 auto;
+}
+
+.section-text .text-block p{
+    margin-bottom: 32px;
+}
+
+.section-text .text-block ul{
+    list-style: disc;
+    margin-left: 28px;
+}
+
+.section-text .text-block ul li{
+    display: list-item;
+    padding-left: 0;
+}
+
+.section-text .text-block ul li::before{
+    display: none;
+}
+
+.p-ind{
+    padding-left: 24px;
+}
+
+.p-ind + .p-ind{
+    margin-top: -8px;
 }
 /*------------
     Commit

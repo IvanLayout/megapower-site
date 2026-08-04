@@ -952,6 +952,26 @@
         line-height: 64px;
     }
 
+
+    .section-text__bord{
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .section-text_pad{
+        padding-top: 16px;
+    }
+
+    .text-block table th{
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    .text-block table td{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
 	/* commit */
 
 	.cats-popular__info
