@@ -307,7 +307,7 @@
 	}
 
 
-	.certificate {
+	.certificates__grid .certificate {
 		width: calc(100% / 2 - 16px);
 	}
 
