@@ -1235,6 +1235,114 @@
 	}
 
 
+	.advantages-inner__wrap-marg
+	{
+		margin-top: 32px;
+	}
+
+	.advantages-inner__wrap .slider-pagination
+	{
+		display: flex;
+	}
+
+	.advantages-inner__wrap .slider-button-prev, 
+	.advantages-inner__wrap .slider-button-next
+	{
+		display: flex;
+
+		bottom: 0;
+		top: auto;
+		margin-top: 0;
+	}
+
+	.advantages-inner__item._empty
+	{
+		display: none;
+	}
+
+	.advantages-inner__item
+	{
+		height: auto;
+	}
+
+	.advantages-inner__name
+	{
+		font-size: 22px;
+	}
+
+	.advantages-inner__desc
+	{
+		margin-top: 66px;
+	}
+
+
+
+	.info-section__bg
+	{
+		padding-top: 24px;
+		padding-right: 24px;
+		padding-bottom: 24px;
+	}
+
+	.info-section__img
+	{
+		height: 140px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: -82px;
+	}
+
+	.info-section__wrap
+	{
+		flex-wrap: wrap;
+	}
+
+	.info-section__info
+	{
+		width: 100%;
+	}
+
+	.info-section__desc
+	{
+		max-width: 100%;
+	}
+
+	.info-section__btn-box
+	{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 24px;
+	}
+
+
+	.loyalty-program__grid
+	{
+		margin-top: 8px;
+	}
+
+	.loyalty-program__item
+	{
+		padding-left: 24px;
+		padding-right: 24px;
+		width: calc(100% / 2 - 16px);
+	}
+
+	.loyalty-program__name 
+	{
+		font-size: 28px;
+	}
+
+	.loyalty-program__desc
+	{
+		margin-top: 12px;
+	}
+
+	.loyalty-program__profit
+	{
+		margin-top: 24px;
+	}
+
+
     .footer__logo{
         max-width: none;
         width: 100%;

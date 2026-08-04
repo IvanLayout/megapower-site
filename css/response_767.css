@@ -690,6 +690,182 @@
 	}
 
 
+	.for-partner
+	{
+		margin-top: 40px;
+	}
+
+	.for-partner__info
+	{
+		margin-top: auto;
+		flex: none;
+	}
+
+	.for-partner__btns
+	{
+		gap: 12px;
+	}
+
+
+	.advantages-inner__wrap
+	{
+		overflow: visible;
+	}
+
+	.advantages-inner__item
+	{
+		width: 320px;
+	}
+
+
+	.wrap-table thead
+	{
+		display: none;
+	}
+
+	.wrap-table tr
+	{
+		display: block;
+	}
+
+	.wrap-table tr + tr
+	{
+		margin-top: 12px;
+	}
+
+	.wrap-table tr td
+	{
+		position: relative;
+		display: block;
+		padding: 12px 20px;
+		border-top: none;
+		border-right: 1px solid #B6BDCA;
+	}
+
+	.wrap-table tr td::before 
+	{
+		content: attr(data-label);
+		display: block;
+		margin-bottom: 4px;
+		color: rgba(17, 24, 39, .4);
+		font-size: 14px;
+		line-height: 1.2;
+		letter-spacing: -0.01em;
+	}
+
+	.wrap-table tr td:first-child::before 
+	{
+		display: none;
+	}
+
+	.wrap-table tr td:first-child
+	{
+		background: #F2F6FA;
+		border-top: 1px solid #B6BDCA;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.wrap-table tr td:nth-child(2)
+	{
+		padding-top: 16px;
+	}
+
+	.wrap-table tr:last-child td
+	{
+		border-bottom: none;
+	}
+
+	.wrap-table tr td:last-child
+	{
+		border-bottom: 1px solid #B6BDCA;
+		padding-bottom: 16px;
+	}
+
+	.wrap-table tr td::after
+	{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 50%;
+
+		display: block;
+		height: 1px;
+		width: calc(100% - 40px);
+
+		transform: translateX(-50%);
+
+		background: #B6BDCA;
+	}
+
+	.wrap-table tr td:first-child::after,
+	.wrap-table tr td:nth-child(2)::after
+	{
+		display: none;
+	}
+
+
+	.info-section_marg
+	{
+		margin-top: 56px;
+	}
+
+	.info-section__bg
+	{
+		padding-right: 16px;
+		padding-left: 16px;
+		position: relative;
+	}
+
+	.info-section__img-box
+	{
+		position: absolute;
+		top: -40px;
+		right: 15px;
+
+		width: 100px;
+		height: 100px;
+	}
+
+	.info-section__img 
+	{
+		height: 100%;
+		padding: 0;
+		margin-top: 0;
+		top: 0;
+	}
+
+	.info-section__wrap
+	{
+		width: 100%;
+	}
+
+	.info-section__title
+	{
+		font-size: 26px;
+		padding-right: 100px;
+	}
+
+	.info-section__desc
+	{
+		margin-top: 16px;
+	}
+
+
+	.loyalty-program__item
+	{
+		width: calc(100% / 1 - 16px);
+	}
+
+
+	.main-form__link
+	{
+		margin-left: 0;
+		width: 100%;
+		margin-top: 8px;
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }

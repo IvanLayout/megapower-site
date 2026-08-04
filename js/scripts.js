@@ -611,8 +611,8 @@ function advantagesSlider(){
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 10,
-			slidesPerView: 1,
+			spaceBetween: 16,
+			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -626,17 +626,24 @@ function advantagesSlider(){
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
 			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 10,
-					slidesPerView: 1,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'480': {
-					spaceBetween: 10,
-					slidesPerView: 1,
+					spaceBetween: 16,
+					slidesPerView: 'auto',
 				},
 				'768': {
-					spaceBetween: 20,
+					spaceBetween: 16,
 					slidesPerView: 2,
 				}
 			},

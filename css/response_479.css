@@ -369,6 +369,54 @@
 	}
 
 
+	.for-partner__btn
+	{
+		width: 100%;
+	}
+
+	.for-partner__btn-big
+	{
+		width: 100%;
+	}
+
+
+	.advantages-inner__desc 
+	{
+		margin-top: 88px;
+	}
+
+
+	.wrap-table_marg
+	{
+		margin-top: 24px;
+	}
+
+	.info-section__title
+	{
+		font-size: 22px;
+	}
+
+	.info-section__btn
+	{
+		width: 100%;
+	}
+
+	.loyalty-program__grid
+	{
+		margin-top: 12px;
+	}
+
+	.loyalty-program__item
+	{
+		margin-top: 12px;
+	}
+
+	.loyalty-program__name
+	{
+		font-size: 22px;
+	}
+
+
     .footer__logo{
         width: 100%;
     }

@@ -1882,8 +1882,8 @@ button
 	text-decoration: none;
 	font-size: 14px;
 	background: transparent;
+	text-align: center;
 
-	margin-left: 8px;
 	display: block;
 	font-weight: 600;
 	transition: background .2s linear;
@@ -6075,6 +6075,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-right: 128px;
 }
 
+.main-form__btns
+{
+	gap: 8px;
+	margin-top: 24px;
+}
+
 
 .tooltip
 {
@@ -6656,6 +6662,29 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	min-width: 240px;
 }
 
+.info-section__btn span
+{
+	display: inline-block;
+	position: relative;
+	padding-left: 28px;
+}
+
+.info-section__btn svg
+{
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	fill: #fff;
+	transition: stroke .2s linear;
+
+	margin-top: -8px;
+}
+
 @media (any-hover: hover)
 {
 	.info-section__btn:hover
@@ -6671,6 +6700,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .advantages-inner__wrap-marg
 {
 	margin-top: 56px;
+}
+
+.advantages-inner__wrap .slider-button-prev,
+.advantages-inner__wrap  .slider-button-next,
+.advantages-inner__wrap .slider-pagination
+{
+	display: none;
 }
 
 .advantages-inner__grid._flex
