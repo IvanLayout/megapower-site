@@ -115,6 +115,10 @@
         font-size: 42px;
     }
 
+    .text-block h2{
+        font-size: 42px;
+    }
+
     .head-section__btn a {
         min-width: 190px;
     }

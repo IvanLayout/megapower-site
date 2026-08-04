@@ -497,6 +497,19 @@
         display: none;
     }
 
+    .text-block h2{
+        font-size: 28px;
+    }
+
+    .text-block h3{
+        font-size: 24px;
+    }
+
+    .text-block h4{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
     .wrap-btn._mob{
         margin-top: 32px;
         display: block;
@@ -845,6 +858,44 @@
     }
 
     .news-top__desc{
+        margin-top: 16px;
+    }
+
+
+    .news-top__img{
+        width: 40%;
+    }
+
+    .text-block blockquote{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .blockquote__text{
+        font-size: 18px;
+    }
+
+    .blockquote__flex{
+        gap: 16px;
+    }
+
+    .blockquote__box{
+        padding-top: 15px;
+    }
+
+    .blockquote__name{
+        font-size: 18px;
+    }
+
+    .blockquote__pos{
+        font-size: 12px;
+    }
+
+    .text-block h4 + ol{
+        margin-top: 16px;
+    }
+
+    .text-block h4 + ul{
         margin-top: 16px;
     }
 
