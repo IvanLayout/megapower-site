@@ -460,6 +460,10 @@ $(window).on('load', () => {
 		areasActivitySlider()
 	}
 
+	if ($('.advantages-inner__wrap').length){
+		advantagesSlider()
+	}
+
 	if ($('.download').length){
 		downloadSlider()
 	}
@@ -501,6 +505,10 @@ $(window).on('resize', () => {
 
 	if ($('.areas-activity__wrap').length){
 		areasActivitySlider()
+	}
+
+	if ($('.advantages-inner__wrap').length){
+		advantagesSlider()
 	}
 
 	if ($('.download').length){
@@ -590,6 +598,61 @@ function areasActivitySlider(){
 		$('.areas-activity__wrap').removeClass('swiper')
 		$('.areas-activity__grid').removeClass('swiper-wrapper').addClass('_flex')
 		$('.areas-activity__item').removeClass('swiper-slide')
+	}
+}
+
+function advantagesSlider(){
+	if ( $(window).width() < 1024 && !$('.advantages-inner__wrap').hasClass('swiper-initialized') ) {
+		$('.advantages-inner__wrap').addClass('swiper')
+		$('.advantages-inner__grid').addClass('swiper-wrapper').removeClass('_flex')
+		$('.advantages-inner__item').addClass('swiper-slide')
+
+		advantagesSwiperSlider = new Swiper('.advantages-inner__wrap', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 1,
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 1,
+				},
+				'768': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				}
+			},
+		})
+	} else if ($(window).width() > 1023 && $('.advantages-inner__wrap').hasClass('swiper-initialized')) {
+		if ($('.advantages-inner__wrap').length === 1 && $('.advantages-inner__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.destroy(true, true)
+		} else if ($('.advantages-inner__wrap').length >= 2 && $('.advantages-inner__wrap').hasClass('swiper-initialized')) {
+			advantagesSwiperSlider.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
+
+		$('.advantages-inner__wrap').removeClass('swiper')
+		$('.advantages-inner__grid').removeClass('swiper-wrapper').addClass('_flex')
+		$('.advantages-inner__item').removeClass('swiper-slide')
 	}
 }
 

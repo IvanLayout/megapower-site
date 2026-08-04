@@ -6546,7 +6546,6 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .loyalty-program__profit-name
 {
 	letter-spacing: -0.01em;
-	margin-right: 15px;
 	width: calc(48.5% - 15px);
 }
 

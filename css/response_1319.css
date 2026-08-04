@@ -87,4 +87,22 @@
 	{
 		font-size: 48px;
 	}
+	
+
+	.for-partner__desc
+	{
+		font-size: 18px;
+		max-width: 570px;
+	}
+
+	.for-partner__btn-big 
+	{
+		min-width: 300px;
+	}
+
+
+	.advantages-inner__desc
+	{
+		margin-top: 40px;
+	}
 }

@@ -451,6 +451,50 @@
 	}
 
 
+	.advantages-inner__grid._flex .advantages-inner__item
+	{
+		width: calc(100% / 3 - 16px);
+	}
+
+
+	.info-section__img-box
+	{
+		width: 23%;
+	}
+
+	.info-section__wrap
+	{
+		width: 77%;
+	}
+
+	.info-section__btn 
+	{
+		min-width: 210px;
+	}
+
+
+	.loyalty-program__item
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.loyalty-program__name
+	{
+		font-size: 30px;
+	}
+
+	.loyalty-program__profit-name
+	{
+		width: calc(48.5% - 10px);
+	}
+
+	.loyalty-program__profit-box
+	{
+		width: calc(51.5% - 10px);
+	}
+
+
     .footer__cols{
         padding-top: 48px;
         padding-bottom: 40px;

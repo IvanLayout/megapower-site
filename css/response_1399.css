@@ -278,6 +278,17 @@
 	}
 
 
+	.advantages-inner__item
+	{
+		padding: 15px;
+	}
+
+	.advantages-inner__name
+	{
+		font-size: 20px;
+	}
+
+
     .footer__logo {
         max-width: 160px;
     }
