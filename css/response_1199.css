@@ -198,6 +198,18 @@
         font-size: 34px;
     }
 
+    .text-block h2{
+        font-size: 34px;
+    }
+
+    .text-block h3{
+        font-size: 28px;
+    }
+
+    .text-block h4{
+        font-size: 22px;
+    }
+
 
     .btn-dark{
         line-height: 56px;
@@ -361,6 +373,11 @@
     .partners__item:hover .partners__info
     {
         display: none;
+    }
+
+
+    .news-top__flex{
+        column-gap: 30px;
     }
 
 	/* commit */

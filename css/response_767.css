@@ -363,6 +363,20 @@
 		max-width: 500px;
 		margin-right: 0;
 	}
+
+
+	.news-top__flex{
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+
+	.news-top__img{
+		width: 100%;
+	}
+
+	.news-top__text{
+		max-width: none;
+	}
 	/* commit */
 
 	.cats-popular_marg
