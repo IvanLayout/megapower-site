@@ -777,6 +777,26 @@
         margin-top: 32px;
     }
 
+    .certificates__slider{
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .certificates__slider .slider-button-prev._top,
+    .certificates__slider .slider-button-next._top{
+        top: -72px;
+        bottom: auto;
+    }
+
+    .certificates__slider .slider-button-prev._top{
+        left: auto;
+        right: 60px;
+    }
+
+    .head-section__box-pad {
+        padding-right: 116px;
+    }
+
 
     .quality-control__colr{
         width: 100%;
@@ -1188,8 +1208,8 @@
 	}
 
 
-	.section-download .main-title, 
-	.section-download .head-section__desc
+	.certificates .main-title, 
+	.certificates .head-section__desc
 	{
 		padding-right: 0;
 	}

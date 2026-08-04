@@ -512,7 +512,7 @@ $(window).on('load', () => {
 		advantagesSlider()
 	}
 
-	if ($('.download').length){
+	if ($('.certificates__slider').length){
 		downloadSlider()
 	}
 
@@ -559,7 +559,7 @@ $(window).on('resize', () => {
 		advantagesSlider()
 	}
 
-	if ($('.download').length){
+	if ($('.certificates__slider').length){
 		downloadSlider()
 	}
 
@@ -712,31 +712,39 @@ function advantagesSlider(){
 }
 
 function downloadSlider(){
-	if ( $(window).width() > 1023 && !$('.download').hasClass('swiper-initialized') ) {
-		$('.download').addClass('swiper')
-		$('.download__wrap').addClass('swiper-wrapper').removeClass('_flex')
-		$('.download__item').addClass('swiper-slide')
-
-		downloadSwiper = new Swiper('.download', {
+	if ( $(window).width() > 479 && !$('.certificates__slider').hasClass('swiper-initialized') ) {
+		downSwiper = new Swiper('.certificates__slider', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
 			spaceBetween: 16,
 			slidesPerView: 2,
 			preloadImages: false,
-			breakpoints: {
-				'1024': {
-					spaceBetween: 16,
-					slidesPerView: 2
-				},
-				'1200': {
-					spaceBetween: 16,
-					slidesPerView: 3
-				}
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
 			},
 			navigation: {
 				nextEl: '.slider-button-next',
 				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 1,
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 2,
+				},
+				'768': {
+					spaceBetween: 16,
+					slidesPerView: 3,
+				}
 			},
 			on: {
 				init: function (swiper) {
@@ -744,11 +752,15 @@ function downloadSlider(){
 				}
 			}
 		})
-	} else if ($(window).width() < 1023 && $('.download').hasClass('swiper-initialized')) {
-		downloadSwiper.destroy(true, true)
+	} else if ($(window).width() < 480 && $('.certificates__slider').hasClass('swiper-initialized')) {
+		if ($('.certificates__slider').length === 1 && $('.certificates__slider').hasClass('swiper-initialized')) {
+			downSwiper.destroy(true, true)
+		} else if ($('.certificates__slider').length >= 2 && $('.certificates__slider').hasClass('swiper-initialized')) {
+			downSwiper.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
 
-		$('.download').removeClass('swiper')
-		$('.download__wrap').removeClass('swiper-wrapper').addClass('_flex')
-		$('.download__item').removeClass('swiper-slide')
+		$('.certificates__slider .swiper-overflow').children().unwrap();
 	}
 }

@@ -153,15 +153,31 @@
 
 	.certificates__grid{
 		gap: 12px 0;
-		margin-top: 24px;
 	}
 
-	.certificate {
+	.certificates__grid .certificate {
 		width: calc(100% - 16px);
+	}
+
+	.certificates__slider-wrap{
+		display: block;
+	}
+
+	.certificates__slider .certificate + .certificate{
+		margin-top: 12px;
 	}
 
 	.certificate__desc{
 		margin-top: 8px;
+	}
+
+	.head-section__box-pad{
+		padding-right: 0;
+	}
+
+	.certificates__slider .slider-button-prev._top,
+	.certificates__slider .slider-button-next._top{
+		display: none;
 	}
 
 
