@@ -493,6 +493,10 @@
         font-size: 28px;
     }
 
+    .section-empty__title{
+        font-size: 24px;
+    }
+
     .main-title br{
         display: none;
     }
@@ -917,6 +921,35 @@
 
     .text-block h4 + ul{
         margin-top: 16px;
+    }
+
+    .sorting__flex .select-wrap,
+    .sorting__flex .sorting__btn{
+        width: calc(100%/2 - 16px);
+    }
+
+    .sorting__box{
+        justify-content: space-between;
+    }
+
+    .sorting__box .select-wrap{
+        width: calc(100%/2 - 8px);
+    }
+
+    .sorting__show{
+        order: 2;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .search .search__submit{
+        width: 200px;
+    }
+
+
+    .section-empty__btn{
+        width: calc(100%/2 - 8px);
+        line-height: 64px;
     }
 
 	/* commit */

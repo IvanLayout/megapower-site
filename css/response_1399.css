@@ -119,6 +119,10 @@
         font-size: 42px;
     }
 
+    .section-empty__title{
+        font-size: 36px;
+    }
+
     .head-section__btn a {
         min-width: 190px;
     }

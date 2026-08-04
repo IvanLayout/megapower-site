@@ -200,6 +200,15 @@
 		width: 100%;
 	}
 
+
+	.section-empty__btns{
+		gap: 12px;
+	}
+
+	.section-empty__btn{
+		width: 100%;
+	}
+
 	/* commit */
 
 	.page-title 
@@ -222,7 +231,7 @@
 		width: 100%;
 	}
 
-	.sorting__btn
+	.sorting .sorting__btn
 	{
 		width: 100%;
 	}

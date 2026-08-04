@@ -377,6 +377,33 @@
 	.news-top__text{
 		max-width: none;
 	}
+
+	.search__flex{
+		flex-wrap: wrap;
+	}
+
+	.search .search__submit{
+		margin: 16px 0 0;
+		width: 100%;
+	}
+
+	.search__number{
+		margin-top: 24px;
+	}
+
+
+	.section-empty__title{
+		width: 100%;
+	}
+
+	.section-empty__colr{
+		width: 100%;
+		padding-top: 16px;
+	}
+
+	.section-empty__btns{
+		margin-top: 48px;
+	}
 	/* commit */
 
 	.cats-popular_marg
@@ -384,15 +411,9 @@
 		margin-top: 32px;
 	}
 
-	.sorting .select-wrap,
-	.sorting__btn
-	{
-		width: calc(50% - 16px);
-	}
-
 	.sorting__box .select-wrap
 	{
-		width: calc(50% - 8px);
+		width: 100%;
 	}
 
 	.sorting__show
