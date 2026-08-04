@@ -2587,6 +2587,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-top: 48px;
 }
 
+.tabs-container_marg2
+{
+	margin-top: 24px;
+}
+
 .tabs__margBot
 {
 	margin-bottom: 32px;
@@ -2633,53 +2638,49 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin-left: 8px;
 }
 
-.tabs-text
+.tabs-border
 {
-	margin-right: auto;
-	align-self: flex-end;
-	padding-bottom: 5px;
+	flex-wrap: nowrap;
+	border-bottom: 1px solid #C9D4E0;
+	margin-bottom: 40px;
 }
 
-.tabs-text__flex
+.tabs-border_maxWidth
 {
-	align-items: flex-end;
-	align-content: flex-end;
+	width: calc(75.57% - 16px);
+	margin-left: auto;
 }
 
-.tabs-text__btn
+.tabs__button-border
 {
-	color: rgba(115, 125, 135, .5);
-	font: 500 28px/1.3 var(--font-family);
+	color: rgba(17, 24, 39, .4);
+	font-size: 16px;
+    line-height: 1.25;
 	white-space: nowrap;
-	transition: color .2s linear;
-
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
-	align-content: flex-end;
-	flex-wrap: wrap;
-
-	transition: color .2s linear;
+	border-bottom: 2px solid transparent;
+	transition: color .2s linear, border .2s linear;
+	padding-top: 16px;
+	padding-bottom: 14px;
 }
 
-.tabs-text__btn + .tabs-text__btn
+.tabs__button-border + .tabs__button-border
 {
-	margin-left: 30px;
+	margin-left: 32px;
 }
 
 @media (any-hover: hover)
 {
-	.tabs-text__btn:hover
+	.tabs__button-border:hover
 	{
-		color: #D64923;
+		color: #72CFE8;
 	}
 }
 
-.tabs-text__btn._active
+.tabs__button-border._active
 {
-	color: #1B2745;
-	font-size: 48px;
-	line-height: 1;
+	color: #111827;
+	font-weight: 700;
+	border-color: #72CFE8;
 }
 
 .tab-content
@@ -6852,6 +6853,49 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .for-partner__btn-big
 {
 	min-width: 368px;
+}
+
+/*------------
+    return-section
+------------*/
+
+.return-section__item
+{
+	height: auto;
+	min-height: 240px;
+
+	background: #F2F6FA;
+	padding: 24px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.return-section__number
+{
+	font-size: 24px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	font-family: var(--font-family2);
+}
+
+.return-section__info
+{
+	margin-top: 60px;
+	flex: 1 0 auto;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+}
+
+.return-section__desc
+{
+	color: #838691;
+	letter-spacing: -0.01em;
+	max-width: 240px;
 }
 
 @media (any-hover: hover)

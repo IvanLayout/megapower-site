@@ -1394,6 +1394,26 @@
 	}
 
 
+	.tabs-border_maxWidth
+	{
+		width: 100%;
+	}
+
+	.tabs-border
+	{
+		margin-bottom: 24px;
+	}
+
+	.return-section__slider .slider-button-prev, 
+	.return-section__slider .slider-button-next 
+	{
+		display: flex;
+		bottom: 0;
+		top: auto;
+		margin-top: 0;
+	}
+
+
     .footer__logo{
         max-width: none;
         width: 100%;

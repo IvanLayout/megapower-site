@@ -293,6 +293,12 @@
 	}
 
 
+	.return-section__item
+	{
+		padding: 16px;
+	}
+
+
     .footer__logo {
         max-width: 160px;
     }
