@@ -396,6 +396,11 @@
 		font-size: 22px;
 	}
 
+	.info-section__desc
+	{
+		margin-top: 16px;
+	}
+
 	.info-section__btn
 	{
 		width: 100%;

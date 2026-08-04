@@ -820,11 +820,21 @@
 	.info-section__img-box
 	{
 		position: absolute;
-		top: -40px;
-		right: 15px;
+		top: -30px;
+		right: 7px;
 
-		width: 100px;
-		height: 100px;
+		width: 110px;
+		height: 110px;
+	}
+
+	.info-section__img-box._img-box2
+	{
+		transform: rotate(15deg);
+
+		top: -27px;
+		right: -14px;
+		width: 132px;
+		height: 132px;
 	}
 
 	.info-section__img 
@@ -835,6 +845,11 @@
 		top: 0;
 	}
 
+	.info-section__img-expand img
+	{
+		transform: scaleX(-1);
+	}
+
 	.info-section__wrap
 	{
 		width: 100%;
@@ -843,12 +858,17 @@
 	.info-section__title
 	{
 		font-size: 26px;
+		padding-right: 75px;
+	}
+
+	.info-section__title._pad-mob
+	{
 		padding-right: 100px;
 	}
 
 	.info-section__desc
 	{
-		margin-top: 16px;
+		margin-top: 24px;
 	}
 
 

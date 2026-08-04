@@ -6633,6 +6633,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	align-items: center;
 	align-content: center;
 	flex-wrap: nowrap;
+
+	position: relative;
+	z-index: 1;
 }
 
 .info-section__title
