@@ -924,6 +924,17 @@
 	}
 
 
+	.page-error__desc
+	{
+		font-size: 16px;
+	}
+
+	.page-error__btn
+	{
+		width: 100%;
+	}
+
+
     .footer__logo{
         width: calc(50% - 12px);
     }
@@ -943,4 +954,25 @@
         max-width: none;
         padding-top: 40px;
     }
+
+
+	.modal
+	{
+		padding: 20px;
+	}
+
+	.modal__title
+	{
+		font-size: 22px;
+	}
+
+	.modal__form
+	{
+		margin-top: 20px;
+	}
+
+	.form__flex .form__line 
+	{
+		width: 100%;
+	}
 }

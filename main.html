@@ -3833,7 +3833,7 @@
 								</a>
 							</div>
 
-							<button type="button" data-content="#" class="btn-light modal-btn footer__callback-btn">Заказать звонок</button>
+							<button type="button" data-content="#modal-callback" class="btn-light modal-btn footer__callback-btn">Заказать звонок</button>
 						</div>
 
 						<div class="footer__col footer__col-flex">
@@ -3896,372 +3896,40 @@
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
 
-		<div id="modal-addres" class="modal modal-addres">
+		<div id="modal-callback" class="modal modal-callback">
 			<div class="modal__box">
-				<div class="modal__title">Выберите ваш город</div>
+				<div class="modal__title modal__title_maxWidth">Оставьте запрос — менеджер свяжется для уточнения деталей</div>
 
-				<form action="" class="modal-search">
-					<div class="modal-search__field">
-						<input type="text" value="" placeholder="Введите название своего города" id="cities-search" class="modal-search__input">
-						<button type="button" class="modal-search__close">
-							<svg>
-								<use xlink:href="images/sprite.svg#close"></use>
-							</svg>
-						</button>
-					</div>
-				</form>
+				<form action="" class="form modal__form">
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__label"><span>Имя</span></div>
 
-				<div class="modal-addres__detect">
-					<a href="/" class="modal-addres__detect-link">Определить автоматически</a>
-				</div>
-
-				<div class="modal-cities">
-					<div class="modal-cities__item">
-						<a class="modal-cities__link active">Москва</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Санкт-Петербург</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Новосибирск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Екатеринбург</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Нижний Новгород</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Казань</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Челябинск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Омск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Москва</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Санкт-Петербург</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Новосибирск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Екатеринбург</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Нижний Новгород</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Казань</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Челябинск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Омск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Самара</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Ростов‑на-Дону</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Уфа</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Красноярск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Пермь</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Воронеж</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Волгоград</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Краснодар</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Самара</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Ростов‑на-Дону</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Уфа</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Красноярск</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Пермь</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Воронеж</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Волгоград</a>
-					</div>
-					<div class="modal-cities__item">
-						<a href="/" class="modal-cities__link">Краснодар</a>
-					</div>
-				</div>
-
-				<div class="modal__btn">
-					<a href="/" class="btn-red btn-red_big">Выбрать</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="modal-cart" class="modal modal-cart">
-			<div class="modal__box">
-				<div class="modal__title">Корзина <span>3 шт</span></div>
-
-				<div class="cart-small">
-					<div class="cart-small__item _flex">
-						<div class="cart-small__thumb">
-							<a href="/" class="cart-small__img">
-								<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</a>
+							<div class="form__field">
+								<input type="text" value="" placeholder="Имя" class="form__input">
+							</div>
 						</div>
-						<div class="cart-small__info">
-							<button type="button" class="cart-small__delete">
-								<svg>
-									<use xlink:href="images/sprite.svg#delete2"></use>
-								</svg>
-							</button>
+						<div class="form__line">
+							<div class="form__label"><span>Телефон</span></div>
 
-							<div class="cart-small__top _flex">
-								<a href="/" class="cart-small__brand">
-									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-								</a>
-
-								<div class="cart-small__stickers">
-									<div class="cart-small__sticker cart-small__sticker_blue">
-										<span>- 23%</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="cart-small__name">
-								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
-							</div>
-
-							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
-
-							<div class="cart-small__bot _flex">
-								<div class="cart-small__prices">
-									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
-									<div class="cart-small__price">1 396 ₽ /шт</div>
-								</div>
-
-								<div class="amount cart-small__amount">
-									<div class="amount__val _flex">
-										<button type="button" class="amount__btn amount__btn_minus">
-											<svg>
-												<use xlink:href="images/sprite.svg#minus"></use>
-											</svg>
-										</button>
-
-										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-										<button type="button" class="amount__btn amount__btn_plus">
-											<svg>
-												<use xlink:href="images/sprite.svg#plus"></use>
-											</svg>
-										</button>
-									</div>
-								</div>
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
 							</div>
 						</div>
 					</div>
-					<div class="cart-small__item _flex">
-						<div class="cart-small__thumb">
-							<a href="/" class="cart-small__img">
-								<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</a>
-						</div>
-						<div class="cart-small__info">
-							<button type="button" class="cart-small__delete">
-								<svg>
-									<use xlink:href="images/sprite.svg#delete2"></use>
-								</svg>
-							</button>
 
-							<div class="cart-small__top _flex">
-								<a href="/" class="cart-small__brand">
-									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-								</a>
-
-								<div class="cart-small__stickers">
-									<div class="cart-small__sticker cart-small__sticker_blue">
-										<span>- 23%</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="cart-small__name">
-								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
-							</div>
-
-							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
-
-							<div class="cart-small__bot _flex">
-								<div class="cart-small__prices">
-									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
-									<div class="cart-small__price">1 396 ₽ /шт</div>
-								</div>
-
-								<div class="amount cart-small__amount">
-									<div class="amount__val _flex">
-										<button type="button" class="amount__btn amount__btn_minus">
-											<svg>
-												<use xlink:href="images/sprite.svg#minus"></use>
-											</svg>
-										</button>
-
-										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-										<button type="button" class="amount__btn amount__btn_plus">
-											<svg>
-												<use xlink:href="images/sprite.svg#plus"></use>
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="cart-small__item _flex">
-						<div class="cart-small__thumb">
-							<a href="/" class="cart-small__img">
-								<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-							</a>
-						</div>
-						<div class="cart-small__info">
-							<button type="button" class="cart-small__delete">
-								<svg>
-									<use xlink:href="images/sprite.svg#delete2"></use>
-								</svg>
-							</button>
-
-							<div class="cart-small__top _flex">
-								<a href="/" class="cart-small__brand">
-									<img data-src="images/tmp/brand_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-								</a>
-
-								<div class="cart-small__stickers">
-									<div class="cart-small__sticker cart-small__sticker_blue">
-										<span>- 23%</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="cart-small__name">
-								<a href="/">Микроволновый рефлексный датчик уровня HHK-703–4</a>
-							</div>
-
-							<div class="cart-small__code">Артикул: IL–LAA-N0300/200/250/250–010–50/25-FB-G1/2</div>
-
-							<div class="cart-small__bot _flex">
-								<div class="cart-small__prices">
-									<div class="cart-small__oldprice">1 396 ₽ /шт</div>
-									<div class="cart-small__price">1 396 ₽ /шт</div>
-								</div>
-
-								<div class="amount cart-small__amount">
-									<div class="amount__val _flex">
-										<button type="button" class="amount__btn amount__btn_minus">
-											<svg>
-												<use xlink:href="images/sprite.svg#minus"></use>
-											</svg>
-										</button>
-
-										<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input" maxlength="3" inputmode="numeric" pattern="[0-9]*">
-
-										<button type="button" class="amount__btn amount__btn_plus">
-											<svg>
-												<use xlink:href="images/sprite.svg#plus"></use>
-											</svg>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="modal-cart__total">Итого: 13 280 ₽</div>
-
-				<div class="modal__btn">
-					<a href="/" class="btn-red btn-red_big">В корзину</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="modal-callbacks" class="modal">
-			<div class="modal__box">
-				<div class="modal__title">Заказать звонок</div>
-
-				<form action="" class="form-gray modal__form-gray">
-					<div class="form-gray__line">
-						<div class="form-gray__field">
-							<input type="text" value="" name="" placeholder="Имя*" class="form-gray__input">
-						</div>
-					</div>
-					<div class="form-gray__line">
-						<div class="form-gray__field">
-							<input type="tel" value="" name="" placeholder="Телефон*" data-mask="+7 (999) 999-99-99" class="form-gray__input">
-						</div>
-					</div>
-					<div class="checkbox form__agree form__agree_marg">
+					<div class="checkbox form__agree">
 						<label class="checkbox__label">
 							<input type="checkbox" name="">
 
-							<span class="checkbox__text">
-								Я <a href="/">соглашаюсь</a> на получение рекламных предложений, а также рассылок рекламного характера, в том числе полезных материалов.
-							</span>
+							<span class="checkbox__text">Согласен на обработку <a href="/" target="_blank">персональных данных</a></span>
 						</label>
 					</div>
 
-					<div class="form__agree">Заполняя поля и нажимая кнопку «Отправить», вы подтверждаете, что ознакомлены и согласны с <a href="/">Политикой в отношении обработки персональных данных.</a></div>
-					
 					<div class="form__submit">
-						<button type="submit" class="form__submit-btn btn-red btn-red_big">Отправить</button>
+						<button type="submit" class="btn-dark form__submit-btn modal__form-btn">Отправить</button>
 					</div>
 				</form>
-			</div>
-		</div>
-
-		<div id="modal-login" class="modal modal_login">
-			<div class="modal__box">
-				<div class="modal__title">Войдите в профиль</div>
-
-				<div class="modal__subtitle">Чтобы следить за статусом заказов и получать персональные предложения</div>
-
-				<div class="modal__link">
-					<a href="/" class="btn-red btn-red_big">Войти</a>
-				</div>
-
-				<div class="modal__list">
-					<div class="modal__list-item">
-						<a href="/" class="modal__list-link">
-							Избранное <span>999</span>
-						</a>
-					</div>
-					<div class="modal__list-item">
-						<a href="/" class="modal__list-link">
-							Сравнение <span>999</span>
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 

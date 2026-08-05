@@ -1434,6 +1434,32 @@
 	}
 
 
+	.page-error
+	{
+		padding-top: 32px;
+		padding-bottom: 40px;
+	}
+
+	.page-error__bot
+	{
+		padding-top: 24px;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+
+	.page-error__desc
+	{
+		font-size: 18px;
+		width: 100%;
+	}
+
+	.page-error__btn-box
+	{
+		width: 100%;
+	}
+	
+
+
     .footer__logo{
         max-width: none;
         width: 100%;
@@ -1455,4 +1481,10 @@
     .footer__download-link{
         line-height: 48px;
     }
+
+
+	.modal
+	{
+		padding: 40px;
+	}
 }
