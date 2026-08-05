@@ -200,6 +200,48 @@
 		width: 100%;
 	}
 
+
+	.section-empty__btns{
+		gap: 12px;
+	}
+
+	.section-empty__btn{
+		width: 100%;
+	}
+
+
+	.text-block table thead{
+		display: none;
+	}
+
+	.text-block table td{
+		width: 100%;
+		display: block;
+		padding-left: 0;
+		border-bottom: none;
+	}
+
+	.text-block table td:first-child{
+		width: 100%;
+	}
+
+	.text-block table td:last-child{
+		border-bottom: 1px solid #C9D4E0;
+	}
+
+	.text-block table td + td{
+		padding-top: 0;
+	}
+
+	.text-block table td br{
+		display: none;
+	}
+
+	.section-text .text-block h3{
+		font-size: 22px;
+		margin-bottom: 24px;
+	}
+
 	/* commit */
 
 	.page-title 
@@ -222,7 +264,7 @@
 		width: 100%;
 	}
 
-	.sorting__btn
+	.sorting .sorting__btn
 	{
 		width: 100%;
 	}

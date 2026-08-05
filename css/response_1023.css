@@ -493,6 +493,10 @@
         font-size: 28px;
     }
 
+    .section-empty__title{
+        font-size: 24px;
+    }
+
     .main-title br{
         display: none;
     }
@@ -919,6 +923,55 @@
         margin-top: 16px;
     }
 
+    .sorting__flex .select-wrap,
+    .sorting__flex .sorting__btn{
+        width: calc(100%/2 - 16px);
+    }
+
+    .sorting__box{
+        justify-content: space-between;
+    }
+
+    .sorting__box .select-wrap{
+        width: calc(100%/2 - 8px);
+    }
+
+    .sorting__show{
+        order: 2;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .search .search__submit{
+        width: 200px;
+    }
+
+
+    .section-empty__btn{
+        width: calc(100%/2 - 8px);
+        line-height: 64px;
+    }
+
+
+    .section-text__bord{
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .section-text_pad{
+        padding-top: 16px;
+    }
+
+    .text-block table th{
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+
+    .text-block table td{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
 	/* commit */
 
 	.cats-popular__info
@@ -1222,31 +1275,6 @@
 	.head-section__desc
 	{
 		font-size: 14px;
-	}
-
-	.download .slider-button-prev, 
-	.download .slider-button-next
-	{
-		display: none;
-	}
-
-	.download__wrap._flex
-	{
-		justify-content: space-between;
-		align-items: stretch;
-		align-content: stretch;
-		margin-top: -12px;
-	}
-
-	.download__item
-	{
-		width: calc(50% - 8px);
-		margin-top: 12px;
-	}
-
-	.download__name
-	{
-		font-size: 20px;
 	}
 
 

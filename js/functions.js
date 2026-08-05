@@ -366,6 +366,25 @@ $(() => {
 		$('.header').removeClass('_search')
 	})
 
+	$('.search__input').on('input change', function () {
+		const hasValue = $(this).val().trim() !== '';
+
+		if(hasValue){
+			$(this).addClass('_full');
+			$(this).closest('.search').find('.search__submit').attr('disabled', false)
+		} else {
+			$(this).removeClass('_full');
+			$(this).closest('.search').find('.search__submit').attr('disabled', true)
+		}
+	}).trigger('input');
+	$('body').on('click', '.search__clear', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.search').find('.search__input').val('')
+		$(this).closest('.search').find('.search__input').removeClass('_full')
+		$(this).closest('.search').find('.search__submit').attr('disabled', true)
+	})
+
 	// Кастомный select
 	$('select').niceSelect()
 })
