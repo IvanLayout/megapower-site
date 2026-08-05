@@ -480,6 +480,13 @@
 	}
 
 
+	.form .form__textarea
+	{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+
     .footer__logo{
         width: 100%;
     }
@@ -527,6 +534,6 @@
 
 	.modal__title
 	{
-		font-size: 20px;
+		font-size: 22px;
 	}
 }

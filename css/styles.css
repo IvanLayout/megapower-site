@@ -2156,7 +2156,8 @@ input[type=radio]:checked + .radio__text::before
 
     display: block;
 
-    padding-left: 26px;
+    padding-left: 24px;
+	letter-spacing: -0.01em;
 }
 
 .checkbox__text::before
@@ -2164,8 +2165,8 @@ input[type=radio]:checked + .radio__text::before
     content: "";
 
     position: absolute;
-    top: 2px;
-    left: 4px;
+    top: 1px;
+    left: 2px;
 
     width: 13px;
     height: 13px;

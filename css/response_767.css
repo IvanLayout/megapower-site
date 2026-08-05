@@ -968,7 +968,7 @@
 
 	.modal
 	{
-		padding: 20px;
+		padding: 24px 20px 20px;
 	}
 
 	.modal__title
@@ -984,5 +984,10 @@
 	.form__flex .form__line 
 	{
 		width: 100%;
+	}
+
+	.modal__form-btn
+	{
+		min-width: 1px;
 	}
 }
