@@ -504,10 +504,6 @@ $(() => {
 
 
 $(window).on('load', () => {
-	if ($('.areas-activity__wrap').length){
-		areasActivitySlider()
-	}
-
 	if ($('.advantages-inner__wrap').length){
 		advantagesSlider()
 	}
@@ -550,11 +546,6 @@ $(window).on('resize', () => {
 		}
 	}
 
-
-	if ($('.areas-activity__wrap').length){
-		areasActivitySlider()
-	}
-
 	if ($('.advantages-inner__wrap').length){
 		advantagesSlider()
 	}
@@ -587,65 +578,6 @@ function productsHeight(context, step) {
 
 		start  = start + step
 		finish = finish + step
-	}
-}
-
-
-function areasActivitySlider(){
-	if ( $(window).width() < 1024 && !$('.areas-activity__wrap').hasClass('swiper-initialized') ) {
-		$('.areas-activity__wrap').addClass('swiper')
-		$('.areas-activity__grid').addClass('swiper-wrapper').removeClass('_flex')
-		$('.areas-activity__item').addClass('swiper-slide')
-
-		areasActivitySwiperSlider = new Swiper('.areas-activity__wrap', {
-			loop: false,
-			watchSlidesProgress: true,
-			watchOverflow: true,
-			spaceBetween: 10,
-			slidesPerView: 1,
-			preloadImages: false,
-			lazy: {
-				loadPrevNext: true,
-				elementClass: 'lazyload',
-				enabled: true,
-				loadedClass: 'loaded',
-				checkInView: true,
-				loadOnTransitionStart: true
-			},
-			pagination: {
-				bulletActiveClass: 'slider-dot_active',
-				bulletClass: 'slider-dot',
-				clickableClass: 'slider-pagination-clickable',
-				el: '.slider-pagination',
-				clickable: true
-			},
-			breakpoints: {
-				'320': {
-					spaceBetween: 10,
-					slidesPerView: 1,
-				},
-				'480': {
-					spaceBetween: 10,
-					slidesPerView: 1,
-				},
-				'768': {
-					spaceBetween: 15,
-					slidesPerView: 2,
-				}
-			},
-		})
-	} else if ($(window).width() > 1023 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
-		if ($('.areas-activity__wrap').length === 1 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
-			areasActivitySwiperSlider.destroy(true, true)
-		} else if ($('.areas-activity__wrap').length >= 2 && $('.areas-activity__wrap').hasClass('swiper-initialized')) {
-			areasActivitySwiperSlider.forEach(function (element) {
-				element.destroy(true, true)
-			})
-		}
-
-		$('.areas-activity__wrap').removeClass('swiper')
-		$('.areas-activity__grid').removeClass('swiper-wrapper').addClass('_flex')
-		$('.areas-activity__item').removeClass('swiper-slide')
 	}
 }
 
