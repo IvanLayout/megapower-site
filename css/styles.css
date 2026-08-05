@@ -7044,41 +7044,46 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .page-error
 {
-	padding: 64px 0;
 	position: relative;
-	height: 100vh;
+    background: #E2E8F4;
+    overflow: hidden;
 }
 
 .page-error__img
 {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 50%;
+    transform: translateX(-50%);
 
 	display: block;
 
 	width: 100%;
-	height: 100%;
-
-	object-fit: cover;
+    max-width: 1600px;
 }
 
-.page-error .cont
-{
-	height: 100%;
+.page-error__wrap{
+    padding: 64px 0;
 	display: flex;
 	flex-direction: column;
+	min-height: calc(70vh - 160px);
+}
+
+.page-error__top{
+    width: 100%;
+    flex-grow: 1;
 }
 
 .page-error__bot
 {
+    width: 100%;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	gap: 30px;
 
 	border-top: 1px solid #838691;
 	padding-top: 40px;
-	margin-top: auto;
+	margin-top: 587px;
 }
 
 .page-error__desc

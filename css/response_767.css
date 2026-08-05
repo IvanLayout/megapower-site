@@ -404,6 +404,15 @@
 	.section-empty__btns{
 		margin-top: 48px;
 	}
+
+
+	.page-error__img{
+		top: 6%;
+	}
+
+	.page-error__bot{
+		margin-top: 40%;
+	}
 	/* commit */
 
 	.cats-popular_marg

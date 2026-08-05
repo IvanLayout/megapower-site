@@ -215,6 +215,11 @@
         font-size: 20px;
     }
 
+
+    .page-error__bot{
+        margin-top: 36%;
+    }
+
 	/* commit */
 
 	.product-info__images 

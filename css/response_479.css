@@ -242,6 +242,16 @@
 		margin-bottom: 24px;
 	}
 
+
+	.page-error__img{
+		width: 174%;
+		top: 6%;
+	}
+
+	.page-error__bot {
+		margin-top: 91%;
+	}
+
 	/* commit */
 
 	.page-title 
