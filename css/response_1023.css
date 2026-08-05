@@ -1459,6 +1459,10 @@
 		white-space: nowrap;
 	}
 
+    .tabs-border::-webkit-scrollbar{
+        display: none;
+    }
+
 	.return-section__slider .slider-button-prev, 
 	.return-section__slider .slider-button-next 
 	{
