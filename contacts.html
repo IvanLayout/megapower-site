@@ -1981,7 +1981,7 @@
 								</a>
 							</div>
 
-							<button type="button" data-content="#" class="btn-light modal-btn footer__callback-btn">Заказать звонок</button>
+							<button type="button" data-content="#modal-callback" class="btn-light modal-btn footer__callback-btn">Заказать звонок</button>
 						</div>
 
 						<div class="footer__col footer__col-flex">
@@ -2042,6 +2042,43 @@
 
 		<div class="supports-error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<div id="modal-callback" class="modal">
+			<div class="modal__box">
+				<div class="modal__title modal__title_maxWidth">Оставьте запрос — менеджер свяжется для уточнения деталей</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__label"><span>Имя</span></div>
+
+							<div class="form__field">
+								<input type="text" value="" placeholder="Имя" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__label"><span>Телефон</span></div>
+
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+					</div>
+
+					<div class="checkbox form__agree">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">Согласен на обработку <a href="/" target="_blank">персональных данных</a></span>
+						</label>
+					</div>
+
+					<div class="form__submit">
+						<button type="submit" class="btn-dark form__submit-btn modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<!-- Подключение javascript файлов -->
