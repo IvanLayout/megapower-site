@@ -638,8 +638,11 @@
     }
 
     .cats-product__items{
-        columns: 1;
         margin-top: 24px;
+    }
+
+    .cats-product__items-col{
+        width: 100%;
     }
 
     .cats-product__item{

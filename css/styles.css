@@ -24,6 +24,17 @@
 @font-face
 {
     font-family: "OpenSansHebrew";
+    font-weight: 300;
+    font-style: normal;
+
+    font-display: swap;
+    src: url("../fonts/OpenSansHebrewLight.woff") format("woff"),
+    url("../fonts/OpenSansHebrewLight.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: "OpenSansHebrew";
     font-weight: 400;
     font-style: normal;
 
@@ -4375,12 +4386,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
     position: relative;
     display: block;
-    aspect-ratio: 1 / .6049;
 	background: #fff;
 	text-decoration: none;
 	border-top: 1px solid #D9DDE0;
 	border-left: 1px solid #D9DDE0;
 	border-right: 1px solid #D9DDE0;
+    aspect-ratio: 1 / .6049;
+    width: 100%;
 }
 
 .product__img 
@@ -4512,9 +4524,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .product__price span
 {
-	display: inline-block;
+	display: block;
 	position: relative;
-	padding-right: 24px;
 }
 
 .products__info
@@ -4982,6 +4993,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 	margin: 16px 0 0 16px;
 }
 
+@media (any-hover: hover){
+    .find-marketplaces__btn:hover{
+        background-color: #1789A7;
+    }
+}
+
 /*------------
     cats-product
 ------------*/
@@ -4990,18 +5007,22 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	margin-top: 56px;
 
-	column-gap: 16px;
-    columns: 2;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cats-product__items-col{
+    width: calc(50% - 8px);
 }
 
 .cats-product__item
 {
-	break-inside: avoid;
-	-webkit-break-inside: avoid;
-
 	position: relative;
 	text-decoration: none;
-    display: inline-block;
+    display: block;
     width: 100%;
 	color: #72CFE8;
 	background: transparent;
@@ -6346,13 +6367,9 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .product__price .tooltip
 {
-	position: absolute;
-	content: '';
-	top: 50%;
-	right: 0;
-
-	display: block;
-	margin-top: -10px;
+    position: static;
+	display: inline-block;
+	margin: -2px 0 0 4px;
 
 	width: 16px;
 	height: 16px;
@@ -6360,8 +6377,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .product__price .tooltip__wrap{
     top: auto;
-    margin-top: 0;
+    margin: 0;
     bottom: calc(100% + 10px);
+    white-space: normal;
+    left: 0;
+    min-width: 200px;
+    width: auto;
+    max-width: 100%;
 }
 
 .tooltip__icon

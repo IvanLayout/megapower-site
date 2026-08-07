@@ -131,7 +131,7 @@
 
 
     .about-main__wrap{
-        min-height: 680px;
+        min-height: 608px;
     }
 
     .about-main__item {
@@ -165,6 +165,10 @@
     .product__sticker{
         font-size: 14px;
     }
+
+	.product__sticker::before{
+		top: 5px;
+	}
 
     .product__arrow{
         top: 20px;
@@ -650,15 +654,16 @@
 
 	.tooltip__wrap
 	{
-		position: fixed;
+		/* position: fixed;
 		top: auto;
 		bottom: 0;
 		left: 0;
 		width: 100%;
 		margin-left: 0;
-		margin-top: 0;
+		margin-top: 0; */
 
 		padding-right: 40px;
+		width: 100%;
 	}
 
     .tooltip .mini-modal__close
