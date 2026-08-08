@@ -109,6 +109,9 @@
         width: 100%;
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .header._search .header__info{
         position: static;
     }
 

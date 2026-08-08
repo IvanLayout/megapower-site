@@ -347,15 +347,20 @@ $(() => {
 
 		$(this).toggleClass('_full', hasValue);
 		$('.header__search-block').toggleClass('_active', hasValue);
-		$('.overlay-search').toggleClass('_show', hasValue)
-		$('.header').toggleClass('_search', hasValue)
 	}).trigger('input');
 	$('body').on('focus', '.header__search-input', function (e) {
 		$(this).closest('.header__search').addClass('_active')
 		$('.overlay-search').addClass('_show')
 		$('.header').addClass('_search')
 	})
-	$('body').on('click', '.header__search-clear, .header__search-hide', function (e) {
+	$('body').on('click', '.header__search-clear', function (e) {
+		e.preventDefault()
+
+		$('.header__search-input').val('')
+		$('.header__search-input').removeClass('_full')
+		$('.header__search-block').removeClass('_active');
+	})
+	$('body').on('click', '.header__search-hide', function (e) {
 		e.preventDefault()
 
 		$('.header__search-input').val('')
