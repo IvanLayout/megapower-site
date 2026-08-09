@@ -24,6 +24,10 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow4" viewBox="0 0 48 48">
 		<path d="M44 4V27.3687H42.9909V5.72922L42.6466 6.07448L5.72824 42.9938H27.3687V44.002H4V20.6382H5.00715V42.2708L42.2718 5.00715H20.6313V4H44Z"/>
 	</symbol>
+	<symbol xmlns="http://www.w3.org/2000/svg" id="arrow5" viewBox="0 0 16 16">
+		<path d="M7.39206 2.92231L2.83889 7.4184L2 6.50917L7.5801 1H8.4199L14 6.50917L13.1611 7.4184L8.60794 2.92231V15H7.39206V2.92231Z"/>
+	</symbol>
+
 	<symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 11 11">
 		<path d="M0.6875 0.6875L10.3125 10.3125" stroke-width="1.375" stroke-linecap="round"/>
 		<path d="M10.3125 0.6875L0.6875 10.3125" stroke-width="1.375" stroke-linecap="round"/>

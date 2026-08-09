@@ -219,14 +219,9 @@ $(() => {
 		autoFocus: false,
 		dragToClose: false,
 		placeFocusBack: false,
-		
-		
 		Html: {
-			
 			tpl: myCloseBtn
 		},
-		
-		
 		Toolbar: {
 			display: {
 				right: ["close"],
@@ -236,6 +231,9 @@ $(() => {
 					tpl: myCloseBtn
 				}
 			}
+		},
+		Carousel: {
+			gestures: false
 		}
 	};
 
@@ -246,7 +244,6 @@ $(() => {
 		Fancybox.close();
 	
 		const target = $(this).attr('data-content');
-		const isBig = $(this).attr('data-modal-big') !== undefined;
 
 		setTimeout(() => {
 			Fancybox.show([{
@@ -254,15 +251,6 @@ $(() => {
 				type: 'inline'
 			}], {
 				...commonOptions,
-				on: {
-					reveal: () => {
-						if (isBig) $('body').addClass('_big-modal');
-					},
-					destroy: () => {
-						$('body').removeClass('_big-modal');
-						$('.modal video').each(function () { this.pause(); });
-					}
-				}
 			});
 		}, 10);
 	});
@@ -392,6 +380,27 @@ $(() => {
 
 	// Кастомный select
 	$('select').niceSelect()
+
+	$('.form__input').on('input change', function () {
+		const hasValue = $(this).val().trim() !== '';
+
+		$(this).toggleClass('_full', hasValue);
+	}).trigger('input');
+
+	$('.form__textarea').on('textarea change', function () {
+		const hasValue = $(this).val().trim() !== '';
+
+		$(this).toggleClass('_full', hasValue);
+	}).trigger('textarea');
+
+	// Кнопка 'Вверх'
+	$('body').on('click', '.button-up', function(e) {
+		e.preventDefault()
+
+		$('body, html').stop(false, false).animate({
+			scrollTop: 0
+		}, 1000)
+	})
 })
 
 

@@ -1809,12 +1809,12 @@
 							<div class="faq__top left">
 								<div class="select-wrap">
 									<select>
+										<option value="0" data-content="Все категории"></option>
 										<option value="1">Пункт 1</option>
 										<option value="2">Пункт 2</option>
 										<option value="3">Пункт 3</option>
 										<option value="4">Пункт 4</option>
 										<option value="5">Пункт 5</option>
-										<option value="6" selected>Все категории</option>
 									</select>
 								</div>
 							</div>
@@ -1908,7 +1908,7 @@
 	
 									<div class="faq__desc">Задайте вопрос о сотрудничестве, документах, логистике или индивидуальных условиях — <br>ответим и поможем подобрать <br>формат работы.</div>
 	
-									<button type="button" class="btn-blue faq__btn">Задать вопрос</button>
+									<button type="button" data-content="#modal-faq" class="btn-blue faq__btn modal-btn">Задать вопрос</button>
 								</div>
 							</div>
 
@@ -1920,6 +1920,11 @@
 
 
 			<footer class="footer _marg">
+				<button type="button" class="button-up">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow5"></use>
+					</svg>
+				</button>
 				<div class="cont">
 					<div class="footer__cols _flex">
 						<div class="footer__logo">
@@ -2067,6 +2072,51 @@
 							<div class="form__field">
 								<input type="tel" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
 							</div>
+						</div>
+					</div>
+
+					<div class="checkbox form__agree">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">Согласен на обработку <a href="/" target="_blank">персональных данных</a></span>
+						</label>
+					</div>
+
+					<div class="form__submit">
+						<button type="submit" class="btn-dark form__submit-btn modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div id="modal-faq" class="modal">
+			<div class="modal__box">
+				<div class="modal__title modal__title_maxWidth">Оставьте ваш вопрос.</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__label"><span>Имя</span></div>
+
+							<div class="form__field">
+								<input type="text" value="" placeholder="Имя" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__label"><span>Телефон</span></div>
+
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+					</div>
+
+					<div class="form__line">
+						<div class="form__label"><span>Вопрос.</span></div>
+
+						<div class="form__field">
+							<textarea name="" id="" placeholder="Формат: розница/опт, склад, количество точек, основные марки, ваш ассортимент." class="form__textarea"></textarea>
 						</div>
 					</div>
 

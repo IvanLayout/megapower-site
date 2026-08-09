@@ -167,6 +167,11 @@
 		margin-top: 12px;
 	}
 
+	.certificate__name{
+		font-size: 20px;
+		height: auto !important;
+	}
+
 	.certificate__desc{
 		margin-top: 8px;
 	}

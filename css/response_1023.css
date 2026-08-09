@@ -517,6 +517,10 @@
         margin-bottom: 16px;
     }
 
+    .text-block h5{
+        font-size: 18px;
+    }
+
     .wrap-btn._mob{
         margin-top: 32px;
         display: block;
@@ -636,7 +640,7 @@
     .advantages-main__slider .slider-button-prev,
     .advantages-main__slider .slider-button-next{
         bottom: 0;
-        top: auto;
+        top: auto !important;
         margin-top: 0;
     }
 
@@ -771,6 +775,10 @@
         min-width: 190px;
     }
 
+
+    .production__accordion .accordion__info{
+        font-size: 14px;
+    }
 
     .production__accordion .information__name{
         font-size: 22px;
@@ -1213,6 +1221,10 @@
 		display: none;
 	}
 
+    .wrap-table_two{
+        max-width: none;
+    }
+
 	.list-dealers__slider
 	{
 		display: block;
@@ -1504,6 +1516,14 @@
 	}
 	
 
+    .button-up{
+        top: 48px;
+    }
+
+
+    .footer__cols{
+        padding-right: 0;
+    }
 
     .footer__logo{
         max-width: none;

@@ -71,6 +71,18 @@ $(() => {
 					spaceBetween: 16,
 					slidesPerView: 4
 				}
+			},
+			on: {
+				init: function (swiper) {
+					let posTop = $(swiper.el).find('.swiper-slide:not(_big)').height()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+				},
+				resize: function (swiper) {
+					let posTop = $(swiper.el).find('.swiper-slide:not(_big)').height()
+
+					$(swiper.el).find('.slider-button-prev, .slider-button-next').css('top', posTop)
+				}
 			}
 		})
 
@@ -681,6 +693,15 @@ function downloadSlider(){
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+
+					$(swiper.el).find('.certificate__name').height('auto')
+
+					setHeight( $(swiper.el).find('.certificate__name') )
+				},
+				resize: function (swiper) {
+					$(swiper.el).find('.certificate__name').height('auto')
+
+					setHeight( $(swiper.el).find('.certificate__name') )
 				}
 			}
 		})

@@ -1623,6 +1623,20 @@ button
     margin-top: 32px;
 }
 
+.text-block h5
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #111827;
+
+    margin-bottom: 32px;
+}
+
+.text-block * + h5{
+    margin-top: 32px;
+}
+
 .text-block p
 {
     margin-bottom: 20px;
@@ -1947,7 +1961,11 @@ button
 
 .form .form__input:focus
 {
-	border-color: #B6BDCA;
+	border-color: #838691;
+}
+
+.form .form__input._full{
+    border-color: #838691;
 }
 
 .form .form__textarea
@@ -1965,6 +1983,14 @@ button
 	border: 1px solid #C9D4E0;
     background: transparent;
 	resize: none;
+}
+
+.form .form__textarea:focus{
+	border-color: #838691;
+}
+
+.form .form__textarea._full{
+    border-color: #838691;
 }
 
 .form .form__textarea.error,
@@ -3536,12 +3562,22 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .advantages-main__slider .slider-button-prev{
     left: calc(100%/6 + 10%);
-    margin-top: 0;
+    margin-top: -14px;
 }
 
 .advantages-main__slider .slider-button-next{
     right: calc(100%/6 + 10%);
-    margin-top: 0;
+    margin-top: -14px;
+}
+
+.advantages-main__slider._about .slider-button-prev{
+    left: calc(100%/6 + 2%);
+    margin-top: -14px;
+}
+
+.advantages-main__slider._about .slider-button-next{
+    right: calc(100%/6 + 2%);
+    margin-top: -14px;
 }
 
 .advantages-main__item{
@@ -3556,6 +3592,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     flex-direction: column;
     --color1: #838691;
     height: 100%;
+}
+
+.advantages-main__slider._about .advantages-main__item{
+    min-height: 274px;
 }
 
 .advantages-main__slider .swiper-slide._big{
@@ -3756,6 +3796,11 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
 .production__accordion .information__info {
     margin-left: 16px;
+    max-width: 512px;
+}
+
+.production__accordion .accordion__info{
+    font-size: 16px;
     max-width: 512px;
 }
 
@@ -6308,6 +6353,7 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 {
 	column-gap: 16px;
     columns: 2;
+    padding-top: 1px;
 }
 
 .contacts__item
@@ -6319,11 +6365,8 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     width: 100%;
 
 	border-top: 1px solid #B6BDCA;
-}
-
-.contacts__item:last-child
-{
 	border-bottom: 1px solid #B6BDCA;
+    margin-top: -1px;
 }
 
 .contacts__item-flex
@@ -6564,6 +6607,22 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 
     border-spacing: 0;
     border-collapse: separate;
+}
+
+.wrap-table_two{
+    max-width: 1008px;
+}
+
+.wrap-table_two td:first-child{
+    width: 48%;
+}
+
+.wrap-table_thee td:first-child{
+    width: 32%;
+}
+
+.wrap-table_thee td:nth-child(2){
+    width: 33.5%;
 }
 
 .wrap-table tr th
@@ -7194,16 +7253,48 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .footer
 {
 	background-color: #111827;
+    position: relative;
+}
+
+.button-up{
+    position: absolute;
+    top: 169px;
+    left: 50%;
+    margin-left: 704px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    color: #111827;
+    transition: background .2s linear, color .2s linear;
+    z-index: 20;
+}
+
+.button-up svg{
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+@media (any-hover: hover){
+    .button-up:hover{
+        background: #72CFE8;
+    }
 }
 
 .footer__cols
 {
-	padding: 80px 0 114px;
+	padding: 80px 90px 114px 0;
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
 
-	max-width: 1340px;
+	max-width: 1422px;
 }
 
 .footer__col
@@ -7588,7 +7679,21 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
         right: 10px;
     }
 
+    .advantages-main__slider._about .slider-button-prev{
+        left: 10px;
+    }
+
+    .advantages-main__slider._about .slider-button-next{
+        right: 10px;
+    }
+
     .advantages-main__date{
         font-size: 50px;
+    }
+
+    .button-up{
+        margin-left: 0;
+        left: auto;
+        right: 20px;
     }
 }

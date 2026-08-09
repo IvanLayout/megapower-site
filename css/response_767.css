@@ -780,6 +780,18 @@
 		border-right: 1px solid #B6BDCA;
 	}
 
+	.wrap-table_two td:first-child{
+		width: 100%;
+	}
+
+	.wrap-table_thee td:first-child{
+		width: 100%;
+	}
+
+	.wrap-table_thee td:nth-child(2){
+		width: 100%;
+	}
+
 	.wrap-table tr td.wrap-table__td::before 
 	{
 		content: attr(data-label);

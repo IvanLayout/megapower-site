@@ -1932,7 +1932,7 @@
 							</div>
 						</div>
 
-						<table class="wrap-table wrap-table_marg">
+						<table class="wrap-table wrap-table_thee wrap-table_marg">
 							<thead>
 								<tr>
 									<th>Параметр</th>
@@ -2117,14 +2117,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="accordion__item faq__item _active">
+									<div class="accordion__item faq__item">
 										<div class="accordion__title faq__info-title">
 											<div class="faq__name">Какие условия по оплате и объёму?</div>
 		
 											<div class="faq__plus-minus"></div>
 										</div>
 		
-										<div class="accordion__data faq__data" style="display: block;">
+										<div class="accordion__data faq__data">
 											<div class="text-block">
 												<p>Предусмотрена отсрочка платежа 30 дней (если иные условия не прописаны в договоре). Увеличение лимита — индивидуально. Партнёрский договор также предусматривает ежемесячный объём отгрузки/закупки.</p>
 											</div>
@@ -2165,7 +2165,7 @@
 	
 									<div class="faq__desc">Задайте вопрос о сотрудничестве, документах, логистике или индивидуальных условиях — <br>ответим и поможем подобрать <br>формат работы.</div>
 	
-									<button type="button" class="btn-blue faq__btn">Задать вопрос</button>
+									<button type="button" data-content="#modal-faq" class="btn-blue faq__btn modal-btn">Задать вопрос</button>
 								</div>
 							</div>
 
@@ -2247,6 +2247,11 @@
 
 
 			<footer class="footer _marg">
+				<button type="button" class="button-up">
+					<svg>
+						<use xlink:href="images/sprite.svg#arrow5"></use>
+					</svg>
+				</button>
 				<div class="cont">
 					<div class="footer__cols _flex">
 						<div class="footer__logo">
@@ -2498,6 +2503,51 @@
 
 						<div class="form__field">
 							<textarea name="" id="" placeholder="Кратко опишите вопрос" class="form__textarea"></textarea>
+						</div>
+					</div>
+
+					<div class="checkbox form__agree">
+						<label class="checkbox__label">
+							<input type="checkbox" name="">
+
+							<span class="checkbox__text">Согласен на обработку <a href="/" target="_blank">персональных данных</a></span>
+						</label>
+					</div>
+
+					<div class="form__submit">
+						<button type="submit" class="btn-dark form__submit-btn modal__form-btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div id="modal-faq" class="modal">
+			<div class="modal__box">
+				<div class="modal__title modal__title_maxWidth">Оставьте ваш вопрос.</div>
+
+				<form action="" class="form modal__form">
+					<div class="form__flex _flex">
+						<div class="form__line">
+							<div class="form__label"><span>Имя</span></div>
+
+							<div class="form__field">
+								<input type="text" value="" placeholder="Имя" class="form__input">
+							</div>
+						</div>
+						<div class="form__line">
+							<div class="form__label"><span>Телефон</span></div>
+
+							<div class="form__field">
+								<input type="tel" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+					</div>
+
+					<div class="form__line">
+						<div class="form__label"><span>Вопрос.</span></div>
+
+						<div class="form__field">
+							<textarea name="" id="" placeholder="Формат: розница/опт, склад, количество точек, основные марки, ваш ассортимент." class="form__textarea"></textarea>
 						</div>
 					</div>
 

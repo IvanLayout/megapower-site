@@ -1,5 +1,8 @@
 @media (max-width: 1319px)
 {
+	.certificate__name{
+		font-size: 18px;
+	}
 
 	/* commit */
 	

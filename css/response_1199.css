@@ -526,6 +526,13 @@
     .footer__cols{
         padding-top: 48px;
         padding-bottom: 40px;
+        padding-right: 70px;
+    }
+
+    .button-up{
+        top: 120px;
+        width: 48px;
+        height: 48px;
     }
 
     .footer__logo{
