@@ -3977,10 +3977,16 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .certificates__grid .certificate{
     width: calc(100%/3 - 16px);
     margin-left: 16px;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .certificates__grid-small .certificate{
     width: calc(100%/2 - 8px);
+
+	display: flex;
+	flex-direction: column;
 }
 
 .certificate__download{
@@ -4018,6 +4024,12 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     padding-right: 44px;
     font-size: 20px;
     line-height: 1.2;
+}
+
+.certificates__grid .certificate__name,
+.certificates__grid-small .certificate__name
+{
+	flex: 1 0 auto;
 }
 
 .certificate__desc{
