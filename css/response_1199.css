@@ -351,6 +351,12 @@
     }
 
 
+	.certificates__grid-small .certificate 
+	{
+		width: calc(100% / 2 - 8px);
+	}
+
+
     .quality-control__cols{
         margin-top: 32px;
         gap: 32px 30px;

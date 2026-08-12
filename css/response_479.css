@@ -159,6 +159,11 @@
 		width: calc(100% - 16px);
 	}
 
+	.certificates__grid-small .certificate 
+	{
+		width: 100%;
+	}
+
 	.certificates__slider-wrap{
 		display: block;
 	}

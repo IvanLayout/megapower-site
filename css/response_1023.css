@@ -811,6 +811,12 @@
         right: 60px;
     }
 
+
+	.certificates__grid-small .certificate
+	{
+		width: calc(100%/2 - 8px);
+	}
+
     .head-section__box-pad {
         padding-right: 116px;
     }

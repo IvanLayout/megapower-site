@@ -302,6 +302,12 @@
 	}
 
 
+	.certificates__grid-small .certificate
+	{
+		padding: 16px;
+	}
+
+
     .footer__logo {
         max-width: 160px;
     }

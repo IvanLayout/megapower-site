@@ -3922,6 +3922,14 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     margin-top: 56px;
 }
 
+.certificates__grid-small
+{
+	align-items: stretch;
+    align-content: stretch;
+	justify-content: space-between;
+    gap: 16px 0;
+}
+
 .certificates__slider{
     margin-left: auto;
     width: calc(75.57% - 16px);
@@ -3949,6 +3957,10 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
 .certificates__grid .certificate{
     width: calc(100%/3 - 16px);
     margin-left: 16px;
+}
+
+.certificates__grid-small .certificate{
+    width: calc(100%/2 - 8px);
 }
 
 .certificate__download{
@@ -6331,6 +6343,13 @@ input[type=checkbox]:checked + .checkbox-slider__text .checkbox-slider__text-dot
     font-size: 14px;
 	line-height: 1.2;
 	letter-spacing: -0.01em;
+
+	color: #111827;
+}
+
+.text-block.accordion__info ul li::before
+{
+	top: 4px;
 }
 
 
