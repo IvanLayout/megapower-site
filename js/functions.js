@@ -207,7 +207,7 @@ $(() => {
 		let datamask = $(this).data('mask');
 
 		$(this).inputmask(`${datamask}`, {
-			showMaskOnHover: false
+			showMaskOnHover: false,
 		})
 	})
 
@@ -331,11 +331,14 @@ $(() => {
 	})
 
 	$('.header__search-input').on('input change', function () {
-		const hasValue = $(this).val().trim() !== '';
-
-		$(this).toggleClass('_full', hasValue);
-		$('.header__search-block').toggleClass('_active', hasValue);
-	}).trigger('input');
+		if ($(this).val().trim() !== '') {
+			$(this).addClass('_full');
+			$('.header__search-block').addClass('_active');
+		} else {
+			$(this).removeClass('_full');
+			$('.header__search-block').removeClass('_active');
+		}
+	});
 	$('body').on('focus', '.header__search-input', function (e) {
 		$(this).closest('.header__search').addClass('_active')
 		$('.overlay-search').addClass('_show')
@@ -360,16 +363,14 @@ $(() => {
 	})
 
 	$('.search__input').on('input change', function () {
-		const hasValue = $(this).val().trim() !== '';
-
-		if(hasValue){
+		if ($(this).val().trim() !== '') {
 			$(this).addClass('_full');
-			$(this).closest('.search').find('.search__submit').attr('disabled', false)
+			$(this).closest('.search').find('.search__submit').attr('disabled', false);
 		} else {
 			$(this).removeClass('_full');
-			$(this).closest('.search').find('.search__submit').attr('disabled', true)
+			$(this).closest('.search').find('.search__submit').attr('disabled', true);
 		}
-	}).trigger('input');
+	});
 	$('body').on('click', '.search__clear', function (e) {
 		e.preventDefault()
 
@@ -382,16 +383,20 @@ $(() => {
 	$('select').niceSelect()
 
 	$('.form__input').on('input change', function () {
-		const hasValue = $(this).val().trim() !== '';
+		if ($(this).val().trim() !== '') {
+			$(this).addClass('_full');
+		} else {
+			$(this).removeClass('_full');
+		}
+	});
 
-		$(this).toggleClass('_full', hasValue);
-	}).trigger('input');
-
-	$('.form__textarea').on('textarea change', function () {
-		const hasValue = $(this).val().trim() !== '';
-
-		$(this).toggleClass('_full', hasValue);
-	}).trigger('textarea');
+	$('.form__textarea').on('input change', function () {
+		if ($(this).val().trim() !== '') {
+			$(this).addClass('_full');
+		} else {
+			$(this).removeClass('_full');
+		}
+	});
 
 	// Кнопка 'Вверх'
 	$('body').on('click', '.button-up', function(e) {
